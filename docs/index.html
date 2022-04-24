@@ -1,401 +1,691 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Santiago Espinosa Mooser</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Santiago Espinosa Mooser</title>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
 
-	<style>
-	html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1.5;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-html,
-button,
-input,
-textarea {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Roboto', sans-serif;
+blockquote {
+  font-size: 1em;
 }
 
-:root {
-  --text: #333333;
-  --headline: #c9cccf;
-  --sub-headline: #96999b;
-  --primary: rgb(207, 214, 255);
-  --secondary: rgb(238, 245, 255);
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
 }
 
-body {
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  max-width: 600px;
-  color: var(--text);
+#photo-header{
+  margin-top: -75px;
 }
-
-h1 {
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  margin-top: 2rem;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--headline);
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-}
-
-h3 {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1.2px;
-  margin-top: 0.5rem;
-}
-
-h4 {
-  font-size: 14px;
-  color: var(--sub-headline);
-  padding-top: 0.5rem;
-  padding-bottom: 0.25rem;
-}
-
-p,
-li {
-  margin-bottom: 0.25rem;
-  font-size: 14px;
-}
-
-a {
-  transition: box-shadow 160ms ease 0s;
-  box-shadow: var(--secondary) 0px -9px 0px inset;
-  border-bottom: 2px solid var(--primary);
-  text-decoration: none;
-  color: var(--text);
-}
-
-a:hover {
-  box-shadow: var(--primary) 0px -1.2em 0px inset;
-}
-
-section ul {
-  margin-top: 0.5rem;
-  margin-left: 2.5rem;
-  list-style: disc;
-}
-
-.contact {
-  padding-top: 2rem;
-}
-
-.contact span {
-  width: 100px;
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
   display: inline-block;
 }
-
-.skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
 }
 
-.skills li {
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  padding: 0.25rem 1rem;
-  background-color: var(--secondary);
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
 }
 
-.position {
-  margin-bottom: 1.5rem;
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
-.grey {
-  color: var(--sub-headline);
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+a[href]:after {
+  content: none !important;
 }
 
-.pdf {
-  color: var(--headline);
-  transition: color ease 160ms;
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
   border: none;
-  box-shadow: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
 }
 
-.pdf:hover {
-  box-shadow: none;
-  color: var(--sub-headline);
+.badge {
+  margin: 0;
 }
 
-@media print {
-  body {
-    padding: 0rem;
-  }
-
-  section,
-  div {
-    page-break-inside: avoid;
-  }
-
-  .pdf {
-    display: none;
-  }
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
 }
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<div id="resume">
-		  <div class="header">
-		    <h1>Santiago Espinosa Mooser</h1>
-		  </div>
-		  
-		  <p></p>
-		
-		    <p class="grey">Hong Kong, </p>
-		
-		    <p class="grey">I&#x27;m currently a Student at the University of Hong Kong studying Computer Science. I&#x27;ve worked every summer since highschool in various roles, including as a sound engineer, but I&#x27;m primarily interested in and experienced in Cybersecurity, DevSecOps, Site Reliability Engineering and Automation Engineering. I also love self-hosting services!</p>
-		
-				<section class="position">
-						<h2>Work Experience</h2>
-					<h3>
-							Handshake Networking
-					</h3>
-		
-						<h4>
-						    Software Developer &amp; SysAdmin (full-time/part-time*)
-						
-						      | Jan, 2022
-						  
-						    - May, 2020
-						</h4>
-						
-						  <div class="summary">
-						    <p>Handshake Networking is cybersecurity consultancy company.</p>
-						  </div>
-						
-						  <ul class="highlights">
-						      <li>Design, development and deployment of Django-based API.</li>
-						      <li>Development of full (but simple) DevSecOps pipeline and unit tests for Django-based API.</li>
-						      <li>Installation, management and maintenance of XCP-ng hypervisor server and Ubuntu-based VMs.</li>
-						      <li>Assistance in ASV exam recertification through penetration tests.</li>
-						      <li>Security Auditing of client IT systems through penetration tests.</li>
-						      <li>Deployment of internal services such as Bookstack, GitLab, .</li>
-						      <li>Development of internal tools &amp; web applications for internal use such as ike-scan &amp; nmap multithreaded wrapper (link)[Development of internal tools &amp; web applications]</li>
-						  </ul>
-				</section>
-				<section class="position">
-					<h3>
-							PricewaterhouseCoopers New Ventures
-					</h3>
-		
-						<h4>
-						    DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)
-						
-						      | May, 2019
-						  
-						    - Aug, 2019
-						</h4>
-						
-						
-						  <ul class="highlights">
-						      <li>Automation of server deployment &amp; provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.</li>
-						      <li>Deployment and maintenance of various webapps using docker; Mattermost and MySQL.</li>
-						      <li>Management of CentOS-based servers.</li>
-						  </ul>
-				</section>
-				<section class="position">
-					<h3>
-							Cathay Pacific Airlines
-					</h3>
-		
-						<h4>
-						    Pentesting intern in Enterprise Testing Department (Full-time)
-						
-						      | Dec, 2018
-						  
-						    - Feb, 2019
-						</h4>
-						
-						
-						  <ul class="highlights">
-						      <li>Penetration testing of internal systems and webapps.</li>
-						      <li>Installation of custom Operating Systems on company laptops used for security auditing.</li>
-						      <li>General small-task automation.</li>
-						  </ul>
-				</section>
-				<section class="position">
-						<h2>Education</h2>
-					<h3>University of Hong Kong</h3>
-					<h4>
-							Bachelor
-		
-								-
-							Computer Science
-						
-						    | Sep, 2018
-						
-						    - Current
-					</h4>
-				</section>
-				<section class="position">
-					<h3>HKU Space</h3>
-					<h4>
-							Associate
-		
-								-
-							Engineering
-						
-						    | Jun, 2017
-						
-						  - May, 2018
-					</h4>
-				</section>
-			<h2>Contact Information</h2>
-			<section class="contact">
-				<p>
-					<span>Website:</span>
-					<a href="https://santiago-mooser.com" target="_blank" rel="noopener">https://santiago-mooser.com</a>
-				</p>
-		
-		
-		
-			</section>
-	</body>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="text-header" style="margin-top: 90px;">
+              <h1>Santiago Espinosa Mooser<br></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fas fa-user ico"></i> About</h2>
+            <p>I'm currently a Student at the University of Hong Kong studying Computer Science. I've worked every summer since highschool in various roles, including as a sound engineer, but I'm primarily interested in and experienced in Cybersecurity, DevSecOps, Site Reliability Engineering and Automation Engineering. I also love self-hosting services!</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                      <div class="pull-right">
+                        Hong Kong
+                      </div>
+                    </div>
+                    <div class="description">
+                      Developed API &amp; deployed &amp; maintained XCP-ng based Hypervisor and VMs
+                    </div>
+                    <div class="year">January 2022 – May 2020</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Software Developer &amp; SysAdmin (full-time&#x2F;part-time*)</div>
+                    <div class="description">
+                      Handshake Networking is cybersecurity consultancy company.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Design, development and deployment of Django-based API.</li>
+                        <li class="list-group-item">Development of full (but simple) DevSecOps pipeline and unit tests for Django-based API.</li>
+                        <li class="list-group-item">Installation, management and maintenance of XCP-ng hypervisor server and Ubuntu-based VMs.</li>
+                        <li class="list-group-item">Assistance in ASV exam recertification through penetration tests.</li>
+                        <li class="list-group-item">Security Auditing of client IT systems through penetration tests.</li>
+                        <li class="list-group-item">Deployment of internal services such as Bookstack, GitLab, .</li>
+                        <li class="list-group-item">Development of internal tools & web applications for internal use such as ike-scan & nmap multithreaded wrapper (link)[Development of internal tools & web applications]</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                      <div class="pull-right">
+                        Hong Kong
+                      </div>
+                    </div>
+                    <div class="description">
+                      PWC New Ventures department develops digital solutions for PWC&#39;s clients.
+                    </div>
+                    <div class="year">May 2019 – August 2019</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Automation of server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.</li>
+                        <li class="list-group-item">Deployment and maintenance of various webapps using docker; Mattermost and MySQL.</li>
+                        <li class="list-group-item">Management of CentOS-based servers.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                      <div class="pull-right">
+                        Hong Kong
+                      </div>
+                    </div>
+                    <div class="description">
+                      Cathay Pacific Airlines is a leading global airline with a global presence in the Asia Pacific region.
+                    </div>
+                    <div class="year">December 2018 – February 2019</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Pentesting intern in Enterprise Testing Department (Full-time)</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Penetration testing of internal systems and webapps.</li>
+                        <li class="list-group-item">Installation of custom Operating Systems on company laptops used for security auditing.</li>
+                        <li class="list-group-item">General small-task automation.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- PROJECTS -->
+          <div class="box">
+            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span style="font-weight:bold">Unraid Self-hosted Media Server</span>: Deployment and Maintenance of Home Media server as well as backup of personal data
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+              
+              <div class="title only  pull-right">Hong Kong</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
+              <div class="title pull-right">GitHub</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;santiago-mooser" target="_blank">santiago-mooser</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
+              <div class="title pull-right">LinkedIn</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;santiago-mooser" target="_blank">santiago-mooser</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-key fa-fw"></span></div>
+              <div class="title pull-right">Keybase</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;keybase.io&#x2F;santiagoespinosa" target="_blank">santiagoespinosa</a></div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fas fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2018 Present</div>
+                <div class="description pull-right">
+                  <h3>University of Hong Kong</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;hku.hk&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hku.hk&#x2F;</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor</p>
+                  <p>Computer Science</p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">COMP3357 - Cryptography</li>
+                      <li class="list-group-item">COMP3250 - Design And Analysis of Algorithms</li>
+                      <li class="list-group-item">COMP3352 - Algorithmic Game Theory</li>
+                      <li class="list-group-item">COMP3230 - Principles of Operating Systems</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2017 2018</div>
+                <div class="description pull-right">
+                  <h3>HKU Space</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;hkuspace.hku.hk&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hkuspace.hku.hk&#x2F;</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Associate</p>
+                  <p>Engineering</p>
+                  <p>
+                    Grade: 3.63&#x2F;4.0
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Python
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Python</span>
+                <span class= "skill badge">Django</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Linux system
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Linux</span>
+                <span class= "skill badge">Bash</span>
+                <span class= "skill badge">Shell</span>
+                <span class= "skill badge">Tmux</span>
+                <span class= "skill badge">Arch</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  DevOps &amp; Site Reliability Engineering
+                  <span class="skill-level">Working knowledge</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  System Administration
+                  <span class="skill-level">Working knowledge</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">System Administration</span>
+                <span class= "skill badge">SysAdmin</span>
+                <span class= "skill badge">SysOps</span>
+                <span class= "skill badge">Azure</span>
+                <span class= "skill badge">AWS</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Databases&#x2F; Key-value stores
+                  <span class="skill-level">Working knowledge</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">MySQL</span>
+                <span class= "skill badge">PostgreSQL</span>
+                <span class= "skill badge">Redis</span>
+                <span class= "skill badge">RabbitMQ</span>
+                <span class= "skill badge">ElasticSearch</span>
+              </div>
+            </div>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fas fa-heart ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Playing the bass
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Muay Thai &amp; MMA
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Videogames
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Cybersecurity and Hacking
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Privacy
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Self-hosting
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
