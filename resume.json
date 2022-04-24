@@ -1,0 +1,218 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "meta": {
+        "theme": "kendall"
+    },
+    "basics": {
+       "name": "Santiago Espinosa Mooser",
+       "mail": "smooser@pm.me",
+       "website": "https://santiago-mooser.com",
+       "picture": "https://avatars0.githubusercontent.com/u/40335919?v=4",
+       "summary": "I'm currently a Student at the University of Hong Kong studying Computer Science. I've worked every summer since highschool in various roles, including as a sound engineer, but I'm primarily interested in and experienced in Cybersecurity, DevSecOps, Site Reliability Engineering and Automation Engineering. I also love self-hosting services!",
+       "location": {
+          "city": "Hong Kong"
+       },
+       "profiles": [
+          {
+             "network": "GitHub",
+             "username": "santiago-mooser",
+             "url": "https://github.com/santiago-mooser"
+          },
+          {
+             "network": "LinkedIn",
+             "username": "santiago-mooser",
+             "url": "https://linkedin.com/in/santiago-mooser"
+          },
+          {
+            "network": "Keybase",
+            "username": "santiagoespinosa",
+            "url": "https://keybase.io/santiagoespinosa"
+          }
+       ]
+    },
+
+    "work": [
+       {
+          "company": "Handshake Networking",
+          "location": "Hong Kong",
+          "description": "Developed API & deployed & maintained XCP-ng based Hypervisor and VMs",
+          "position": "Software Developer & SysAdmin (full-time/part-time*)",
+          "startDate": "2022-01",
+          "endDate": "2020-05",
+          "summary": "Handshake Networking is cybersecurity consultancy company.",
+          "highlights": [
+             "Design, development and deployment of Django-based API.",
+             "Development of full (but simple) DevSecOps pipeline and unit tests for Django-based API.",
+             "Installation, management and maintenance of XCP-ng hypervisor server and Ubuntu-based VMs.",
+             "Assistance in ASV exam recertification through penetration tests.",
+             "Security Auditing of client IT systems through penetration tests.",
+             "Deployment of internal services such as Bookstack, GitLab, .",
+             "Development of internal tools & web applications for internal use such as ike-scan & nmap multithreaded wrapper (link)[Development of internal tools & web applications]"
+          ]
+       },
+       {
+          "company": "PricewaterhouseCoopers New Ventures",
+          "location": "Hong Kong",
+          "startDate": "2019-05",
+          "endDate": "2019-08",
+          "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
+          "description": "PWC New Ventures department develops digital solutions for PWC's clients.",
+          "highlights": [
+             "Automation of server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.",
+             "Deployment and maintenance of various webapps using docker; Mattermost and MySQL.",
+             "Management of CentOS-based servers."
+          ]
+       },
+       {
+          "company": "Cathay Pacific Airlines",
+          "location": "Hong Kong",
+          "startDate": "2018-12",
+          "endDate": "2019-02",
+          "position": "Pentesting intern in Enterprise Testing Department (Full-time)",
+          "description": "Cathay Pacific Airlines is a leading global airline with a global presence in the Asia Pacific region.",
+          "highlights": [
+             "Penetration testing of internal systems and webapps.",
+             "Installation of custom Operating Systems on company laptops used for security auditing.",
+             "General small-task automation."
+          ]
+       }
+    ],
+    "education": [
+       {
+          "institution": "University of Hong Kong",
+          "url": "https://hku.hk/",
+          "area": "Computer Science",
+          "studyType": "Bachelor",
+          "startDate": "2018-09",
+          "courses": [
+            "COMP3357 - Cryptography",
+            "COMP3250 - Design And Analysis of Algorithms",
+            "COMP3352 - Algorithmic Game Theory",
+            "COMP3230 - Principles of Operating Systems"
+          ]
+       },
+       {
+          "institution": "HKU Space",
+          "url": "https://hkuspace.hku.hk/",
+          "area": "Engineering",
+          "score": "3.63/4.0",
+          "studyType": "Associate",
+          "startDate": "2017-06",
+          "endDate": "2018-05"
+       }
+    ],
+    "skills": [
+       {
+          "name": "Python",
+          "level": "Advanced",
+          "keywords": [
+             "Python",
+             "Django"
+          ],
+          "description": "Intimately familiar with Python, Django, and its ecosystem. Regularly script in Python and have completed three different Django-based projects."
+       },
+       {
+          "name": "Linux system",
+          "level": "Advanced",
+          "keywords": [
+             "Linux",
+             "Bash",
+             "Shell",
+             "Tmux",
+             "Arch"
+          ],
+          "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop."
+       },
+       {
+          "name": "DevOps & Site Reliability Engineering",
+          "level": "Working knowledge",
+          "keyworks": [
+             "DevOps",
+             "Site Reliability Engineering",
+             "Ansible",
+             "Terraform",
+             "CICD",
+             "Docker",
+             "Docker-compose"
+          ],
+          "description": "- Worked on DevOps and Site Reliability Engineering projects, as well as developed my own dockerfiles, docker-compose setups and Ansible playbooks.\n- Developed and deployed Docker containers for various projects, including academic, work and personal projects."
+       },
+       {
+          "name": "System Administration",
+          "level": "Working knowledge",
+          "keywords": [
+             "System Administration",
+             "SysAdmin",
+             "SysOps",
+             "Azure",
+             "AWS"
+          ]
+       },
+       {
+          "name": "Databases/ Key-value stores",
+          "level": "Working knowledge",
+          "keywords": [
+             "MySQL",
+             "PostgreSQL",
+             "Redis",
+             "RabbitMQ",
+             "ElasticSearch"
+          ]
+        }
+    ],
+
+    "projects": [{
+        "name": "Unraid Self-hosted Media Server",
+        "description": "Deployment and Maintenance of Home Media server as well as backup of personal data",
+        "keywords": [
+          "UnRaid",
+          "Docker",
+          "ZFS",
+          "Docker-compose",
+          "TailScale",
+          "Syncthing",
+          "Backup"
+        ],
+        "startDate": "2019-01-01",
+        "roles": [
+          "Team Lead"
+        ],
+        "type": "Server"
+    }],
+
+
+    "languages": [
+       {
+          "language": "English",
+          "fluency": "Native"
+       },
+       {
+          "language": "Spanish",
+          "fluency": "Native"
+       },
+       {
+          "language": "German",
+          "fluency": "Proficient"
+       }
+    ],
+    "interests": [
+       {
+          "name": "Playing the bass"
+       },
+       {
+          "name": "Muay Thai & MMA"
+       },
+       {
+          "name": "Videogames"
+       },
+       {
+          "name": "Cybersecurity and Hacking"
+       },
+       {
+            "name": "Privacy"
+       },
+       {
+           "name": "Self-hosting"
+       }
+    ]
+ }
