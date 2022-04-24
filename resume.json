@@ -5,10 +5,10 @@
     },
     "basics": {
        "name": "Santiago Espinosa Mooser",
-       "mail": "smooser@pm.me",
+       "email": "smooser@pm.me",
        "website": "https://santiago-mooser.com",
-       "picture": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-       "summary": "I'm currently a Student at the University of Hong Kong studying Computer Science. I've worked every summer since highschool in various roles, including as a sound engineer, but I'm primarily interested in and experienced in Cybersecurity, DevSecOps, Site Reliability Engineering and Automation Engineering. I also love self-hosting services!",
+       "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
+       "summary": "I'm currently a student at the University of Hong Kong, studying Computer Science. I've worked every summer since highschool in various roles, including as a sound engineer, but I'm primarily interested in and experienced in Cybersecurity, DevSecOps, Site Reliability Engineering and Automation Engineering. I also love self-hosting services!",
        "location": {
           "city": "Hong Kong"
        },
@@ -33,10 +33,10 @@
 
     "work": [
        {
-          "company": "Handshake Networking",
+          "name": "Handshake Networking",
+          "position": "Software Developer & SysAdmin (full-time/part-time)",
+          "url": "https://handshake.hk",
           "location": "Hong Kong",
-          "description": "Developed API & deployed & maintained XCP-ng based Hypervisor and VMs",
-          "position": "Software Developer & SysAdmin (full-time/part-time*)",
           "startDate": "2022-01",
           "endDate": "2020-05",
           "summary": "Handshake Networking is cybersecurity consultancy company.",
@@ -51,24 +51,26 @@
           ]
        },
        {
-          "company": "PricewaterhouseCoopers New Ventures",
+          "name": "PricewaterhouseCoopers New Ventures",
+          "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
+          "url": "https://www.pwchk.com/en/services/new-ventures.html",
           "location": "Hong Kong",
           "startDate": "2019-05",
           "endDate": "2019-08",
-          "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
           "description": "PWC New Ventures department develops digital solutions for PWC's clients.",
           "highlights": [
              "Automation of server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.",
              "Deployment and maintenance of various webapps using docker; Mattermost and MySQL.",
-             "Management of CentOS-based servers."
+             "Management of CentOS-based servers.",
+             "Modeled for article: https://www.pwchk.com/en/issues/cybersecurity-and-privacy/employees-and-cybersecurity-asset-or-liability.html"
           ]
        },
        {
-          "company": "Cathay Pacific Airlines",
+          "name": "Cathay Pacific Airlines",
+          "position": "Pentesting Intern in Enterprise Testing Department (Full-time)",
           "location": "Hong Kong",
           "startDate": "2018-12",
           "endDate": "2019-02",
-          "position": "Pentesting intern in Enterprise Testing Department (Full-time)",
           "description": "Cathay Pacific Airlines is a leading global airline with a global presence in the Asia Pacific region.",
           "highlights": [
              "Penetration testing of internal systems and webapps.",
@@ -197,7 +199,7 @@
     ],
     "interests": [
        {
-          "name": "Playing the bass"
+          "name": "Playing the Bass"
        },
        {
           "name": "Muay Thai & MMA"
