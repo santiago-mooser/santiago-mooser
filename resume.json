@@ -67,6 +67,7 @@
        },
        {
           "name": "Cathay Pacific Airlines",
+          "url": "https://www.cathaypacific.com",
           "position": "Pentesting Intern in Enterprise Testing Department (Full-time)",
           "location": "Hong Kong",
           "startDate": "2018-12",
@@ -128,7 +129,7 @@
        {
           "name": "DevOps & Site Reliability Engineering",
           "level": "Working knowledge",
-          "keyworks": [
+          "keywords": [
              "DevOps",
              "Site Reliability Engineering",
              "Ansible",
