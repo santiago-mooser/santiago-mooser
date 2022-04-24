@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Santiago Espinosa Mooser</title>
+
+	<style>
+	html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+html,
+button,
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --text: #333333;
+  --headline: #c9cccf;
+  --sub-headline: #96999b;
+  --primary: rgb(207, 214, 255);
+  --secondary: rgb(238, 245, 255);
+}
+
+body {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  max-width: 600px;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--headline);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-top: 0.5rem;
+}
+
+h4 {
+  font-size: 14px;
+  color: var(--sub-headline);
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+p,
+li {
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+}
+
+a {
+  transition: box-shadow 160ms ease 0s;
+  box-shadow: var(--secondary) 0px -9px 0px inset;
+  border-bottom: 2px solid var(--primary);
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  box-shadow: var(--primary) 0px -1.2em 0px inset;
+}
+
+section ul {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  list-style: disc;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+.contact span {
+  width: 100px;
+  display: inline-block;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skills li {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 1rem;
+  background-color: var(--secondary);
+  white-space: nowrap;
+}
+
+.position {
+  margin-bottom: 1.5rem;
+}
+
+.grey {
+  color: var(--sub-headline);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdf {
+  color: var(--headline);
+  transition: color ease 160ms;
+  border: none;
+  box-shadow: none;
+}
+
+.pdf:hover {
+  box-shadow: none;
+  color: var(--sub-headline);
+}
+
+@media print {
+  body {
+    padding: 0rem;
+  }
+
+  section,
+  div {
+    page-break-inside: avoid;
+  }
+
+  .pdf {
+    display: none;
+  }
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<div id="resume">
+		  <div class="header">
+		    <h1>Santiago Espinosa Mooser</h1>
+		  </div>
+		  
+		  <p></p>
+		
+		    <p class="grey">Hong Kong, </p>
+		
+		    <p class="grey">I&#x27;m currently a Student at the University of Hong Kong studying Computer Science. I&#x27;ve worked every summer since highschool in various roles, including as a sound engineer, but I&#x27;m primarily interested in and experienced in Cybersecurity, DevSecOps, Site Reliability Engineering and Automation Engineering. I also love self-hosting services!</p>
+		
+				<section class="position">
+						<h2>Work Experience</h2>
+					<h3>
+							Handshake Networking
+					</h3>
+		
+						<h4>
+						    Software Developer &amp; SysAdmin (full-time/part-time*)
+						
+						      | Jan, 2022
+						  
+						    - May, 2020
+						</h4>
+						
+						  <div class="summary">
+						    <p>Handshake Networking is cybersecurity consultancy company.</p>
+						  </div>
+						
+						  <ul class="highlights">
+						      <li>Design, development and deployment of Django-based API.</li>
+						      <li>Development of full (but simple) DevSecOps pipeline and unit tests for Django-based API.</li>
+						      <li>Installation, management and maintenance of XCP-ng hypervisor server and Ubuntu-based VMs.</li>
+						      <li>Assistance in ASV exam recertification through penetration tests.</li>
+						      <li>Security Auditing of client IT systems through penetration tests.</li>
+						      <li>Deployment of internal services such as Bookstack, GitLab, .</li>
+						      <li>Development of internal tools &amp; web applications for internal use such as ike-scan &amp; nmap multithreaded wrapper (link)[Development of internal tools &amp; web applications]</li>
+						  </ul>
+				</section>
+				<section class="position">
+					<h3>
+							PricewaterhouseCoopers New Ventures
+					</h3>
+		
+						<h4>
+						    DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)
+						
+						      | May, 2019
+						  
+						    - Aug, 2019
+						</h4>
+						
+						
+						  <ul class="highlights">
+						      <li>Automation of server deployment &amp; provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.</li>
+						      <li>Deployment and maintenance of various webapps using docker; Mattermost and MySQL.</li>
+						      <li>Management of CentOS-based servers.</li>
+						  </ul>
+				</section>
+				<section class="position">
+					<h3>
+							Cathay Pacific Airlines
+					</h3>
+		
+						<h4>
+						    Pentesting intern in Enterprise Testing Department (Full-time)
+						
+						      | Dec, 2018
+						  
+						    - Feb, 2019
+						</h4>
+						
+						
+						  <ul class="highlights">
+						      <li>Penetration testing of internal systems and webapps.</li>
+						      <li>Installation of custom Operating Systems on company laptops used for security auditing.</li>
+						      <li>General small-task automation.</li>
+						  </ul>
+				</section>
+				<section class="position">
+						<h2>Education</h2>
+					<h3>University of Hong Kong</h3>
+					<h4>
+							Bachelor
+		
+								-
+							Computer Science
+						
+						    | Sep, 2018
+						
+						    - Current
+					</h4>
+				</section>
+				<section class="position">
+					<h3>HKU Space</h3>
+					<h4>
+							Associate
+		
+								-
+							Engineering
+						
+						    | Jun, 2017
+						
+						  - May, 2018
+					</h4>
+				</section>
+			<h2>Contact Information</h2>
+			<section class="contact">
+				<p>
+					<span>Website:</span>
+					<a href="https://santiago-mooser.com" target="_blank" rel="noopener">https://santiago-mooser.com</a>
+				</p>
+		
+		
+		
+			</section>
+	</body>
+</html>
