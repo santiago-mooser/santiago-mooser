@@ -46,8 +46,10 @@
              "Installation, management and maintenance of XCP-ng hypervisor server and Ubuntu-based VMs.",
              "Assistance in ASV exam recertification through penetration tests.",
              "Security Auditing of client IT systems through penetration tests.",
-             "Deployment of internal services such as Bookstack, GitLab, .",
-             "Development of internal tools & web applications for internal use such as ike-scan & nmap multithreaded wrapper (link)[Development of internal tools & web applications]"
+             "Deployment of internal services such as Bookstack, GitLab and Ubuntu-based Samba server",
+             "Set up offline backup service from XCP-ng to tape.",
+             "Throughouly documented all work on Bookstack Wiki.",
+             "Development of internal tools & web applications for internal use such as ike-scan & nmap multithreaded wrapper: https://github.com/santiago-mooser/host_discovery"
           ]
        },
        {
@@ -62,6 +64,7 @@
              "Automation of server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.",
              "Deployment and maintenance of various webapps using docker; Mattermost and MySQL.",
              "Management of CentOS-based servers.",
+             "Throughouly documented all work on GitLab Wiki.",
              "Modeled for article: https://www.pwchk.com/en/issues/cybersecurity-and-privacy/employees-and-cybersecurity-asset-or-liability.html"
           ]
        },
@@ -136,7 +139,10 @@
              "Terraform",
              "CICD",
              "Docker",
-             "Docker-compose"
+             "Docker-compose",
+             "GitLab",
+             "GitHub",
+             "Jenkins"
           ],
           "description": "- Worked on DevOps and Site Reliability Engineering projects, as well as developed my own dockerfiles, docker-compose setups and Ansible playbooks.\n- Developed and deployed Docker containers for various projects, including academic, work and personal projects."
        },
@@ -181,6 +187,24 @@
           "Team Lead"
         ],
         "type": "Server"
+    },
+    {
+       "name": "Complete off-site and offline backup of all personal devices",
+       "description": "Set up a warm backup system for all personal devices to two separate cloud providers through the use of CGNAT VPN, syncthing and ZFS.",
+         "keywords": [
+            "CGNAT",
+            "Syncthing",
+            "ZFS",
+            "Backup"
+         ],
+         "startDate": "2020-01-01",
+         "type": "Server"
+    }
+   ],
+
+   "references": [{
+      "name": "Kit Ho (PWC)",
+      "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products."
     }],
 
 
