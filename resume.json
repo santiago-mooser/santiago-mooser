@@ -8,7 +8,7 @@
        "email": "contact@santiago-mooser.com",
        "website": "https://santiago-mooser.com",
        "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-       "summary": "Hi there! My name is Santiago. I'm a Computer Science student at the University of Hong Kong. This page serves as a quick introduction to my professional life and my personal projects.\nIf you would like to hire me or connect with me to collaborate on any projects, feel free to email me using the address on the right of this page.",
+       "summary": "Hey there! My name is Santiago. I'm a Computer Science student at the University of Hong Kong. This page serves as a quick introduction to my professional life and my personal projects.\nIf you would like to hire me or connect with me to collaborate on any projects, feel free to email me using the email address on the right of this page.",
        "location": {
           "city": "Hong Kong"
        },
@@ -170,7 +170,27 @@
         }
     ],
 
-    "projects": [{
+    "projects": [
+      {
+         "name": "Computer Science Association Virtual Career Week 2022",
+         "description": "Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various companies topics, including: Site Reliability Engineer, IT Governance Risk and Compliance, and Software Engineering. Also served as host for three different fireside talks.",
+         "keywords": [
+           "Career Talk",
+           "Public Talk",
+           "Fireside Talk",
+           "Virtual Career Week",
+           "Computer Science Association",
+           "Virtual Career Week 2022"
+         ],
+         "startDate": "2022-03-28",
+         "endDate": "2022-04-29",
+         "roles": [
+           "Team Lead",
+           "Talk Host"
+         ],
+         "type": "Event"
+      },
+      {
         "name": "Unraid Self-hosted Media Server",
         "description": "Deployment and Maintenance of Home Media server as well as backup of personal data",
         "keywords": [
@@ -204,7 +224,20 @@
 
    "references": [{
       "name": "Kit Ho (PWC)",
-      "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products."
+      "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products.",
+      "url": "https://www.linkedin.com/in/kit-hei-ho/"
+      },
+      {
+         "name": "Richard Stagg (Handshake Networking)",
+         "url": "mail:rjs@handshake.hk"
+      }
+   ],
+
+   "certificates": [{
+      "name": "Certified Mental Health First-aider",
+      "date": "2021-04-28",
+      "issuer": "The Mental Health Association of Hong Kong",
+      "url": "https://www.mhahk.org.hk/"
     }],
 
 
