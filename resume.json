@@ -95,6 +95,10 @@
             "COMP3250 - Design And Analysis of Algorithms",
             "COMP3352 - Algorithmic Game Theory",
             "COMP3230 - Principles of Operating Systems"
+          ],
+          "highlights": [
+            "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",
+            "Director of Internal Communications (2019-2020) of HKU’s feminist group HeForSheForUs"
           ]
        },
        {
@@ -118,16 +122,17 @@
           "description": "Intimately familiar with Python, Django, and its ecosystem. Regularly script in Python and have completed three different Django-based projects."
        },
        {
-          "name": "Linux system",
+          "name": "Linux systems",
           "level": "Advanced",
           "keywords": [
              "Linux",
              "Bash",
-             "Shell",
-             "Tmux",
-             "Arch"
+             "Arch",
+             "Debian",
+             "Ubuntu",
+             "CentOS"
           ],
-          "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop."
+          "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop. Comfortable creating services, automating weekly maintenance, and managing software."
        },
        {
           "name": "DevOps & Site Reliability Engineering",
@@ -150,15 +155,30 @@
           "name": "System Administration",
           "level": "Working knowledge",
           "keywords": [
-             "System Administration",
-             "SysAdmin",
              "SysOps",
+             "XCP-ng",
+             "Ansible",
+             "Xen",
              "Azure",
-             "AWS"
+             "AWS",
+             "Linode",
+             "Digital Ocean"
           ]
        },
        {
-          "name": "Databases/ Key-value stores",
+         "name": "App Self-Hosting",
+         "level": "Working knowledge",
+         "keywords": [
+            "Unraid",
+            "Cloudflare Tunnels",
+            "Tailscale Carrier-grade NAT",
+            "Letsencrypt Certificate Automated Renewal",
+            "Nginx",
+            "docker-compose"
+         ]
+      },
+       {
+          "name": "Databases / Key-value stores",
           "level": "Working knowledge",
           "keywords": [
              "MySQL",
@@ -229,7 +249,8 @@
       },
       {
          "name": "Richard Stagg (Handshake Networking)",
-         "url": "mail:rjs@handshake.hk"
+         "reference": "",
+         "url": "https://www.linkedin.com/in/richard-stagg-6528183/"
       }
    ],
 
