@@ -1,8 +1,12 @@
 name: Publish resume in JSONResume format as Github Page
 
+# Controls when the action will run.
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   check_run:
@@ -16,29 +20,20 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: santiago-mooser/action-jsonresume-export@v1
+      - uses: kelvintaywl/action-jsonresume-export@v1
         name: Export resume as HTML
         with:
           theme: kendall
           resume_filepath: resume.json
-          output_format: html
           # modifies the index.html in-place
           output_filepath: docs/index.html
-      - uses: santiago-mooser/action-jsonresume-export@v1
-        name: Export resume as pdf
-        with:
-          theme: macchiato
-          resume_filepath: resume.json
-          output_format: pdf
-          # modifies the index.html in-place
-          output_filepath: docs/cv.pdf
       - name: Commit published HTML
         id: commit
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           if [ -n "$(git status --porcelain docs/index.html)" ]; then
-            git add docs/index.html docs/cv.pdf
+            git add docs/index.html
             git commit -m "[ci skip] chore(docs/index.html): update resume page"
             echo ::set-output name=exit_code::0
           else
