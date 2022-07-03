@@ -8,7 +8,7 @@
        "email": "contact@santiago-mooser.com",
        "website": "https://santiago-mooser.com",
        "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-       "summary": "Hey there! My name is Santiago. I'm a Computer Science student at the University of Hong Kong. This page serves as a quick introduction to my professional life and my personal projects.\nIf you would like to hire me or connect with me to collaborate on any projects, feel free to email me using the email address on the right of this page.",
+       "summary": "\nHey there! My name is Santiago. I'm currently a Computer Science student at the University of Hong Kong. If you are reading this, I'm probably looking for a job. This page serves as a quick introduction to my professional life and my personal projects that might be relevant to the job I'm applying to.\nIf you would like to interview me or simnply connect with me to collaborate on any projects, feel free to email me using the email address on the right.",
        "location": {
           "city": "Hong Kong"
        },
@@ -32,6 +32,20 @@
     },
 
     "work": [
+      {
+         "name": "Hex Trust",
+         "position": "DevSecOps Consultant",
+         "url": "https://hextrust.com",
+         "location": "Hong Kong",
+         "startDate": "2022-06",
+         "endDate": "2020-08",
+         "summary": "Digital Asset Custodian.",
+         "highlights": [
+            "Spearheaded the design, development and deployment of new DevSecOps pipeline and git workflow.",
+            "Implemented smartcard decryption for company computers.",
+            "Adviced on the use of industry-standard security tools."
+         ]
+      },
        {
           "name": "Handshake Networking",
           "position": "Software Developer & SysAdmin (full-time/part-time)",
@@ -41,15 +55,15 @@
           "endDate": "2020-05",
           "summary": "Handshake Networking is cybersecurity consultancy company.",
           "highlights": [
-             "Design, development and deployment of Django-based API.",
+             "Designed, developed and deployed Django-based API.",
              "Development of full (but simple) DevSecOps pipeline and unit tests for Django-based API.",
-             "Installation, management and maintenance of XCP-ng hypervisor server and Ubuntu-based VMs.",
-             "Assistance in ASV exam recertification through penetration tests.",
-             "Security Auditing of client IT systems through penetration tests.",
-             "Deployment of internal services such as Bookstack, GitLab and Ubuntu-based Samba server",
+             "Installed, managed and maintained XCP-ng hypervisor server and Ubuntu-based VMs.",
+             "Assisted in ASV exam recertification through penetration tests.",
+             "Audited the security of clients' IT systems through penetration tests.",
+             "Deployed various services for internal use such as Bookstack, GitLab and Ubuntu-based Samba server",
              "Set up offline backup service from XCP-ng to tape.",
-             "Throughouly documented all work on Bookstack Wiki.",
-             "Development of internal tools & web applications for internal use such as ike-scan & nmap multithreaded wrapper: https://github.com/santiago-mooser/host_discovery"
+             "Throughouly documented all work on Bookstack",
+             "Developed tools & web applications for internal use such as an ike-scan & nmap multithreaded wrapper (see github)"
           ]
        },
        {
@@ -59,13 +73,13 @@
           "location": "Hong Kong",
           "startDate": "2019-05",
           "endDate": "2019-08",
-          "description": "PWC New Ventures department develops digital solutions for PWC's clients.",
+          "description": "PWC digital solutions department.",
           "highlights": [
-             "Automation of server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.",
-             "Deployment and maintenance of various webapps using docker; Mattermost and MySQL.",
-             "Management of CentOS-based servers.",
+             "Automated server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.",
+             "Deployed and maintained services for internal user: Mattermost and MySQL.",
+             "Managed doccker deployments in CentOS servers.",
              "Throughouly documented all work on GitLab Wiki.",
-             "Modeled for article: https://www.pwchk.com/en/issues/cybersecurity-and-privacy/employees-and-cybersecurity-asset-or-liability.html"
+             "Modeled for department: https://www.pwchk.com/en/issues/cybersecurity-and-privacy/employees-and-cybersecurity-asset-or-liability.html"
           ]
        },
        {
@@ -75,11 +89,11 @@
           "location": "Hong Kong",
           "startDate": "2018-12",
           "endDate": "2019-02",
-          "description": "Cathay Pacific Airlines is a leading global airline with a global presence in the Asia Pacific region.",
+          "description": "Leading global airline with a global presence in the Asia Pacific region.",
           "highlights": [
-             "Penetration testing of internal systems and webapps.",
-             "Installation of custom Operating Systems on company laptops used for security auditing.",
-             "General small-task automation."
+             "Carried out simple penetration tests of internal systems and webapps.",
+             "Installed custom operating systems on company laptops used for security auditing.",
+             "General small-task automation with python."
           ]
        }
     ],
@@ -98,6 +112,7 @@
           ],
           "highlights": [
             "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",
+            "Lead organizer for the HKU Computer Science Society's Virtual Career Week 2022.",
             "Director of Internal Communications (2019-2020) of HKU’s feminist group HeForSheForUs"
           ]
        },
@@ -126,6 +141,7 @@
           "level": "Advanced",
           "keywords": [
              "Linux",
+             "Unix",
              "Bash",
              "Arch",
              "Debian",
@@ -135,7 +151,7 @@
           "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop. Comfortable creating services, automating weekly maintenance, and managing software."
        },
        {
-          "name": "DevOps & Site Reliability Engineering",
+          "name": "DevOps & SRE",
           "level": "Working knowledge",
           "keywords": [
              "DevOps",
@@ -175,8 +191,9 @@
             "Letsencrypt Certificate Automated Renewal",
             "Nginx",
             "docker-compose"
-         ]
-      },
+         ],
+         "description": "- Self-host multiple services at home which I regularly use."
+     },
        {
           "name": "Databases / Key-value stores",
           "level": "Working knowledge",
@@ -226,7 +243,7 @@
         "roles": [
           "Team Lead"
         ],
-        "type": "Server"
+        "type": "Project"
     },
     {
        "name": "Complete off-site and offline backup of all personal devices",
@@ -238,7 +255,7 @@
             "Backup"
          ],
          "startDate": "2020-01-01",
-         "type": "Server"
+         "type": "Project"
     }
    ],
 
@@ -264,36 +281,36 @@
 
     "languages": [
        {
-          "language": "English",
-          "fluency": "Native"
+         "language": "English",
+         "fluency": "Native"
        },
        {
-          "language": "Spanish",
-          "fluency": "Native"
+         "language": "Spanish",
+         "fluency": "Native"
        },
        {
-          "language": "German",
-          "fluency": "Proficient"
+         "language": "German",
+         "fluency": "Proficient"
        }
     ],
     "interests": [
        {
-          "name": "Playing the Bass"
+         "name": "Playing the Bass"
        },
        {
-          "name": "Muay Thai & MMA"
+         "name": "Muay Thai, MMA and Running"
        },
        {
-          "name": "Videogames"
+         "name": "Videogames"
        },
        {
-          "name": "Cybersecurity and Hacking"
+         "name": "Cybersecurity and Hacking"
        },
        {
-            "name": "Privacy"
+         "name": "Privacy"
        },
        {
-           "name": "Self-hosting"
+         "name": "Self-hosting"
        }
     ]
  }

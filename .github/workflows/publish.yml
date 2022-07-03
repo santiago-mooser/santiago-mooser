@@ -25,7 +25,7 @@ jobs:
           # modifies the index.html in-place
           output_filepath: docs/index.html
       - uses: santiago-mooser/action-jsonresume-export@v1
-        name: Export resume as HTML
+        name: Export resume as pdf
         with:
           theme: macchiato
           resume_filepath: resume.json
