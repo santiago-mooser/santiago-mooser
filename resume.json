@@ -104,6 +104,7 @@
           "area": "Computer Science",
           "studyType": "Bachelor",
           "startDate": "2018-09",
+          "endDate": "2023-06",
           "courses": [
             "COMP3357 - Cryptography",
             "COMP3250 - Design And Analysis of Algorithms",
