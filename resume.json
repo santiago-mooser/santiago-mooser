@@ -34,67 +34,49 @@
     "work": [
       {
          "name": "Hex Trust",
-         "position": "DevSecOps Consultant",
+         "description": "Hex Trust is a digital asset custody firm.",
          "url": "https://hextrust.com",
          "location": "Hong Kong",
          "startDate": "2022-06",
-         "endDate": "2020-08",
-         "summary": "Digital Asset Custodian.",
+         "position": "DevSecOps Consultant",
+         "summary": "Worked to improve company's cybersecurity posture.",
          "highlights": [
-            "Spearheaded the design, development and deployment of new DevSecOps pipeline and git workflow.",
-            "Implemented smartcard decryption for company computers.",
-            "Adviced on the use of industry-standard security tools."
+            "Worked with CISO, Head of Platform and Head of Cybersecurity to propose and implement first-ever DevSecOps pipeline in the company by gathering information about the industry-standard tools and proposing said pipeline to developers before implementing it on production.",
+            "Worked with  for company laptops through the use of bash scripting to reduce provisioning time of Ubuntu-based computers from 2-3 hours to 5-10 minutes.",
+            "Worked with the head of Cybersecurity to monitor and respond to alerts on the company's SIEM and WAF systems through the use of Elastic Query Language and Wazuh."
          ]
       },
        {
           "name": "Handshake Networking",
-          "position": "Software Developer & SysAdmin (full-time/part-time)",
+          "description": "Handshake Networking is cybersecurity consultancy company.",
           "url": "https://handshake.hk",
           "location": "Hong Kong",
-          "startDate": "2022-01",
-          "endDate": "2020-05",
-          "summary": "Handshake Networking is cybersecurity consultancy company.",
+          "startDate": "2020-05",
+          "endDate": "2022-01",
+          "position": "Pentester, Software Developer (full-time/part-time consultant)",
+          "summary": "Worked in various positions, eventually working to develop a fully-featured Django-based API.",
           "highlights": [
-             "Designed, developed and deployed Django-based API.",
-             "Development of full (but simple) DevSecOps pipeline and unit tests for Django-based API.",
-             "Installed, managed and maintained XCP-ng hypervisor server and Ubuntu-based VMs.",
-             "Assisted in ASV exam recertification through penetration tests.",
-             "Audited the security of clients' IT systems through penetration tests.",
-             "Deployed various services for internal use such as Bookstack, GitLab and Ubuntu-based Samba server",
-             "Set up offline backup service from XCP-ng to tape.",
-             "Throughouly documented all work on Bookstack",
+             "Single-handedly designed, developed and deployed python-based Django backend API used to automatically scan vessels using nmap with the use of remote scanners that communicated using RabbitMQ queues and asynchronous celeray tasks.",             "Developed and deployed full (but simple) DevSecOps pipeline and unit tests for the API project to speed up the development process of the API.",
+             "Installed, managed and maintained XCP-ng hypervisor server to enable the deployment and use of Ubuntu-based VMs internally within the company.",
+             "Assisted in the ASV exam recertification by scripting and automating reconnaissance and reporting stages.",
+             "Deployed various docker-based services for internal use such as Bookstack (and internal wiki), GitLab and an Ubuntu-based Samba server.",
+             "Scripted and set up automated backup from XCP-ng server to tapes using Bash scripting.",
              "Developed tools & web applications for internal use such as an ike-scan & nmap multithreaded wrapper (see github)"
           ]
        },
        {
           "name": "PricewaterhouseCoopers New Ventures",
+          "description": "PWC New Ventures builds software solutions for PWC's client base.",
           "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
           "url": "https://www.pwchk.com/en/services/new-ventures.html",
           "location": "Hong Kong",
           "startDate": "2019-05",
-          "endDate": "2019-08",
-          "description": "PWC digital solutions department.",
+          "endDate": "2019-12",
           "highlights": [
-             "Automated server deployment & provisioning using Ansible and Terraform; Reduced deplotment and privisioning time from 3-5 business days to 30-45 minutes.",
-             "Deployed and maintained services for internal user: Mattermost and MySQL.",
-             "Managed doccker deployments in CentOS servers.",
-             "Throughouly documented all work on GitLab Wiki.",
-             "Modeled for department: https://www.pwchk.com/en/issues/cybersecurity-and-privacy/employees-and-cybersecurity-asset-or-liability.html"
-          ]
-       },
-       {
-          "name": "Cathay Pacific Airlines",
-          "url": "https://www.cathaypacific.com",
-          "position": "Pentesting Intern in Enterprise Testing Department (Full-time)",
-          "location": "Hong Kong",
-          "startDate": "2018-12",
-          "endDate": "2019-02",
-          "description": "Leading global airline with a global presence in the Asia Pacific region.",
-          "highlights": [
-             "Carried out simple penetration tests of internal systems and webapps.",
-             "Installed custom operating systems on company laptops used for security auditing.",
-             "General small-task automation with python."
-          ]
+             "Worked with the head of DevOps to automate server deployments and provisionings using Ansible and Terraform. This reduced deployment and privisioning time from 3-5 business days to 30-45 minutes.",
+             "Wrote and maintained Ansible-based playbook to deploy internal communication tools instance (Mattermost). This deployment used docker-compose and Bash.",
+             "Troubleshooted certificate issues on docker-based deployments through the use of tools such as docker-compose, lazydocker and certbot."
+            ]
        }
     ],
     "education": [
@@ -116,26 +98,19 @@
             "Lead organizer for the HKU Computer Science Society's Virtual Career Week 2022.",
             "Director of Internal Communications (2019-2020) of HKU’s feminist group HeForSheForUs"
           ]
-       },
-       {
-          "institution": "HKU Space",
-          "url": "https://hkuspace.hku.hk/",
-          "area": "Engineering",
-          "score": "3.63/4.0",
-          "studyType": "Associate",
-          "startDate": "2017-06",
-          "endDate": "2018-05"
        }
     ],
     "skills": [
        {
-          "name": "Python",
+          "name": "Scripting",
           "level": "Advanced",
           "keywords": [
+             "Bash",
              "Python",
-             "Django"
+             "Shell",
+             "Linux"
           ],
-          "description": "Intimately familiar with Python, Django, and its ecosystem. Regularly script in Python and have completed three different Django-based projects."
+          "description": "Intimately familiar with scripting languages."
        },
        {
           "name": "Linux systems",
@@ -156,15 +131,11 @@
           "level": "Working knowledge",
           "keywords": [
              "DevOps",
-             "Site Reliability Engineering",
+             "DevSecOps",
              "Ansible",
              "Terraform",
              "CICD",
-             "Docker",
-             "Docker-compose",
-             "GitLab",
-             "GitHub",
-             "Jenkins"
+             "Docker"
           ],
           "description": "- Worked on DevOps and Site Reliability Engineering projects, as well as developed my own dockerfiles, docker-compose setups and Ansible playbooks.\n- Developed and deployed Docker containers for various projects, including academic, work and personal projects."
        },
@@ -194,21 +165,27 @@
             "docker-compose"
          ],
          "description": "- Self-host multiple services at home which I regularly use."
-     },
-       {
-          "name": "Databases / Key-value stores",
-          "level": "Working knowledge",
-          "keywords": [
-             "MySQL",
-             "PostgreSQL",
-             "Redis",
-             "RabbitMQ",
-             "ElasticSearch"
-          ]
-        }
+     }
     ],
 
     "projects": [
+      {
+        "name": "Haskell-based interpreter",
+        "description": "Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course.",
+        "keywords": [
+          "Haskell",
+          "Functional Programming",
+          "Interpreter",
+          "Principles of Programming Languages"
+        ],
+        "url": "https://github.com/santiago-mooser/haskell-based-interpreter.git",
+        "startDate": "2022-01-14",
+         "endDate": "2022-05-30",
+        "roles": [
+          "Programmer"
+        ],
+        "type": "Project"
+    },
       {
          "name": "Computer Science Association Virtual Career Week 2022",
          "description": "Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various companies topics, including: Site Reliability Engineer, IT Governance Risk and Compliance, and Software Engineering. Also served as host for three different fireside talks.",
@@ -260,13 +237,19 @@
     }
    ],
 
-   "references": [{
-      "name": "Kit Ho (PWC)",
+   "references": [
+      {
+         "name": "Shane Read (Hex Trust) - Chief Information Security Officer & Chief Information Officer ",
+         "reference": "",
+         "url": "https://www.linkedin.com/in/cisoinasia/"
+      },
+      {
+      "name": "Kit Ho (PWC) - Head of DevOps",
       "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products.",
       "url": "https://www.linkedin.com/in/kit-hei-ho/"
       },
       {
-         "name": "Richard Stagg (Handshake Networking)",
+         "name": "Richard Stagg (Handshake Networking) - Director and Managing Consultant",
          "reference": "",
          "url": "https://www.linkedin.com/in/richard-stagg-6528183/"
       }
