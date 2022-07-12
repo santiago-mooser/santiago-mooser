@@ -8,7 +8,7 @@
        "email": "contact@santiago-mooser.com",
        "website": "https://santiago-mooser.com",
        "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-       "summary": "\nHey there! My name is Santiago. I'm currently a Computer Science student at the University of Hong Kong. If you are reading this, I'm probably looking for a job. This page serves as a quick introduction to my professional life and my personal projects that might be relevant to the job I'm applying to.\nIf you would like to interview me or simnply connect with me to collaborate on any projects, feel free to email me using the email address on the right.",
+       "summary": "Hi there. My name is Santiago. I'm final year Computer Science student at the University of Hong Kong. I'm a DevSecOps and SecOps enthusiast that specializes in increasing security in the software development lifecyle and company operations. My background includes four different internships in DevOps, Pentesting, DevSecOps and SecOps. I am a respectful and proactive member of teams and like to share ideas and work together with other people. I'm currently looking for jobs in the cybersecurity industry, specifically in a DevSecOps or SecOps position.",
        "location": {
           "city": "Hong Kong"
        },
@@ -38,30 +38,32 @@
          "url": "https://hextrust.com",
          "location": "Hong Kong",
          "startDate": "2022-06",
-         "position": "DevSecOps Consultant",
-         "summary": "Worked to improve company's cybersecurity posture.",
+         "position": "DevSecOps & SecOps Consultant",
+         "summary": "Worked to improve company's cybersecurity posture through the use of DevSecOps and SecOps principles.",
          "highlights": [
-            "Worked with CISO, Head of Platform and Head of Cybersecurity to propose and implement first-ever DevSecOps pipeline in the company by gathering information about the industry-standard tools and proposing said pipeline to developers before implementing it on production.",
-            "Worked with  for company laptops through the use of bash scripting to reduce provisioning time of Ubuntu-based computers from 2-3 hours to 5-10 minutes.",
-            "Worked with the head of Cybersecurity to monitor and respond to alerts on the company's SIEM and WAF systems through the use of Elastic Query Language and Wazuh."
+            "Worked with CISO, Head of Platform and Head of Cybersecurity to propose and implement first-ever DevSecOps pipeline in the company by gathering information about industry-standard tools and proposing said pipeline to developers before implementing it on production.",
+            "Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioninig time fell from 2-3 hours to 10-15 minutes.",
+            "Responded to security incidents through the use of the company's SIEM and WAF systems and reported & advised on recommended response to the Head of Cybersecurity."
          ]
       },
        {
           "name": "Handshake Networking",
-          "description": "Handshake Networking is cybersecurity consultancy company.",
+          "description": "Handshake Networking is cybersecurity consultancy company that specializes in Payment Card Industry (PCI) security auditing.",
           "url": "https://handshake.hk",
           "location": "Hong Kong",
           "startDate": "2020-05",
           "endDate": "2022-01",
           "position": "Pentester, Software Developer (full-time/part-time consultant)",
-          "summary": "Worked in various positions, eventually working to develop a fully-featured Django-based API.",
+          "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Administration.",
           "highlights": [
-             "Single-handedly designed, developed and deployed python-based Django backend API used to automatically scan vessels using nmap with the use of remote scanners that communicated using RabbitMQ queues and asynchronous celeray tasks.",             "Developed and deployed full (but simple) DevSecOps pipeline and unit tests for the API project to speed up the development process of the API.",
-             "Installed, managed and maintained XCP-ng hypervisor server to enable the deployment and use of Ubuntu-based VMs internally within the company.",
+             "Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels aroun the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.",
+             "Developed and deployed full (but simple) DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.",
+             "Installed, managed and maintained XCP-ng hypervisor server and VMs to enable the deployment and use of internally-used services (Bookstack, Samba, Elasticsearch).",
+             "Compiled credential list from online sources for use in pentesting",
              "Assisted in the ASV exam recertification by scripting and automating reconnaissance and reporting stages.",
              "Deployed various docker-based services for internal use such as Bookstack (and internal wiki), GitLab and an Ubuntu-based Samba server.",
-             "Scripted and set up automated backup from XCP-ng server to tapes using Bash scripting.",
-             "Developed tools & web applications for internal use such as an ike-scan & nmap multithreaded wrapper (see github)"
+             "Automated tape backups from XCP-ng server using Bash scripting and transfers.",
+             "Developed internal automation tools & web applications for internal use such as an ike-scan & nmap multithreaded wrapper (see github)"
           ]
        },
        {
@@ -113,16 +115,23 @@
           "description": "Intimately familiar with scripting languages."
        },
        {
+          "name": "Automation",
+          "level": "Advanced",
+          "keywords": [
+             "Scripting",
+             "",
+             "Documentation",
+             "Ease of use"
+          ],
+          "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop. Comfortable creating services, automating weekly maintenance, and managing software."
+       },
+       {
           "name": "Linux systems",
           "level": "Advanced",
           "keywords": [
              "Linux",
-             "Unix",
              "Bash",
-             "Arch",
-             "Debian",
-             "Ubuntu",
-             "CentOS"
+             "Ubuntu"
           ],
           "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop. Comfortable creating services, automating weekly maintenance, and managing software."
        },
@@ -143,29 +152,14 @@
           "name": "System Administration",
           "level": "Working knowledge",
           "keywords": [
-             "SysOps",
              "XCP-ng",
              "Ansible",
-             "Xen",
              "Azure",
              "AWS",
              "Linode",
              "Digital Ocean"
           ]
-       },
-       {
-         "name": "App Self-Hosting",
-         "level": "Working knowledge",
-         "keywords": [
-            "Unraid",
-            "Cloudflare Tunnels",
-            "Tailscale Carrier-grade NAT",
-            "Letsencrypt Certificate Automated Renewal",
-            "Nginx",
-            "docker-compose"
-         ],
-         "description": "- Self-host multiple services at home which I regularly use."
-     }
+       }
     ],
 
     "projects": [
