@@ -8,7 +8,7 @@
        "email": "contact@santiago-mooser.com",
        "website": "https://santiago-mooser.com",
        "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-       "summary": "Hi there. My name is Santiago. I'm final year Computer Science student at the University of Hong Kong. I'm a DevSecOps and SecOps enthusiast that specializes in increasing security in the software development lifecyle and company operations. My background includes four different internships in DevOps, Pentesting, DevSecOps and SecOps. I am a respectful and proactive member of teams and like to share ideas and work together with other people. I'm currently looking for jobs in the cybersecurity industry, specifically in a DevSecOps or SecOps position.",
+       "summary": "I am a final year Computer Science student at the University of Hong Kong enthusiastic about and with a passion for Cyber Security. Through the last few years I have had internships across DevOps, Penetration Testing, DevSecOps and Operational Cyber Security. I enjoy being a team player and sharing ideas with my colleagues for any feedback and constructive criticism. I am currently looking for a Graduate Cyber Security roles in a fast paced and energetic environment.",
        "location": {
           "city": "Hong Kong"
        },
@@ -34,27 +34,30 @@
     "work": [
       {
          "name": "Hex Trust",
-         "description": "Hex Trust is a digital asset custody firm.",
+         "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.",
          "url": "https://hextrust.com",
          "location": "Hong Kong",
          "startDate": "2022-06",
-         "position": "DevSecOps & SecOps Consultant",
-         "summary": "Worked to improve company's cybersecurity posture through the use of DevSecOps and SecOps principles.",
+         "position": "Consultant (DevSecOps & SecOps)",
+         "summary": "Focused on the 'Build' inititives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.",
          "highlights": [
-            "Worked with CISO, Head of Platform and Head of Cybersecurity to propose and implement first-ever DevSecOps pipeline in the company by gathering information about industry-standard tools and proposing said pipeline to developers before implementing it on production.",
-            "Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioninig time fell from 2-3 hours to 10-15 minutes.",
-            "Responded to security incidents through the use of the company's SIEM and WAF systems and reported & advised on recommended response to the Head of Cybersecurity."
+            "Worked with senior management including CISO, Head of Platform and Head of Cybersecurity on the first-ever DevSecOps pipeline in the company by researching industry-standard tools. Designed, Tested and Finalized the pipelines in different environments to balance security requirements and efficiency of code deployment.",
+            "Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioninig time reduced by more than 90%.",
+            "Responded to critical security incidents by investigating logs and alerts on the company's SIEM and WAF systems. Researched and advised on recommended response to the Head of Cybersecurity.",
+            "Next Gen WAF Testing??",
+            "Auto-pentesting / Vul Scanner Testing??",
+            "CIS Benchmark??"
          ]
       },
        {
           "name": "Handshake Networking",
-          "description": "Handshake Networking is cybersecurity consultancy company that specializes in Payment Card Industry (PCI) security auditing.",
+          "description": "Handshake Networking is a boutique cybersecurity consultancy company that specializes in penetration testing and application security testing.",
           "url": "https://handshake.hk",
           "location": "Hong Kong",
           "startDate": "2020-05",
           "endDate": "2022-01",
-          "position": "Pentester, Software Developer (full-time/part-time consultant)",
-          "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Administration.",
+          "position": "Pentester, Software Developer, DevOps Engineer (full-time/part-time consultant)",
+          "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Engineering.",
           "highlights": [
              "Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels aroun the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.",
              "Developed and deployed full (but simple) DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.",
@@ -104,53 +107,40 @@
     ],
     "skills": [
        {
-          "name": "Scripting",
-          "level": "Advanced",
+          "name": "Scripting / Automation",
           "keywords": [
              "Bash",
              "Python",
              "Shell",
              "Linux"
-          ],
-          "description": "Intimately familiar with scripting languages."
-       },
-       {
-          "name": "Automation",
-          "level": "Advanced",
-          "keywords": [
-             "Scripting",
-             "",
-             "Documentation",
-             "Ease of use"
-          ],
-          "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop. Comfortable creating services, automating weekly maintenance, and managing software."
+          ]
        },
        {
           "name": "Linux systems",
-          "level": "Advanced",
           "keywords": [
+             "Debian",
+             "Arch",
              "Linux",
              "Bash",
-             "Ubuntu"
-          ],
-          "description": "Daily-drive Arch Linux on my main PC as well as my work Laptop. Comfortable creating services, automating weekly maintenance, and managing software."
+             "Ubuntu",
+             "Systemd",
+             "Troubleshooting"
+          ]
        },
        {
-          "name": "DevOps & SRE",
-          "level": "Working knowledge",
+          "name": "DevSecOps & SRE",
           "keywords": [
-             "DevOps",
-             "DevSecOps",
+             "Shift Left",
+             "DAST",
+             "SAST",
              "Ansible",
              "Terraform",
              "CICD",
              "Docker"
-          ],
-          "description": "- Worked on DevOps and Site Reliability Engineering projects, as well as developed my own dockerfiles, docker-compose setups and Ansible playbooks.\n- Developed and deployed Docker containers for various projects, including academic, work and personal projects."
+          ]
        },
        {
           "name": "System Administration",
-          "level": "Working knowledge",
           "keywords": [
              "XCP-ng",
              "Ansible",
@@ -164,15 +154,14 @@
 
     "projects": [
       {
-        "name": "Haskell-based interpreter",
-        "description": "Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course.",
+        "name": "[Coursework] Haskell-based interpreter",
+        "description": "Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course. This project required understanding the different principles of programming languages such as First-class Functions, Variable Scoping, Mondads and Mutable States in order to build an interpreter that was able to implement these features. See https://github.com/santiago-mooser/haskell-based-interpreter.git",
         "keywords": [
           "Haskell",
           "Functional Programming",
           "Interpreter",
           "Principles of Programming Languages"
         ],
-        "url": "https://github.com/santiago-mooser/haskell-based-interpreter.git",
         "startDate": "2022-01-14",
          "endDate": "2022-05-30",
         "roles": [
@@ -181,7 +170,7 @@
         "type": "Project"
     },
       {
-         "name": "Computer Science Association Virtual Career Week 2022",
+         "name": "[Personal] Computer Science Association Virtual Career Week 2022",
          "description": "Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various companies topics, including: Site Reliability Engineer, IT Governance Risk and Compliance, and Software Engineering. Also served as host for three different fireside talks.",
          "keywords": [
            "Career Talk",
@@ -200,8 +189,8 @@
          "type": "Event"
       },
       {
-        "name": "Unraid Self-hosted Media Server",
-        "description": "Deployment and Maintenance of Home Media server as well as backup of personal data",
+        "name": "[Personal] Unraid Self-hosted Media Server",
+        "description": "Deployment an unraid-based server that serves both as a media server and a personal backup for all my data. This server also hosts various docker-based services such as PhotoPrism and Syncthing.",
         "keywords": [
           "UnRaid",
           "Docker",
@@ -216,18 +205,6 @@
           "Team Lead"
         ],
         "type": "Project"
-    },
-    {
-       "name": "Complete off-site and offline backup of all personal devices",
-       "description": "Set up a warm backup system for all personal devices to two separate cloud providers through the use of CGNAT VPN, syncthing and ZFS.",
-         "keywords": [
-            "CGNAT",
-            "Syncthing",
-            "ZFS",
-            "Backup"
-         ],
-         "startDate": "2020-01-01",
-         "type": "Project"
     }
    ],
 
@@ -279,10 +256,10 @@
          "name": "Muay Thai, MMA and Running"
        },
        {
-         "name": "Videogames"
+         "name": "Co-op Videogames"
        },
        {
-         "name": "Cybersecurity and Hacking"
+         "name": "Cybersecurity and Ethical Hacking"
        },
        {
          "name": "Privacy"
