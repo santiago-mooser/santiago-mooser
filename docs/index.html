@@ -30,35 +30,25 @@ body{
 blockquote {
   font-size: 1.2em;
 }
-#references {
-  text-align: left;
-}
-
 .row {
-    margin-right: 0;
-    margin-left: 0;
-}
-#job-url{
-  align-self: left;
-}
-#job-date{
-  align-self: right;
+  margin-right: 0;
+  margin-left: 0;
 }
 #content{
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 #left-column{
-  padding-left: 3%;
-  padding-right: 1%;
-  max-width: 100%;
-  min-width: 300;
+padding-left: 3%;
+padding-right: 1%;
+max-width: 100%;
+min-width: 300;
 }
 #right-column{
-  padding-left: 1%;
-  padding-right: 3%;
-  max-width: 100%;
-  min-width: 30%;
+padding-left: 1%;
+padding-right: 3%;
+max-width: 100%;
+min-width: 30%;
 }
 .container{
   margin-top: 80px;
@@ -70,7 +60,9 @@ blockquote {
   min-width: auto;
   margin-right: auto;
 }
-
+#references {
+  text-align: left;
+}
 #photo-header{
   margin-top: -75px;
 }
@@ -117,9 +109,20 @@ blockquote {
   display: block;
 }
 
+#content{
+  display: flex;
+  flex-wrap: wrap;
+}
+#left-column{
+  padding-left: 2%;
+  padding-right: 1.5%;
+}
+#right-column{
+  padding-right: 2%;
+  padding-left: 1.5%;
+}
 .box{
   padding-bottom: 10px;
-  margin-bottom: 25px;
   text-align: justify;
 }
 .box h2{
@@ -137,21 +140,27 @@ blockquote {
   padding: 1em 0;
   list-style: none;
 }
-
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
 #awards .year,
 #education .year{
-  opacity: 0.7;
-  margin-top: 5px;
-  margin-bottom: 10px;
+opacity: 0.7;
+margin-top: 5px;
+margin-bottom: 10px;
 }
 #awards .description,
 #education .description{
+  border-radius: 15px;
   display: inline-block;
   background: #eee;
   margin-bottom: 10px;
+  position: relative;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
 }
 #awards .description h3,
 #education .description h3{
@@ -166,15 +175,20 @@ blockquote {
   padding: 0;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  page-break-inside: avoid;
+}
+
 .job{
   margin-bottom: 15px;
+  page-break-inside: avoid;
 }
 .job .details {
   padding: 10px;
   margin-bottom: 10px;
   background: #eee;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   border-radius: 15px 15px 0 0 ;
 }
 .job .where{
@@ -192,12 +206,13 @@ blockquote {
   line-height: 1.5em;
 }
 .job .highlights{
-  padding: 5px 0;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .job .job-details {
-  padding: 0;
   width: 100%;
+
 }
 .publication {
   margin-bottom: 0;
@@ -217,11 +232,10 @@ blockquote {
 .contact-item{
   width: 100%;
   float: left;
+  margin: 4px;
 }
 .contact-item .icon{
   padding: 10px;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   color: #32475c;
   background: #eee;
 }
@@ -287,6 +301,7 @@ blockquote {
     body {
   font-size: .95em;
   -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 a[href]:after {
@@ -312,13 +327,19 @@ blockquote,
 }
 
 .col-sm-5{
-  width: 50%;
+  width: 40%;
   padding: 0 15px;
 }
 
 .col-sm-7{
-  width: 50%;
+  width: 60%;
   padding: 0 15px;
+
+  padding-left: 30px;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .skills .col-sm-offset-1,
@@ -335,15 +356,11 @@ blockquote,
 #education:before {
   background: none;
 }
-#content{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 #awards .description,
 #education .description,
 .job .details {
   border: 1px solid #eee;
-  margin: 5px;
 }
 .publication,
 .publication .panel-heading,
@@ -385,7 +402,7 @@ blockquote,
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12" id="photo-column">
+        <div class="col-xs-12">
           <div id="photo-header" class="text-center">
             <!-- PHOTO (AVATAR) -->
             <div id="photo">
@@ -402,23 +419,26 @@ blockquote,
           <!-- ABOUT ME -->
           <div class="box">
             <h2><i class="fas fa-user ico"></i> About</h2>
-            <p>Hi there. My name is Santiago. I'm final year Computer Science student at the University of Hong Kong. I'm a DevSecOps and SecOps enthusiast that specializes in increasing security in the software development lifecyle and company operations. My background includes four different internships in DevOps, Pentesting, DevSecOps and SecOps. I am a respectful and proactive member of teams and like to share ideas and work together with other people. I'm currently looking for jobs in the cybersecurity industry, specifically in a DevSecOps or SecOps position.</p>
+            <p>I am a final year Computer Science student at the University of Hong Kong enthusiastic about and with a passion for Cyber Security. Through the last few years I have had internships across DevOps, Penetration Testing, DevSecOps and Operational Cyber Security. I enjoy being a team player and sharing ideas with my colleagues for any feedback and constructive criticism. I am currently looking for a Graduate Cyber Security roles in a fast paced and energetic environment.</p>
           </div>
           <!-- PROJECTS -->
           <div class="box">
             <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
             <ul class="list-group">
               <li class="list-group-item">
-                <span style="font-weight:bold">Haskell-based interpreter</span>: Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course.
+                <i class="fa fa-university" aria-hidden="true"></i> <span style="font-weight:bold">Haskell-based interpreter</span>:
+                <br>
+                Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course. This project required understanding the different principles of programming languages such as First-class Functions, Variable Scoping, Mondads and Mutable States in order to build an interpreter that was able to implement these features. See https:&#x2F;&#x2F;github.com&#x2F;santiago-mooser&#x2F;haskell-based-interpreter.git
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Computer Science Association Virtual Career Week 2022</span>: Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various companies topics, including: Site Reliability Engineer, IT Governance Risk and Compliance, and Software Engineering. Also served as host for three different fireside talks.
+                <i class="fa fa-laptop" aria-hidden="true"></i> <span style="font-weight:bold">Computer Science Association Virtual Career Week 2022</span>:
+                <br>
+                Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various companies topics, including: Site Reliability Engineer, IT Governance Risk and Compliance, and Software Engineering. Also served as host for three different fireside talks.
               </li>
               <li class="list-group-item">
-                <span style="font-weight:bold">Unraid Self-hosted Media Server</span>: Deployment and Maintenance of Home Media server as well as backup of personal data
-              </li>
-              <li class="list-group-item">
-                <span style="font-weight:bold">Complete off-site and offline backup of all personal devices</span>: Set up a warm backup system for all personal devices to two separate cloud providers through the use of CGNAT VPN, syncthing and ZFS.
+                <i class="fa fa-laptop" aria-hidden="true"></i> <span style="font-weight:bold">Unraid Self-hosted Media Server</span>:
+                <br>
+                Deployment an unraid-based server that serves both as a media server and a personal backup for all my data. This server also hosts various docker-based services such as PhotoPrism and Syncthing.
               </li>
             </ul>
           </div>
@@ -434,25 +454,28 @@ blockquote,
                         Hong Kong
                       </div>
                     </div>
-                    <div class="description">
-                      Hex Trust is a digital asset custody firm.
-                    </div>
                     <div class="address">
                       <a href="https:&#x2F;&#x2F;hextrust.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hextrust.com</a>
+                      <div class="year pull-right">Jun 2022 – Present</div>
                     </div>
-                    <div class="year">June 2022 – Present</div>
+                    <div class="description">
+                      Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.
+                    </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
-                    <div class="profession">DevSecOps &amp; SecOps Consultant</div>
+                    <div class="profession">Consultant (DevSecOps &amp; SecOps)</div>
                     <div class="description">
-                      Worked to improve company's cybersecurity posture through the use of DevSecOps and SecOps principles.
+                      Focused on the 'Build' inititives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
-                        <li class="list-group-item">Worked with CISO, Head of Platform and Head of Cybersecurity to propose and implement first-ever DevSecOps pipeline in the company by gathering information about industry-standard tools and proposing said pipeline to developers before implementing it on production.</li>
-                        <li class="list-group-item">Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioninig time fell from 2-3 hours to 10-15 minutes.</li>
-                        <li class="list-group-item">Responded to security incidents through the use of the company's SIEM and WAF systems and reported & advised on recommended response to the Head of Cybersecurity.</li>
+                        <li class="list-group-item">Worked with senior management including CISO, Head of Platform and Head of Cybersecurity on the first-ever DevSecOps pipeline in the company by researching industry-standard tools. Designed, Tested and Finalized the pipelines in different environments to balance security requirements and efficiency of code deployment.</li>
+                        <li class="list-group-item">Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioninig time reduced by more than 90%.</li>
+                        <li class="list-group-item">Responded to critical security incidents by investigating logs and alerts on the company's SIEM and WAF systems. Researched and advised on recommended response to the Head of Cybersecurity.</li>
+                        <li class="list-group-item">Next Gen WAF Testing??</li>
+                        <li class="list-group-item">Auto-pentesting / Vul Scanner Testing??</li>
+                        <li class="list-group-item">CIS Benchmark??</li>
                       </ul>
                     </div>
                   </div>
@@ -467,20 +490,20 @@ blockquote,
                         Hong Kong
                       </div>
                     </div>
-                    <div class="description">
-                      Handshake Networking is cybersecurity consultancy company that specializes in Payment Card Industry (PCI) security auditing.
-                    </div>
                     <div class="address">
                       <a href="https:&#x2F;&#x2F;handshake.hk" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;handshake.hk</a>
+                      <div class="year pull-right">May 2020 – Jan 2022</div>
                     </div>
-                    <div class="year">May 2020 – January 2022</div>
+                    <div class="description">
+                      Handshake Networking is a boutique cybersecurity consultancy company that specializes in penetration testing and application security testing.
+                    </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
-                    <div class="profession">Pentester, Software Developer (full-time&#x2F;part-time consultant)</div>
+                    <div class="profession">Pentester, Software Developer, DevOps Engineer (full-time&#x2F;part-time consultant)</div>
                     <div class="description">
-                      Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Administration.
+                      Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Engineering.
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item">Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels aroun the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.</li>
@@ -505,22 +528,20 @@ blockquote,
                         Hong Kong
                       </div>
                     </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html</a>
+                      <div class="year pull-right">May 2019 – Dec 2019</div>
+                    </div>
                     <div class="description">
                       PWC New Ventures builds software solutions for PWC&#39;s client base.
                     </div>
-                    <div class="row">
-                      <div class="address" id="job-url">
-                        <a href="https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html</a>
-                      </div>
-                      <div class="year" id="job-date">May 2019 – December 2019</div>
-                    </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
                     <div class="profession">DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)</div>
                     <div class="description">
-
+                      
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item">Worked with the head of DevOps to automate server deployments and provisionings using Ansible and Terraform. This reduced deployment and privisioning time from 3-5 business days to 30-45 minutes.</li>
@@ -539,7 +560,7 @@ blockquote,
             <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
-
+              
               <div class="title only  pull-right">Hong Kong</div>
             </div>
             <div class="contact-item">
@@ -573,15 +594,15 @@ blockquote,
                   <div class="address">
                     <a href="https:&#x2F;&#x2F;hku.hk&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hku.hk&#x2F;</a>
                   </div>
-                  <p style="shift-left"><i class= "fas fa-graduation-cap ico"></i> Bachelor</p>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor</p>
                   <p>Computer Science</p>
                   <div class="year">2018 - 2023</div>
                     <div>Courses</div>
                     <ul class="list-group">
-                      <li class="list-group-item">COMP3357 - Cryptography</li>
-                      <li class="list-group-item">COMP3250 - Design And Analysis of Algorithms</li>
-                      <li class="list-group-item">COMP3352 - Algorithmic Game Theory</li>
-                      <li class="list-group-item">COMP3230 - Principles of Operating Systems</li>
+                      <li class="list-group-item">Cryptography</li>
+                      <li class="list-group-item">Design And Analysis of Algorithms</li>
+                      <li class="list-group-item">Algorithmic Game Theory</li>
+                      <li class="list-group-item">Principles of Operating Systems</li>
                     </ul>
                 </div>
               </li>
@@ -592,10 +613,9 @@ blockquote,
             <h2><i class="fas fa-tasks ico"></i> Skills</h2>
             <div class="skills clearfix">
               <div class="item-skills">
-                  Scripting
-                  <span class="skill-level">Advanced</span>
+                  Scripting &#x2F; Automation
               </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              <div class="col-sm-12 clearfix">
                 <span class= "skill badge">Bash</span>
                 <span class= "skill badge">Python</span>
                 <span class= "skill badge">Shell</span>
@@ -604,35 +624,26 @@ blockquote,
             </div>
             <div class="skills clearfix">
               <div class="item-skills">
-                  Automation
-                  <span class="skill-level">Advanced</span>
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">Scripting</span>
-                <span class= "skill badge"></span>
-                <span class= "skill badge">Documentation</span>
-                <span class= "skill badge">Ease of use</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
                   Linux systems
-                  <span class="skill-level">Advanced</span>
               </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              <div class="col-sm-12 clearfix">
+                <span class= "skill badge">Debian</span>
+                <span class= "skill badge">Arch</span>
                 <span class= "skill badge">Linux</span>
                 <span class= "skill badge">Bash</span>
                 <span class= "skill badge">Ubuntu</span>
+                <span class= "skill badge">Systemd</span>
+                <span class= "skill badge">Troubleshooting</span>
               </div>
             </div>
             <div class="skills clearfix">
               <div class="item-skills">
-                  DevOps &amp; SRE
-                  <span class="skill-level">Working knowledge</span>
+                  DevSecOps &amp; SRE
               </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">DevOps</span>
-                <span class= "skill badge">DevSecOps</span>
+              <div class="col-sm-12 clearfix">
+                <span class= "skill badge">Shift Left</span>
+                <span class= "skill badge">DAST</span>
+                <span class= "skill badge">SAST</span>
                 <span class= "skill badge">Ansible</span>
                 <span class= "skill badge">Terraform</span>
                 <span class= "skill badge">CICD</span>
@@ -642,9 +653,8 @@ blockquote,
             <div class="skills clearfix">
               <div class="item-skills">
                   System Administration
-                  <span class="skill-level">Working knowledge</span>
               </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              <div class="col-sm-12 clearfix">
                 <span class= "skill badge">XCP-ng</span>
                 <span class= "skill badge">Ansible</span>
                 <span class= "skill badge">Azure</span>
@@ -653,6 +663,15 @@ blockquote,
                 <span class= "skill badge">Digital Ocean</span>
               </div>
             </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><i class="fas fa-language ico"></i> Languages</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">English<span class="skill badge pull-right">Native</span></li>
+              <li class=" list-group-item">Spanish<span class="skill badge pull-right">Native</span></li>
+              <li class=" list-group-item">German<span class="skill badge pull-right">Proficient</span></li>
+            </ul>
           </div>
           <!-- HOBBIES -->
           <div class="box">
@@ -673,14 +692,14 @@ blockquote,
             </div>
             <div class="interests clearfix">
               <div class="item-interests">
-                  Videogames
+                  Co-op Videogames
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
               </div>
             </div>
             <div class="interests clearfix">
               <div class="item-interests">
-                  Cybersecurity and Hacking
+                  Cybersecurity and Ethical Hacking
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
               </div>
@@ -711,13 +730,13 @@ blockquote,
             <blockquote>
               <div>Santiago was always willing to offer his assistance and had excellent technical skills on working software products.</div>
               <footer>
-                <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kit-hei-ho&#x2F;" target= "_blank">Kit Ho (PWC) - Head of DevOps</a>
+                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kit-hei-ho&#x2F;" target= "_blank">Kit Ho (PWC) - Head of DevOps</a>
               </footer>
             </blockquote><br>
             <blockquote>
               <div></div>
               <footer>
-                <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;richard-stagg-6528183&#x2F;" target= "_blank">Richard Stagg (Handshake Networking) - Director and Managing Consultant</a>
+                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;richard-stagg-6528183&#x2F;" target= "_blank">Richard Stagg (Handshake Networking) - Director and Managing Consultant</a>
               </footer>
             </blockquote><br>
           </div>
