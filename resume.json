@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "meta": {
-        "theme": "kendall"
+        "theme": "santiago"
     },
     "basics": {
        "name": "Santiago Espinosa Mooser",
@@ -88,7 +88,8 @@
        {
           "institution": "University of Hong Kong",
           "url": "https://hku.hk/",
-          "studyType": "Bachelor - Computer Science",
+          "studyType": "Bachelor",
+          "area": "Computer Science",
           "startDate": "2018-09",
           "endDate": "2023-06",
           "courses": [
@@ -153,7 +154,7 @@
 
     "projects": [
       {
-        "name": "[Coursework] Haskell-based interpreter",
+        "name": "Haskell-based interpreter",
         "description": "Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course. This project required understanding the different principles of programming languages such as First-class Functions, Variable Scoping, Mondads and Mutable States in order to build an interpreter that was able to implement these features. See https://github.com/santiago-mooser/haskell-based-interpreter.git",
         "keywords": [
           "Haskell",
@@ -166,10 +167,10 @@
         "roles": [
           "Programmer"
         ],
-        "type": "Project"
+        "type": "coursework"
     },
       {
-         "name": "[Personal] Computer Science Association Virtual Career Week 2022",
+         "name": "Computer Science Association Virtual Career Week 2022",
          "description": "Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various companies topics, including: Site Reliability Engineer, IT Governance Risk and Compliance, and Software Engineering. Also served as host for three different fireside talks.",
          "keywords": [
            "Career Talk",
@@ -185,10 +186,10 @@
            "Team Lead",
            "Talk Host"
          ],
-         "type": "Event"
+         "type": "personal"
       },
       {
-        "name": "[Personal] Unraid Self-hosted Media Server",
+        "name": "Unraid Self-hosted Media Server",
         "description": "Deployment an unraid-based server that serves both as a media server and a personal backup for all my data. This server also hosts various docker-based services such as PhotoPrism and Syncthing.",
         "keywords": [
           "UnRaid",
@@ -203,7 +204,7 @@
         "roles": [
           "Team Lead"
         ],
-        "type": "Project"
+        "type": "personal"
     }
    ],
 
