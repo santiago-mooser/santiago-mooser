@@ -88,15 +88,14 @@
        {
           "institution": "University of Hong Kong",
           "url": "https://hku.hk/",
-          "area": "Computer Science",
-          "studyType": "Bachelor",
+          "studyType": "Bachelor - Computer Science",
           "startDate": "2018-09",
           "endDate": "2023-06",
           "courses": [
-            "COMP3357 - Cryptography",
-            "COMP3250 - Design And Analysis of Algorithms",
-            "COMP3352 - Algorithmic Game Theory",
-            "COMP3230 - Principles of Operating Systems"
+            "Cryptography",
+            "Design And Analysis of Algorithms",
+            "Algorithmic Game Theory",
+            "Principles of Operating Systems"
           ],
           "highlights": [
             "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",

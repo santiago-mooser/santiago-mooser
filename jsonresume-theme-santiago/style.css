@@ -110,7 +110,6 @@ min-width: 30%;
 }
 .box{
   padding-bottom: 10px;
-  margin-bottom: 25px;
   text-align: justify;
 }
 .box h2{
@@ -216,6 +215,7 @@ margin-bottom: 10px;
 .contact-item{
   width: 100%;
   float: left;
+  padding: 3px;
 }
 .contact-item .icon{
   padding: 10px;
