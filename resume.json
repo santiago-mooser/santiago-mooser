@@ -44,9 +44,8 @@
             "Worked with senior management including CISO, Head of Platform and Head of Cybersecurity on the first-ever DevSecOps pipeline in the company by researching industry-standard tools. Designed, Tested and Finalized the pipelines in different environments to balance security requirements and efficiency of code deployment.",
             "Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioninig time reduced by more than 90%.",
             "Responded to critical security incidents by investigating logs and alerts on the company's SIEM and WAF systems. Researched and advised on recommended response to the Head of Cybersecurity.",
-            "Next Gen WAF Testing??",
-            "Auto-pentesting / Vul Scanner Testing??",
-            "CIS Benchmark??"
+            "Worked with Head of Cybersecurity to test and evaluate next-gen WAF/RASP and automated pentesting tools.",
+            "Set up and ran CIS benchmarks to ensure compliance with industry-standard "
          ]
       },
        {
