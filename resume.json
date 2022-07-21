@@ -58,12 +58,11 @@
          "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Engineering.",
          "highlights": [
             "Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels around the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.",
-            "Developed and deployed full (but simple) DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.",
-            "Installed, managed and maintained XCP-ng hypervisor server and VMs to enable the deployment and use of internally-used services (Bookstack, Samba, Elasticsearch).",
-            "Compiled credential list from online sources for use in pentesting",
-            "Assisted in the ASV exam recertification by scripting and automating reconnaissance and reporting stages.",
+            "Developed and deployed full DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.",
+            "Installed, managed and maintained company servers and VMs to enable the deployment and use of internally-used services such as Bookstack, Samba, and Elasticsearch.",
+            "Compiled a database of publicly available leaked credentials to enhance the quality of pentests by improving our chances of brute-forcing client passwords. The Elasticsearch-based database contained over 4.2 Billion records.",
+            "Assisted in the recertification of the company for the Authorized Scanning Vendor PCI certificate by scripting and automating reconnaissance and reporting stages.",
             "Deployed various docker-based services for internal use such as Bookstack (and internal wiki), GitLab and an Ubuntu-based Samba server.",
-            "Automated tape backups from XCP-ng server using Bash scripting and transfers.",
             "Developed internal automation tools & web applications for internal use such as an ike-scan & nmap multithreaded wrapper (see github)"
          ]
       },
@@ -75,6 +74,7 @@
          "location": "Hong Kong",
          "startDate": "2019-05",
          "endDate": "2019-12",
+         "summary": "Worked in the DevOps team to automate the provisioning of company servers and services.",
          "highlights": [
             "Worked with the head of DevOps to automate server deployments and provisionings using Ansible and Terraform. This reduced deployment and privisioning time from 3-5 business days to 30-45 minutes.",
             "Wrote and maintained Ansible-based playbook to deploy internal communication tools instance (Mattermost). This deployment used docker-compose and Bash.",
@@ -116,13 +116,15 @@
       {
          "name": "DevSecOps & SRE",
          "keywords": [
-            "Snyk",
+            "Kubernetes",
+            "Helm",
             "DAST",
             "SAST",
             "Ansible",
             "Terraform",
-            "CIS",
             "Docker",
+            "CIS",
+            "Snyk",
             "tfsec",
             "kube-bench"
          ]
@@ -132,8 +134,6 @@
          "keywords": [
             "Ubuntu",
             "Arch",
-            "Debian",
-            "MacOS",
             "Bash",
             "Systemd",
             "Troubleshooting"
@@ -149,23 +149,47 @@
             "Linode",
             "Digital Ocean"
          ]
-      }
+      },
+      {
+         "name": "Pentesting",
+         "keywords": [
+          "reconnaissance",
+          "Network scanning",
+          "nmap",
+          "ike-scan",
+          "Burp suite",
+          "Zap scan"
+         ]
+      },
+      {
+        "name": "Web development",
+        "keywords": [
+          "Django",
+          "API",
+          "RabbitMQ",
+          "Celery",
+          "Queues",
+          "MySQL"
+        ]
+     }
    ],
    "projects": [
      {
        "name": "DevSecOps pipeline",
-       "description": "Planned, proposed and deployed a new DevSecOps pipeline by researching industry-standard tools, planning implementation and presenting to senior management. The deployment of this pipeline led to significant improvements in the security of the software development life cycle within HexTrust.",
+       "description": "Implemented DAST, SAST, and secure stages for NodeJS projects to improve the stage at which developers discover security vulenrabiliies. Each environment pipeline was also adapted to the correcsponding development environment, with Alpha having the lowest controls but highest execution speed and Production having the most stringent and thorough controls. The tools used were Snyk, Zap Scanner, tfsec, hadolint, JSLint, Sonarqube and Sigstore.",
        "keywords": [
-         "Snyk",
          "DevSecOps",
          "SecOps",
-         "SonarQube",
          "DAST",
          "SAST",
+         "Chaos Engineering",
+         "Snyk",
          "HadoLint",
+         "SonarQube",
          "semgrep",
          "ChaosKube",
-         "Chaos Engineering"
+         "Sigstore",
+         "tfsec"
        ],
        "startDate": "2022-01-14",
         "endDate": "2022-05-30",
@@ -284,8 +308,8 @@
 
   "references": [
      {
-      "name": "Shane Read (Hex Trust) - Chief Information Security Officer & Chief Information Officer ",
-      "reference": "",
+      "name": "Shane Read (Hex Trust) - Chief Information Security Officer",
+      "reference": "Santiago's rich experience in DevOps and Information Security allowed us to complete the design and implementation of our DevSecOps pipeline in a matter of weeks rather than months.",
       "url": "https://www.linkedin.com/in/cisoinasia/"
      },
      {
@@ -320,6 +344,10 @@
       {
         "language": "German",
         "fluency": "Proficient"
+      },
+      {
+        "language": "Cantonese",
+        "fluency": "Rudimentary"
       }
    ],
    "interests": [
