@@ -484,12 +484,11 @@ blockquote,
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item">Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels around the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.</li>
-                        <li class="list-group-item">Developed and deployed full (but simple) DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.</li>
-                        <li class="list-group-item">Installed, managed and maintained XCP-ng hypervisor server and VMs to enable the deployment and use of internally-used services (Bookstack, Samba, Elasticsearch).</li>
-                        <li class="list-group-item">Compiled credential list from online sources for use in pentesting</li>
-                        <li class="list-group-item">Assisted in the ASV exam recertification by scripting and automating reconnaissance and reporting stages.</li>
+                        <li class="list-group-item">Developed and deployed full DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.</li>
+                        <li class="list-group-item">Installed, managed and maintained company servers and VMs to enable the deployment and use of internally-used services such as Bookstack, Samba, and Elasticsearch.</li>
+                        <li class="list-group-item">Compiled a database of publicly available leaked credentials to enhance the quality of pentests by improving our chances of brute-forcing client passwords. The Elasticsearch-based database contained over 4.2 Billion records.</li>
+                        <li class="list-group-item">Assisted in the recertification of the company for the Authorized Scanning Vendor PCI certificate by scripting and automating reconnaissance and reporting stages.</li>
                         <li class="list-group-item">Deployed various docker-based services for internal use such as Bookstack (and internal wiki), GitLab and an Ubuntu-based Samba server.</li>
-                        <li class="list-group-item">Automated tape backups from XCP-ng server using Bash scripting and transfers.</li>
                         <li class="list-group-item">Developed internal automation tools & web applications for internal use such as an ike-scan & nmap multithreaded wrapper (see github)</li>
                       </ul>
                     </div>
@@ -518,7 +517,7 @@ blockquote,
                   <div class="job-details col-xs-11">
                     <div class="profession">DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)</div>
                     <div class="description">
-                      
+                      Worked in the DevOps team to automate the provisioning of company servers and services.
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item">Worked with the head of DevOps to automate server deployments and provisionings using Ansible and Terraform. This reduced deployment and privisioning time from 3-5 business days to 30-45 minutes.</li>
@@ -535,10 +534,10 @@ blockquote,
             <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
             <ul class="list-group">
               <li class="list-group-item">
-                <div style="display: none;">Snyk,DevSecOps,SecOps,SonarQube,DAST,SAST,HadoLint,semgrep,ChaosKube,Chaos Engineering</div>
+                <div style="display: none;">DevSecOps,SecOps,DAST,SAST,Chaos Engineering,Snyk,HadoLint,SonarQube,semgrep,ChaosKube,Sigstore,tfsec</div>
                 <i class="fa fa-suitcase" aria-hidden="true"></i> <span style="font-weight:bold">DevSecOps pipeline</span>:
                 <br>
-                Planned, proposed and deployed a new DevSecOps pipeline by researching industry-standard tools, planning implementation and presenting to senior management. The deployment of this pipeline led to significant improvements in the security of the software development life cycle within HexTrust.
+                Implemented DAST, SAST, and secure stages for NodeJS projects to improve the stage at which developers discover security vulenrabiliies. Each environment pipeline was also adapted to the correcsponding development environment, with Alpha having the lowest controls but highest execution speed and Production having the most stringent and thorough controls. The tools used were Snyk, Zap Scanner, tfsec, hadolint, JSLint, Sonarqube and Sigstore.
               </li>
               <li class="list-group-item">
                 <div style="display: none;">Docker,Ansible,MySQL,Documenation</div>
@@ -652,13 +651,15 @@ blockquote,
                   DevSecOps &amp; SRE
               </div>
               <div class="col-sm-12 clearfix">
-                <span class= "skill badge">Snyk</span>
+                <span class= "skill badge">Kubernetes</span>
+                <span class= "skill badge">Helm</span>
                 <span class= "skill badge">DAST</span>
                 <span class= "skill badge">SAST</span>
                 <span class= "skill badge">Ansible</span>
                 <span class= "skill badge">Terraform</span>
-                <span class= "skill badge">CIS</span>
                 <span class= "skill badge">Docker</span>
+                <span class= "skill badge">CIS</span>
+                <span class= "skill badge">Snyk</span>
                 <span class= "skill badge">tfsec</span>
                 <span class= "skill badge">kube-bench</span>
               </div>
@@ -670,8 +671,6 @@ blockquote,
               <div class="col-sm-12 clearfix">
                 <span class= "skill badge">Ubuntu</span>
                 <span class= "skill badge">Arch</span>
-                <span class= "skill badge">Debian</span>
-                <span class= "skill badge">MacOS</span>
                 <span class= "skill badge">Bash</span>
                 <span class= "skill badge">Systemd</span>
                 <span class= "skill badge">Troubleshooting</span>
@@ -690,6 +689,32 @@ blockquote,
                 <span class= "skill badge">Digital Ocean</span>
               </div>
             </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Pentesting
+              </div>
+              <div class="col-sm-12 clearfix">
+                <span class= "skill badge">reconnaissance</span>
+                <span class= "skill badge">Network scanning</span>
+                <span class= "skill badge">nmap</span>
+                <span class= "skill badge">ike-scan</span>
+                <span class= "skill badge">Burp suite</span>
+                <span class= "skill badge">Zap scan</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Web development
+              </div>
+              <div class="col-sm-12 clearfix">
+                <span class= "skill badge">Django</span>
+                <span class= "skill badge">API</span>
+                <span class= "skill badge">RabbitMQ</span>
+                <span class= "skill badge">Celery</span>
+                <span class= "skill badge">Queues</span>
+                <span class= "skill badge">MySQL</span>
+              </div>
+            </div>
           </div>
           <!-- LANGUAGES -->
           <div class="box">
@@ -698,6 +723,7 @@ blockquote,
               <li class=" list-group-item">English<span class="skill badge pull-right">Native</span></li>
               <li class=" list-group-item">Spanish<span class="skill badge pull-right">Native</span></li>
               <li class=" list-group-item">German<span class="skill badge pull-right">Proficient</span></li>
+              <li class=" list-group-item">Cantonese<span class="skill badge pull-right">Rudimentary</span></li>
             </ul>
           </div>
           <!-- HOBBIES -->
@@ -749,9 +775,9 @@ blockquote,
           <div class="box" id="references">
             <h2><i class= "fas fa-check-square ico"></i> References</h2>
             <blockquote>
-              <div></div>
+              <div>Santiago's rich experience in DevOps and Information Security allowed us to complete the design and implementation of our DevSecOps pipeline in a matter of weeks rather than months.</div>
               <footer>
-                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cisoinasia&#x2F;" target= "_blank">Shane Read (Hex Trust) - Chief Information Security Officer &amp; Chief Information Officer </a>
+                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cisoinasia&#x2F;" target= "_blank">Shane Read (Hex Trust) - Chief Information Security Officer</a>
               </footer>
             </blockquote><br>
             <blockquote>
