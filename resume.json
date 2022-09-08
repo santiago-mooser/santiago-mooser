@@ -34,11 +34,11 @@
    "work": [
      {
         "name": "Hex Trust",
-        "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.",
-        "url": "https://hextrust.com",
         "location": "Hong Kong",
+        "url": "https://hextrust.com",
+        "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.",
+        "position": "Full-time Consultant (DevSecOps & SecOps)",
         "startDate": "2022-06",
-        "position": "Consultant (DevSecOps & SecOps)",
         "summary": "Focused on the 'Build' initiatives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.",
         "highlights": [
            "Worked with senior management including CISO, Head of Platform and Head of Cybersecurity on the first-ever DevSecOps pipeline in the company by researching industry-standard tools. Designed, tested and finalized the pipelines in different environments to balance security requirements and efficiency of code deployment.",
@@ -67,13 +67,13 @@
          ]
       },
       {
-         "name": "PricewaterhouseCoopers New Ventures",
-         "description": "PWC New Ventures builds software solutions for PWC's client base.",
-         "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
-         "url": "https://www.pwchk.com/en/services/new-ventures.html",
+         "name": "PWC New Ventures",
          "location": "Hong Kong",
+         "url": "https://www.pwchk.com/en/services/new-ventures.html",
          "startDate": "2019-05",
          "endDate": "2019-12",
+         "description": "PWC New Ventures builds software solutions for PWC's client base.",
+         "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
          "summary": "Worked in the DevOps team to automate the provisioning of company servers and services.",
          "highlights": [
             "Worked with the head of DevOps to automate server deployments and provisionings using Ansible and Terraform. This reduced deployment and provisioning time from 3-5 business days to 30-45 minutes.",
@@ -309,17 +309,17 @@
 
   "references": [
      {
-      "name": "Shane Read (Hex Trust) - Chief Information Security Officer",
+      "name": "Shane Read - Chief Information Security Officer at HexTrust",
       "reference": "Santiago's rich experience in DevOps and Information Security allowed us to complete the design and implementation of our DevSecOps pipeline in a matter of weeks rather than months.",
       "url": "https://www.linkedin.com/in/cisoinasia/"
      },
      {
-      "name": "Kit Ho (PWC) - Head of DevOps",
+      "name": "Kit Ho - Head of DevOps at PWC New Ventures",
       "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products.",
       "url": "https://www.linkedin.com/in/kit-hei-ho/"
      },
      {
-      "name": "Richard Stagg (Handshake Networking) - Director and Managing Consultant",
+      "name": "Richard Stagg - Director and Managing Consultant at Handshake Networking",
       "reference": "",
       "url": "https://www.linkedin.com/in/richard-stagg-6528183/"
      }
