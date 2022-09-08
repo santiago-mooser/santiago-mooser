@@ -4,8 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Santiago Espinosa Mooser's Resume">
+    <meta name="keywords" content="Resume, CV, Job History, Contact">
+    <meta name="author" content="Santiago Espinosa Mooser">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume of Santiago Espinosa Mooser</title>
+    <title>Santiago Espinosa Mooser's Resume Website</title>
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -30,37 +33,41 @@ body{
 blockquote {
   font-size: 1.2em;
 }
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
-#content{
-display: flex;
-flex-wrap: wrap;
-}
-#left-column{
-padding-left: 3%;
-padding-right: 1%;
-max-width: 100%;
-min-width: 300;
-}
-#right-column{
-padding-left: 1%;
-padding-right: 3%;
-max-width: 100%;
-min-width: 30%;
-}
 .container{
   margin-top: 80px;
   margin-bottom: 15px;
   background: #fff;
-  max-width: 80%;
+  max-width: 100%;
   min-width: 15%;
   border-radius: 25px;
   min-width: auto;
   margin-right: auto;
 }
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#content{
+  display: flex;
+  flex-wrap: wrap;
+}
+#left-column {
+  padding-left: 3%;
+  padding-right: 1%;
+  max-width: 100%;
+  min-width: 300;
+}
+#right-column {
+  padding-left: 1%;
+  padding-right: 3%;
+  max-width: 100%;
+  min-width: 30%;
+}
+
 #references {
+  word-wrap: break-word;
+}
+#reference {
   text-align: left;
 }
 #photo-header{
@@ -108,6 +115,22 @@ min-width: 30%;
   content: '';
   display: block;
 }
+#textbox {
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.alignleft {
+width:50%;
+text-align:left;
+word-wrap: break-word;
+}
+.alignright {
+width:50%;
+text-align:right;
+word-wrap: break-word;
+}
+
 
 #content{
   display: flex;
@@ -124,12 +147,14 @@ min-width: 30%;
 .box{
   padding-bottom: 10px;
   text-align: justify;
+  word-wrap: break-word;
 }
 .box h2{
   color: #227c74;
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 20px 20px 20px 0;
 }
 
 #awards,
@@ -187,9 +212,8 @@ margin-bottom: 10px;
 }
 .job .details {
   padding: 10px;
-  margin-bottom: 10px;
   background: #eee;
-  border-radius: 15px 15px 0 0 ;
+  border-radius: 15px 15px 0 0;
 }
 .job .where{
   font-size: 1.2em;
@@ -202,6 +226,13 @@ margin-bottom: 10px;
   font-size: 1.2em;
   font-weight: bold;
 }
+.job .address{
+  word-break: break-all;
+  text-align: left;
+  float: left;
+  margin-bottom: 5px;
+}
+
 .job .description{
   line-height: 1.5em;
 }
@@ -212,6 +243,10 @@ margin-bottom: 10px;
 }
 .job .job-details {
   width: 100%;
+  border: 1px solid #eee;
+  padding-top: 10px;
+  border-width: 0px 1px 1px 1px;
+  border-radius: 0 0 15px 15px;
 
 }
 .publication {
@@ -288,6 +323,10 @@ margin-bottom: 10px;
   font-size: .75em;
   position: absolute;
   margin: 1px 10px;
+}
+
+#languages{
+  min-width: max-content
 }
 
 #language-skills .skill{
@@ -427,24 +466,24 @@ blockquote,
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">
-                      Hex Trust
-                      <div class="pull-right">
-                        Hong Kong
-                      </div>
+                    <div class="where" id="textbox">
+                      <p class="alignleft">Hex Trust</p>
+                      <p class="alignright">Hong Kong</p>
                     </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;hextrust.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hextrust.com</a>
-                      <div class="year pull-right">Jun 2022 – Present</div>
+                    <div class="when" id="textbox">
+                      <div class="address alignleft">
+                        <a href="https:&#x2F;&#x2F;hextrust.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hextrust.com</a>
+                      </div>
+                      <div class="year alignright">Jun 2022 – Present</div>
                     </div>
                     <div class="description">
                       Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row" id="job-details">
                   <div class="job-details col-xs-11">
-                    <div class="profession">Consultant (DevSecOps &amp; SecOps)</div>
+                    <div class="profession">Full-time Consultant (DevSecOps &amp; SecOps)</div>
                     <div class="description">
                       Focused on the 'Build' initiatives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.
                       <div class="highlights">Highlights</div>
@@ -461,22 +500,22 @@ blockquote,
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">
-                      Handshake Networking
-                      <div class="pull-right">
-                        Hong Kong
-                      </div>
+                    <div class="where" id="textbox">
+                      <p class="alignleft">Handshake Networking</p>
+                      <p class="alignright">Hong Kong</p>
                     </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;handshake.hk" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;handshake.hk</a>
-                      <div class="year pull-right">May 2020 – Jan 2022</div>
+                    <div class="when" id="textbox">
+                      <div class="address alignleft">
+                        <a href="https:&#x2F;&#x2F;handshake.hk" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;handshake.hk</a>
+                      </div>
+                      <div class="year alignright">May 2020 – Jan 2022</div>
                     </div>
                     <div class="description">
                       Handshake Networking is a boutique cybersecurity consultancy company that specializes in penetration testing and application security testing.
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row" id="job-details">
                   <div class="job-details col-xs-11">
                     <div class="profession">Pentester, Software Developer, DevOps Engineer (full-time&#x2F;part-time consultant)</div>
                     <div class="description">
@@ -498,22 +537,22 @@ blockquote,
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">
-                      PricewaterhouseCoopers New Ventures
-                      <div class="pull-right">
-                        Hong Kong
-                      </div>
+                    <div class="where" id="textbox">
+                      <p class="alignleft">PWC New Ventures</p>
+                      <p class="alignright">Hong Kong</p>
                     </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html</a>
-                      <div class="year pull-right">May 2019 – Dec 2019</div>
+                    <div class="when" id="textbox">
+                      <div class="address alignleft">
+                        <a href="https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html</a>
+                      </div>
+                      <div class="year alignright">May 2019 – Dec 2019</div>
                     </div>
                     <div class="description">
                       PWC New Ventures builds software solutions for PWC&#39;s client base.
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row" id="job-details">
                   <div class="job-details col-xs-11">
                     <div class="profession">DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)</div>
                     <div class="description">
@@ -717,13 +756,13 @@ blockquote,
             </div>
           </div>
           <!-- LANGUAGES -->
-          <div class="box">
+          <div class="box" id="languages">
             <h2><i class="fas fa-language ico"></i> Languages</h2>
             <ul class="list-group">
-              <li class=" list-group-item">English<span class="skill badge pull-right">Native</span></li>
-              <li class=" list-group-item">Spanish<span class="skill badge pull-right">Native</span></li>
-              <li class=" list-group-item">German<span class="skill badge pull-right">Proficient</span></li>
-              <li class=" list-group-item">Cantonese<span class="skill badge pull-right">Rudimentary</span></li>
+              <li class=" list-group-item">English  <span class="skill badge pull-right">Native</span></li>
+              <li class=" list-group-item">Spanish  <span class="skill badge pull-right">Native</span></li>
+              <li class=" list-group-item">German  <span class="skill badge pull-right">Proficient</span></li>
+              <li class=" list-group-item">Cantonese  <span class="skill badge pull-right">Rudimentary</span></li>
             </ul>
           </div>
           <!-- HOBBIES -->
@@ -777,19 +816,19 @@ blockquote,
             <blockquote>
               <div>Santiago's rich experience in DevOps and Information Security allowed us to complete the design and implementation of our DevSecOps pipeline in a matter of weeks rather than months.</div>
               <footer>
-                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cisoinasia&#x2F;" target= "_blank">Shane Read (Hex Trust) - Chief Information Security Officer</a>
+                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cisoinasia&#x2F;" target= "_blank">Shane Read - Chief Information Security Officer at HexTrust</a>
               </footer>
             </blockquote><br>
             <blockquote>
               <div>Santiago was always willing to offer his assistance and had excellent technical skills on working software products.</div>
               <footer>
-                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kit-hei-ho&#x2F;" target= "_blank">Kit Ho (PWC) - Head of DevOps</a>
+                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kit-hei-ho&#x2F;" target= "_blank">Kit Ho - Head of DevOps at PWC New Ventures</a>
               </footer>
             </blockquote><br>
             <blockquote>
               <div></div>
               <footer>
-                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;richard-stagg-6528183&#x2F;" target= "_blank">Richard Stagg (Handshake Networking) - Director and Managing Consultant</a>
+                <a id="reference" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;richard-stagg-6528183&#x2F;" target= "_blank">Richard Stagg - Director and Managing Consultant at Handshake Networking</a>
               </footer>
             </blockquote><br>
           </div>
