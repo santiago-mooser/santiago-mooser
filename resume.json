@@ -37,7 +37,7 @@
         "location": "Hong Kong",
         "url": "https://hextrust.com",
         "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.",
-        "position": "Full-time Consultant (DevSecOps & SecOps)",
+        "position": "DevSecOps Engineer (Full-time)",
         "startDate": "2022-06",
         "summary": "Focused on the 'Build' initiatives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.",
         "highlights": [
@@ -54,7 +54,7 @@
          "location": "Hong Kong",
          "startDate": "2020-05",
          "endDate": "2022-01",
-         "position": "Pentester, Software Developer, DevOps Engineer (full-time/part-time consultant)",
+         "position": "Pentester, Software Developer, DevOps Engineer (full-time/part-time)",
          "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Engineering.",
          "highlights": [
             "Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels around the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.",
