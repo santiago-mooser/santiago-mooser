@@ -8,7 +8,7 @@
       "email": "contact@santiago-mooser.com",
       "website": "https://santiago-mooser.com",
       "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-      "summary": "I am a final year Computer Science student at the University of Hong Kong with a passion for Cyber Security. Over the last few years, I have had internships in various cybersecurity-related roles, including DevOps, Penetration Testing, DevSecOps, and Operational Cyber Security. I generally enjoy being a team player and sharing ideas with my colleagues, and I appreciate any feedback and constructive criticism. I am currently looking for a Graduate Cyber Security role in a fast paced and energetic environment, hopefully in Hong Kong or Europe.",
+      "summary": "An ambitious and detail-oriented final year Computer Science student at the University of Hong Kong, specializing in Cyber Security and DevOps. Experienced in diverse roles across multiple internships, including DevSecOps, Penetration Testing, Operational Cyber Security, and Software Development. A strong team player and effective communicator, with a demonstrated ability to collaborate with colleagues and senior management to deliver high-impact projects. Actively seeking a challenging Graduate Cyber Security role in a fast-paced, dynamic environment in Hong Kong or Europe, where I can apply and expand my skillset to contribute to the organization's success.",
       "location": {
          "city": "Hong Kong"
       },
@@ -42,15 +42,18 @@
         "name": "Hex Trust",
         "location": "Hong Kong",
         "url": "https://hextrust.com",
-        "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus in security and compliance.",
-        "position": "DevSecOps Engineer (Full-time)",
+        "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.",
+        "position": "DevSecOps Engineer (Full-time/part-time)",
         "startDate": "2022-06",
         "summary": "Focused on the 'Build' initiatives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.",
         "highlights": [
-           "Worked with senior management including CISO, Head of Platform and Head of Cybersecurity on the first-ever DevSecOps pipeline in the company by researching industry-standard tools. Designed, tested and finalized the pipelines in different environments to balance security requirements and efficiency of code deployment.",
-           "Automated the implementation of smartcard encryption and the provisioning of Ubuntu-based company laptops through the use of bash scripting. Provisioning time reduced by more than 90%.",
-           "Responded to critical security incidents by investigating logs and alerts on the company's SIEM and WAF systems. Researched and advised on recommended response to the Head of Cybersecurity.",
-           "Worked with Head of Cybersecurity to test and evaluate next-gen WAF/RASP and automated pentesting tools."
+           "Designed, implemented, and maintained the company's first-ever DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production using Snyk, tfsec, Clair, and trufflehog. Adapted rules based on the company's Git branching strategy.",
+           "Personally led the Snyk vulnerability management tool integration, achieving a 20% reduction in active, potentially exploitable vulnerabilities within the first month.",
+           "Deployed and maintained next-gen WAF (Signal Sciences) to protect against OWASP Top-10, various web CVEs, and enumeration attacks. Managed the ruleset through Terraform Infrastructure as Code (IAC) for optimized security.",
+           "Automated provisioning of company Yubikeys, reducing provisioning time from ~45 minutes to <1 minute. The open-source scripts can be found on my GitHub.",
+           "Led the adoption of YubiKey hardware smartcards for company-wide code signing, significantly enhancing security measures across the organization.",
+           "Conducted thorough investigations on critical security incidents by analyzing logs and alerts from the company's SIEM and WAF systems, and provided recommendations to the Head of Cybersecurity.",
+           "Collaborated with Head of Cybersecurity to evaluate and test next-generation WAF/RASP and automated pentesting tools."
         ]
      },
       {
@@ -63,13 +66,12 @@
          "position": "Pentester, Software Developer, DevOps Engineer (full-time/part-time)",
          "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Engineering.",
          "highlights": [
-            "Independently designed, developed and deployed python-based Django backend API. The API was use to automatically scan vessels around the world with the use of remote scanners that communicated through RabbitMQ queues and asynchronous celery tasks.",
-            "Developed and deployed full DevSecOps pipeline and unit tests on self-hosted GitLab for the API project to speed up the development process.",
-            "Installed, managed and maintained company servers and VMs to enable the deployment and use of internally-used services, such as Bookstack, Samba and Elasticsearch.",
-            "Compiled a database of publicly-available leaked credentials to enhance the quality of pentests by improving our chances of brute-forcing client passwords. The Elasticsearch-based database contained over 4.2 billion records.",
-            "Assisted in the recertification of the company for the Authorized Scanning Vendor PCI certificate by scripting and automating reconnaissance and reporting stages.",
-            "Deployed various docker-based services for internal use, such as Bookstack (an internal wiki), GitLab and an Ubuntu-based Samba server.",
-            "Developed internal automation tools & web applications for internal use such as an ike-scan and nmap multithreaded wrapper (see github)"
+            "Designed, developed, and deployed a Python-based Django backend API to automatically scan vessels worldwide using remote scanners, RabbitMQ queues, and asynchronous Celery tasks.",
+            "Managed and maintained company servers and VMs, facilitating the deployment and utilization of internal services such as Bookstack, Samba, Elasticsearch, Microsoft Domain Controller, and Microsoft Remote app server.",
+            "Compiled an Elasticsearch-based database containing over 4.2 billion records of publicly available leaked credentials to enhance penetration testing quality and increase the success rate of brute-forcing client passwords.",
+            "Assisted in the recertification process for the Authorized Scanning Vendor PCI certificate by automating reconnaissance and reporting stages.",
+            "Deployed Docker-based internal services, including Bookstack (an internal wiki), GitLab, and an Ubuntu-based Samba server.",
+            "Developed various internal automation tools and web applications, such as an ike-scan and nmap multithreaded wrapper (available on GitHub)."
          ]
       },
       {
@@ -80,11 +82,11 @@
          "endDate": "2019-12",
          "description": "PWC New Ventures builds software solutions for PWC's client base.",
          "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
-         "summary": "Worked in the DevOps team to automate the provisioning of company servers and services.",
+         "summary": "Worked within the DevOps team to automate the provisioning of company servers and services.",
          "highlights": [
-            "Worked with the head of DevOps to automate server deployments and provisionings using Ansible and Terraform. This reduced deployment and provisioning time from 3-5 business days to 30-45 minutes.",
-            "Wrote and maintained Ansible-based playbook to deploy internal communication tools instance (Mattermost). This deployment used docker-compose and Bash.",
-            "Troubleshooted certificate issues on docker-based deployments through the use of tools such as docker-compose, lazydocker and certbot."
+            "Collaborated with the Head of DevOps to automate server deployments and provisioning using Ansible and Terraform, reducing deployment and provisioning time from 3-5 business days to 30-45 minutes.",
+            "Developed and maintained Ansible-based playbook for deploying internal communication tool instances (Mattermost) using Docker-compose and Bash.",
+            "Troubleshot certificate issues on Docker-based deployments utilizing tools such as Docker-compose, Lazydocker, and Certbot."
            ]
       }
    ],
@@ -182,7 +184,7 @@
    "projects": [
      {
        "name": "DevSecOps pipeline",
-       "description": "Implemented DAST, SAST, and secure stages for NodeJS projects to improve the stage at which developers discover security vulnerabiliies. Each environment pipeline was also adapted to the corresponding development environment, with Alpha having the lowest controls but highest execution speed and production having the most stringent and thorough controls. The tools used were Snyk, Zap Scanner, tfsec, hadolint, JSLint, Sonarqube and Sigstore.",
+       "description": "Implemented DAST, SAST, and secure stages for NodeJS projects to enhance early detection of security vulnerabilities. Adapted each environment pipeline to its corresponding development environment, using tools such as Snyk, Zap Scanner, tfsec, Hadolint, JSLint, Sonarqube, and Sigstore.",
        "keywords": [
          "DevSecOps",
          "SecOps",
@@ -206,7 +208,7 @@
    },
    {
       "name": "Ansible-based automation for server provisioning",
-      "description": "Developed various ansible playbooks for provisioning PWC's servers by leveraging Ansible, Jinja2 and Bash scripting. The automation of this process reduced provisioning time from 4-5 business days to 30-45 minutes.",
+      "description": "Developed Ansible playbooks for provisioning PWC's servers using Ansible, Jinja2, and Bash scripting, reducing provisioning time from 4-5 business days to 30-45 minutes.",
       "keywords": [
         "Docker",
         "Ansible",
@@ -223,7 +225,7 @@
   },
    {
       "name": "Django-based network scanner API",
-      "description": "Designed, developed and deployed django-based API. The API designed is to scan vessels connected to satelite and 4G networks by using asynchronous, pluggable 'scan engines' that communicate through rabbitMQ queues as the project required ships to be scanned from the scanner which is geographically closest to the target vessel.",
+      "description": "Designed, developed, and deployed a Django-based API for scanning vessels connected to satellite and 4G networks using asynchronous, pluggable 'scan engines' that communicate via RabbitMQ queues.",
       "keywords": [
         "Django",
         "Nmap",
@@ -242,7 +244,7 @@
   },
    {
      "name": "Django-based covid tracker dashboard",
-     "description": "Developed a Django-based dashboard that displayed covid statistics for a software engineering course in HKU. The dashboard interacted with various third-party APIs to retrieve daily stats and display them after processing the data in the backend. The project was developed using Jira and Github in an Agile fashion.",
+     "description": "Created a Django-based dashboard for displaying Covid-19 statistics as part of a software engineering course at HKU, utilizing Jira and GitHub in an Agile development process.",
      "keywords": [
        "Django",
        "Agile",
@@ -260,7 +262,7 @@
    },
      {
        "name": "Haskell-based interpreter",
-       "description": "Developed a Haskell-based interpreter for a custom programming language as the final project for the Principles of Programming Languages Course. This project required understanding the different principles of programming languages, such as First-class Functions, Variable Scoping, Mondads and Mutable States in order to build an interpreter that was able to implement these features. See https://github.com/santiago-mooser/haskell-based-interpreter.git",
+       "description": "Developed a custom programming language interpreter using Haskell for a Principles of Programming Languages Course, incorporating features like First-class Functions, Variable Scoping, Monads, and Mutable States. See https://github.com/santiago-mooser/haskell-based-interpreter.git",
        "keywords": [
          "Haskell",
          "Functional Programming",
@@ -276,7 +278,7 @@
    },
      {
         "name": "Computer Science Association Virtual Career Week 2022",
-        "description": "Organized and spearheaded the 2022 virtual career week event for the Computer Science Association. Involved six speakers from various role, including: Site Reliability Engineer, IT Governance Risk and Compliance Officer, and Software Engineer. Also served as host for three different fireside talks.",
+        "description": "Organized and led the 2022 virtual career week event for the Computer Science Association, hosting six speakers from various roles and serving as a host for three fireside talks",
         "keywords": [
           "Career Talk",
           "Public Talk",
@@ -295,7 +297,7 @@
      },
      {
        "name": "Unraid Self-hosted Media Server",
-       "description": "Deployed an unraid-based server that serves both as a media server and a personal backup for all my data. This server also hosts various docker-based services, such as PhotoPrism and Syncthing. I often use this server to experiment with new tools such as syncthing, nextdns.io, rclone and syncthing.",
+       "description": "Deployed an Unraid-based server for personal media and data backup, hosting various Docker-based services such as PhotoPrism and Syncthing, and experimenting with new tools like Syncthing, nextdns.io, rclone, and Syncthing.",
        "keywords": [
          "UnRaid",
          "Docker",
