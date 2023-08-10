@@ -13,8 +13,8 @@
 - Frameworks: Django, ReactJS (basic)
 - Languages: Python, Bash, Haskell, C (basic)
 - DBMS: PostgreSQL, Elasticsearch
-- Infrastructure: Kubernetes, Docker (compose), Ansible, Terraform, Jenkins, gitlab CI/CD, github CI/CD
-
+- Platform: Kubernetes, Docker (compose), Ansible, Terraform, Jenkins, gitlab CI/CD, github CI/CD
+- Infra: AWS, Azure
 
 ## Skills 
 - Scripting (Bash, Python)
@@ -24,6 +24,5 @@
 - Sound Engineering (yes, really!)
 
 [![santiago-espinosa's GitHub stats](https://github-readme-stats.vercel.app/api?username=santiago-mooser&show_icons=true&theme=radical)](https://github.com/santiago-mooser?tab=repositories) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=santiago-mooser&theme=radical&layout=compact)](https://github.com/santiago-mooser?tab=repositories)
-
 
 If you'd like to see my CV, you can do so [here](https://santiago-mooser.com)
