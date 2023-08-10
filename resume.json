@@ -64,7 +64,7 @@
          "startDate": "2020-05",
          "endDate": "2022-01",
          "position": "Pentester, Software Developer, DevOps Engineer (full-time/part-time)",
-         "summary": "Worked in various roles due to the small size of the company: Pentesting, Automation Engineering, Web Development, System Engineering.",
+         "summary": "Started as a internship, then deferred a semester to work in various roles (due to the small size of the company): Pentesting, Automation Engineering, Web Development, System Engineering.",
          "highlights": [
             "Designed, developed, and deployed a Python-based Django backend API to automatically scan vessels worldwide using remote scanners, RabbitMQ queues, and asynchronous Celery tasks.",
             "Managed and maintained company servers and VMs, facilitating the deployment and utilization of internal services such as Bookstack, Samba, Elasticsearch, Microsoft Domain Controller, and Microsoft Remote app server.",
@@ -82,7 +82,7 @@
          "endDate": "2019-12",
          "description": "PWC New Ventures builds software solutions for PWC's client base.",
          "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
-         "summary": "Worked within the DevOps team to automate the provisioning of company servers and services.",
+         "summary": "Started as an internship, then worked part-time during uni semester within the DevOps team to automate the provisioning of company servers and services.",
          "highlights": [
             "Collaborated with the Head of DevOps to automate server deployments and provisioning using Ansible and Terraform, reducing deployment and provisioning time from 3-5 business days to 30-45 minutes.",
             "Developed and maintained Ansible-based playbook for deploying internal communication tool instances (Mattermost) using Docker-compose and Bash.",
