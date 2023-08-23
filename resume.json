@@ -39,12 +39,28 @@
 
    "work": [
      {
+        "name": "Security Research Labs",
+        "location": "Hong Kong",
+        "url": "https://srlabs.de",
+        "description": "Security Research Labs is a boutique cybersecurity consulting company specializing in telco security testing",
+        "position": "Security Specialist (Full-time)",
+        "startDate": "2022-06",
+        "summary": "Got head-hunted into the full-time position and I am now working as a security consultant, focusing on vulnerability testing and malware development.",
+        "highlights": [
+           "Led various vulnerability assessments on internal and external systems of clients",
+           "Organized the deployment and provisioning of various internal servers to aid in the vulnerability assessment process",
+           "Communicated with clients to understand their needs and provide them with the best possible service",
+        ]
+     },
+
+     {
         "name": "Hex Trust",
         "location": "Hong Kong",
         "url": "https://hextrust.com",
         "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.",
         "position": "DevSecOps Engineer (Full-time/part-time)",
         "startDate": "2022-06",
+        "endDate": "2023-05",
         "summary": "Got head-hunted into an internship and continued working part-time throughout the last year of my studies. Focused on the 'Build' initiatives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.",
         "highlights": [
            "Designed, implemented, and maintained the company's first-ever DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production using Snyk, tfsec, Clair, and trufflehog, as well as other DAST tools. Also adapted CICD rules based on the company's Git branching strategy.",
