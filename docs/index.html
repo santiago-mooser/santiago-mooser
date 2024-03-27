@@ -681,11 +681,45 @@ margin-bottom: 10px;
           <!-- ABOUT ME -->
           <div class="box">
             <h2><i class="fas fa-user ico"></i> About</h2>
-            <p>Hi there 👋 My name is Santiago, I'm 24 and I've just graduated from the University of Hong Kong. Throughout my university years, I worked part-time in various companies, mostly specializing in cybersecurity, but also including DevSecOps, Penetration Testing, and Software Development. My main focus over the past couple of years has been improving my technical knowledge, and as such, I've experimented with many different technologies, including but not limited to running Arch Linux as my main OS, managing ubuntu-based servers at home, and deploying my own containerized services. I am a team player and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. I'm currently looking for a job, in any of the diverse fields I'm familiar with. If you're interested in my CV, please feel free to check out my github and/or contact me using my email in the top right -></p>
+            <p>Hi there 👋 My name is Santiago, I'm 24 and I've just graduated from a Bachelor of engineering in Computer Science at the University of Hong Kong. Throughout my university years, I worked part-time in various companies, mostly specializing in cybersecurity, but also including DevSecOps, Penetration Testing, and Software Development. My main focus over the past couple of years has been improving my technical knowledge, and as such, I've experimented with many different technologies, including but not limited to running Arch Linux as my main OS, managing ubuntu-based servers at home, and deploying my own containerized services in Docker and Kubernetes. I am a team player and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my CV, please feel free to check out my github and/or contact me using my email in the top right -></p>
           </div>
           <!-- WORK EXPERIENCE -->
           <div class="box">
             <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where" id="textbox">
+                      <p class="alignleft">Hex Trust</p>
+                      <p class="alignright">Hong Kong</p>
+                    </div>
+                    <div class="when" id="textbox">
+                      <div class="address alignleft">
+                        <a href="https:&#x2F;&#x2F;hextrust.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;hextrust.com</a>
+                      </div>
+                      <div class="year alignright">Oct 2023 – Present</div>
+                    </div>
+                    <div class="description">
+                      Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="job-details">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">DevSecOps Engineer (Full-time)</div>
+                    <div class="description">
+                      After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers where I focused on cloud workloads hardening and security monitoring.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Maintained and managed Privileged Access Management (PAM) tool (teleport) by provisioning and managing access to our kubernetes clusters, RDS databases, web applications and linux servers.</li>
+                        <li class="list-group-item">Utilized internal terraform applications to provision and maintain cloud resources in AWS such as EKS roles, IAM roles and teleport roles.</li>
+                        <li class="list-group-item">Organized, launched and ran bug-bounty programme for main product</li>
+                        <li class="list-group-item">Organized and ran source code review of critical services.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
@@ -697,7 +731,7 @@ margin-bottom: 10px;
                       <div class="address alignleft">
                         <a href="https:&#x2F;&#x2F;srlabs.de" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;srlabs.de</a>
                       </div>
-                      <div class="year alignright">Jun 2022 – Present</div>
+                      <div class="year alignright">Jun 2023 – Sep 2023</div>
                     </div>
                     <div class="description">
                       Security Research Labs is a boutique cybersecurity consulting company specializing in telco security testing
@@ -711,9 +745,9 @@ margin-bottom: 10px;
                       Got head-hunted into the full-time position and I am now working as a security consultant, focusing on vulnerability testing and malware development.
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
+                        <li class="list-group-item">Implemented encryption between malware and C2 server for enhanced redteaming.</li>
                         <li class="list-group-item">Led various vulnerability assessments on internal and external systems of clients</li>
                         <li class="list-group-item">Organized the deployment and provisioning of various internal servers to aid in the vulnerability assessment process</li>
-                        <li class="list-group-item">Communicated with clients to understand their needs and provide them with the best possible service</li>
                       </ul>
                     </div>
                   </div>
@@ -745,8 +779,8 @@ margin-bottom: 10px;
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item">Designed, implemented, and maintained the company's first-ever DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production using Snyk, tfsec, Clair, and trufflehog, as well as other DAST tools. Also adapted CICD rules based on the company's Git branching strategy.</li>
-                        <li class="list-group-item">Personally led the Snyk vulnerability management tool implementation, achieving a 20% reduction in active, potentially exploitable vulnerabilities within the first month. Additionally, also </li>
-                        <li class="list-group-item">Deployed and maintained next-gen WAF (Signal Sciences) to protect against OWASP Top-10, various web CVEs, and enumeration attacks. The project led to increased protection as well as visibility into incoming network attacks. The ruleset was managed through Terraform Infrastructure as Code (IAC) for optimized security.</li>
+                        <li class="list-group-item">Personally led the Snyk vulnerability management tool implementation, achieving a 20% reduction in active, potentially exploitable vulnerabilities within the first month.</li>
+                        <li class="list-group-item">Deployed and maintained next-gen WAF (Signal Sciences) to protect against OWASP Top-10, various web CVEs, and enumeration attacks. The project led to increased protection as well as visibility into incoming network attacks. The ruleset was managed through Terraform Infrastructure as Code (IAC) for increased reproducibility and control.</li>
                         <li class="list-group-item">Automated provisioning of company Yubikeys, reducing provisioning time from ~45 minutes to <1 minute. The open-source scripts can be found on my GitHub.</li>
                         <li class="list-group-item">Led the adoption of YubiKey hardware smartcards for company-wide code signing, significantly enhancing security measures across the organization.</li>
                         <li class="list-group-item">Conducted thorough investigations on critical security incidents by analyzing logs and alerts from the company's SIEM and WAF systems, and provided recommendations to the Head of Cybersecurity.</li>
@@ -801,7 +835,7 @@ margin-bottom: 10px;
                     </div>
                     <div class="when" id="textbox">
                       <div class="address alignleft">
-                        <a href="www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html" target= "_blank"><i class="fas fa-globe ico"></i> www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html</a>
+                        <a href="https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.pwchk.com&#x2F;en&#x2F;services&#x2F;new-ventures.html</a>
                       </div>
                       <div class="year alignright">May 2019 – Dec 2019</div>
                     </div>
@@ -939,6 +973,20 @@ margin-bottom: 10px;
             <h2><i class="fas fa-tasks ico"></i> Skills</h2>
             <div class="skills clearfix">
               <div class="item-skills">
+                  DevOps &amp; DevSecOps
+              </div>
+              <div class="col-sm-12 clearfix">
+                <span class= "skill badge">Containerization</span>
+                <span class= "skill badge">Docker</span>
+                <span class= "skill badge">Kubernetes</span>
+                <span class= "skill badge">Helm</span>
+                <span class= "skill badge">Ansible</span>
+                <span class= "skill badge">Terraform</span>
+                <span class= "skill badge">Terragrunt</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
                   Scripting &#x2F; Automation
               </div>
               <div class="col-sm-12 clearfix">
@@ -949,58 +997,39 @@ margin-bottom: 10px;
             </div>
             <div class="skills clearfix">
               <div class="item-skills">
-                  DevSecOps &amp; SRE
-              </div>
-              <div class="col-sm-12 clearfix">
-                <span class= "skill badge">Kubernetes</span>
-                <span class= "skill badge">Helm</span>
-                <span class= "skill badge">DAST</span>
-                <span class= "skill badge">SAST</span>
-                <span class= "skill badge">Ansible</span>
-                <span class= "skill badge">Terraform</span>
-                <span class= "skill badge">Docker</span>
-                <span class= "skill badge">CIS</span>
-                <span class= "skill badge">Snyk</span>
-                <span class= "skill badge">tfsec</span>
-                <span class= "skill badge">kube-bench</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
                   Linux&#x2F;Unix systems
               </div>
               <div class="col-sm-12 clearfix">
                 <span class= "skill badge">Ubuntu</span>
-                <span class= "skill badge">Arch</span>
+                <span class= "skill badge">Arch Linux</span>
+                <span class= "skill badge">Proxmox</span>
                 <span class= "skill badge">Bash</span>
-                <span class= "skill badge">Systemd</span>
-                <span class= "skill badge">Troubleshooting</span>
+                <span class= "skill badge">Systemd services</span>
               </div>
             </div>
             <div class="skills clearfix">
               <div class="item-skills">
-                  System Administration
+                  Cloud &#x2F; Sysadmin
               </div>
               <div class="col-sm-12 clearfix">
-                <span class= "skill badge">XCP-ng</span>
-                <span class= "skill badge">Ansible</span>
-                <span class= "skill badge">Azure</span>
                 <span class= "skill badge">AWS</span>
+                <span class= "skill badge">GCP</span>
                 <span class= "skill badge">Linode</span>
                 <span class= "skill badge">Digital Ocean</span>
+                <span class= "skill badge">Unraid</span>
+                <span class= "skill badge">XCP-ng</span>
+                <span class= "skill badge">Proxmox</span>
               </div>
             </div>
             <div class="skills clearfix">
               <div class="item-skills">
-                  Pentesting
+                  Security
               </div>
               <div class="col-sm-12 clearfix">
-                <span class= "skill badge">reconnaissance</span>
+                <span class= "skill badge">DAST</span>
+                <span class= "skill badge">SAST</span>
                 <span class= "skill badge">Network scanning</span>
-                <span class= "skill badge">nmap</span>
-                <span class= "skill badge">ike-scan</span>
-                <span class= "skill badge">Burp suite</span>
-                <span class= "skill badge">Zap scan</span>
+                <span class= "skill badge">WebApp scanning</span>
               </div>
             </div>
             <div class="skills clearfix">
