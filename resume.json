@@ -8,7 +8,9 @@
       "email": "contact@santiago-mooser.com",
       "website": "https://santiago-mooser.com",
       "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-      "summary": "Hi there 👋 My name is Santiago, I'm 24 and I've just graduated from a Bachelor of engineering in Computer Science at the University of Hong Kong. Throughout my university years, I worked part-time in various companies, mostly specializing in cybersecurity, but also including DevSecOps, Penetration Testing, and Software Development. My main focus over the past couple of years has been improving my technical knowledge, and as such, I've experimented with many different technologies, including but not limited to running Arch Linux as my main OS, managing ubuntu-based servers at home, and deploying my own containerized services in Docker and Kubernetes. I am a team player and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my CV, please feel free to check out my github and/or contact me using my email in the top right ->",
+      "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist, with strong automation skills. I mainly like to work with linux and linux-adjecent technologies but also enjoy infrastructure and DevOps work. I've worked in a number of different roles, inclusing as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. 
+      My main focus over the past couple of years has been learning about technologies I'm interested in (kubernetes, rust, linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker and developing my. 
+      I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right ->",
       "location": {
          "city": "Hong Kong"
       },
@@ -28,7 +30,6 @@
            "username": "santiagoespinosa",
            "url": "https://keybase.io/santiagoespinosa"
          },
-
          {
           "network": "cv",
           "username": "Download this as PDF",
@@ -46,12 +47,15 @@
        "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.",
        "position": "DevSecOps Engineer (Full-time)",
        "startDate": "2023-10",
-       "summary": "After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers where I focused on cloud workloads hardening and security monitoring.",
+       "summary": "After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers where I focused on heardning our cloud workloads and improving our security monitoring.",
        "highlights": [
-          "Maintained and managed Privileged Access Management (PAM) tool (teleport) by provisioning and managing access to our kubernetes clusters, RDS databases, web applications and linux servers.",
-          "Utilized internal terraform applications to provision and maintain cloud resources in AWS such as EKS roles, IAM roles and teleport roles.",
-          "Organized, launched and ran bug-bounty programme for main product",
-          "Organized and ran source code review of critical services."
+          "Maintained, deployed and managed Privileged Access Management (PAM) tool (teleport) by provisioning and managing access to our kubernetes clusters, RDS databases, web applications and linux servers using terragrunt, helm charts and AWS EKS.",
+          "Developed, used and maintained terraform modules to provision and maintain cloud resources in AWS such as EKS roles, IAM roles and teleport roles.",
+          "Organized and launched bug-bounty programme for main service. Organized response to findings.",
+          "Organized and ran source code review of critical services. Organized response to findings",
+          "Acted as main responder to security incidents and documented situation and response in incident reports.",
+          "Managed interests of stakeholders in other departments to ensure both security and business needs were met.",
+          "Misc work such as automating small tasks for team members, helping with difficult IT tickets and "
        ]
     },
      {
@@ -322,11 +326,12 @@
         "type": "personal"
      },
      {
-       "name": "Unraid Self-hosted Media Server",
-       "description": "Deployed an Unraid-based server for personal media and data backup, hosting various Docker-based services such as PhotoPrism and Syncthing, and experimenting with new tools like Syncthing, nextdns.io, rclone, and Syncthing.",
+       "name": "Self-hosted Server",
+       "description": "Deployed a proxmox-based server for personal self-hosting and media and data backup. In this server, I host various Docker-based services such as PhotoPrism, MonicaHQ and Firefly III.",
        "keywords": [
-         "UnRaid",
+         "Unraid",
          "Docker",
+         "proxmox",
          "ZFS",
          "Docker-compose",
          "TailScale",
