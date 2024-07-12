@@ -8,9 +8,7 @@
       "email": "contact@santiago-mooser.com",
       "website": "https://santiago-mooser.com",
       "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-      "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist, with strong automation skills. I mainly like to work with linux and linux-adjecent technologies but also enjoy infrastructure and DevOps work. I've worked in a number of different roles, inclusing as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. 
-      My main focus over the past couple of years has been learning about technologies I'm interested in (kubernetes, rust, linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker and developing my. 
-      I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right ->",
+      "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist, with strong automation skills. I mainly like to work with linux and linux-adjecent technologies but also enjoy infrastructure and DevOps work. I've worked in a number of different roles, inclusing as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My main focus over the past couple of years has been learning about technologies I'm interested in (kubernetes, rust, linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker and developing my. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right ->",
       "location": {
          "city": "Hong Kong"
       },
@@ -109,21 +107,6 @@
             "Deployed Docker-based internal services, including Bookstack (an internal wiki), GitLab, and an Ubuntu-based Samba server.",
             "Developed various internal automation tools and web applications, such as an ike-scan and nmap multithreaded wrapper (available on GitHub)."
          ]
-      },
-      {
-         "name": "PWC New Ventures",
-         "location": "Hong Kong",
-         "url": "https://www.pwchk.com/en/services/new-ventures.html",
-         "startDate": "2019-05",
-         "endDate": "2019-12",
-         "description": "PWC New Ventures builds software solutions for PWC's client base.",
-         "position": "DevOps Intern (Full-time), DevOps Engineer Apprentice (Part-time)",
-         "summary": "Started as an internship, then worked part-time during uni semester within the DevOps team to automate the provisioning of company servers and services.",
-         "highlights": [
-            "Collaborated with the Head of DevOps to automate server deployments and provisioning using Ansible and Terraform, reducing deployment and provisioning time from 3-5 business days to 30-45 minutes.",
-            "Developed and maintained Ansible-based playbook for deploying internal communication tool instances (Mattermost) using Docker-compose and Bash.",
-            "Troubleshot certificate issues on Docker-based deployments utilizing tools such as Docker-compose, Lazydocker, and Certbot."
-           ]
       }
    ],
    "education": [
@@ -135,15 +118,15 @@
          "startDate": "2018-09",
          "endDate": "2023-06",
          "courses": [
-           "Cryptography",
-           "Design And Analysis of Algorithms",
+           "Advanced Algorithm Analysis",
            "Algorithmic Game Theory",
+           "Principles of Programming Languages",
+           "Compiling Techniques",
            "Principles of Operating Systems"
          ],
          "highlights": [
            "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",
-           "Lead organizer for the HKU Computer Science Society's Virtual Career Week 2022.",
-           "Director of Internal Communications (2019-2020) of HKU’s feminist group HeForSheForUs"
+           "Lead organizer for the HKU Computer Science Society's Virtual Career Week 2022."
          ]
       }
    ],
