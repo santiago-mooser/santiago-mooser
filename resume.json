@@ -8,7 +8,7 @@
     "email": "contact@santiago-mooser.com",
     "website": "https://santiago-mooser.com",
     "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-    "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist, with strong automation skills. I mainly like to work with linux and linux-adjecent technologies but also enjoy infrastructure and DevOps work. I've worked in a number of different roles, inclusing as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My main focus over the past couple of years has been learning about technologies I'm interested in (kubernetes, rust, linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker and developing my. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right ->",
+    "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist, with strong automation skills. I mainly like to work with linux and linux-adjacent technologies but also enjoy infrastructure and DevOps work. I've worked in a number of different roles, including as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My main focus over the past couple of years has been learning about technologies I'm interested in (kubernetes, rust, linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker and developing my. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right ->",
     "location": {
       "city": "Hong Kong"
     },
@@ -43,7 +43,7 @@
       "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.",
       "position": "DevSecOps Engineer (Full-time)",
       "startDate": "2023-10",
-      "summary": "After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers where I focused on heardning our cloud workloads and improving our security monitoring.",
+      "summary": "After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers where I focused on hardening our cloud workloads and improving our security monitoring.",
       "highlights": [
         "Maintained, deployed and managed Privileged Access Management (PAM) tool (teleport) by provisioning and managing access to our kubernetes clusters, RDS databases, web applications and linux servers using terragrunt, helm charts and AWS EKS.",
         "Developed, used and maintained terraform modules to provision and maintain cloud resources in AWS such as EKS roles, IAM roles and teleport roles.",
@@ -86,7 +86,7 @@
         "Designed, developed, and deployed a Python-based Django backend API to automatically scan vessels worldwide using remote scanners, RabbitMQ queues, and asynchronous Celery tasks.",
         "Managed and maintained company servers and VMs, facilitating the deployment and utilization of internal services such as Bookstack, Samba, Elasticsearch, Microsoft Domain Controller, and Microsoft Remote app server.",
         "Compiled an Elasticsearch-based database containing over 4.2 billion records of publicly available leaked credentials to enhance penetration testing quality and increase the success rate of brute-forcing client passwords.",
-        "Assisted in the recertification process for the Authorized Scanning Vendor PCI certificate by automating reconnaissance and reporting stages.",
+        "Assisted in the re-certification process for the Authorized Scanning Vendor PCI certificate by automating reconnaissance and reporting stages.",
         "Deployed Docker-based internal services, including Bookstack (an internal wiki), GitLab, and an Ubuntu-based Samba server.",
         "Developed various internal automation tools and web applications, such as an ike-scan and nmap multithreaded wrapper (available on GitHub)."
       ]
