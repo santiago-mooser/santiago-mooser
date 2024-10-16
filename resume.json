@@ -8,7 +8,7 @@
     "email": "contact@santiago-mooser.com",
     "website": "https://santiago-mooser.com",
     "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-    "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist, with strong automation skills. I mainly like to work with linux and linux-adjacent technologies but also enjoy infrastructure and DevOps work. I've worked in a number of different roles, including as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My main focus over the past couple of years has been learning about technologies I'm interested in (kubernetes, rust, linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker and developing my. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room, but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right ->",
+    "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist with strong automation skills. I mainly like to work with linux and linux-adjacent technologies but also enjoy infrastructure and DevOps work. I've worked in several different roles, including as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My focus over the past couple of years has been learning about technologies I'm interested in (Kubernetes, Rust, Linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right",
     "location": {
       "city": "Hong Kong"
     },
@@ -178,6 +178,43 @@
     }
   ],
   "projects": [
+    
+    {
+      "name": "Self-hosted Server",
+      "description": "Deployed a proxmox-based server for personal self-hosting and media and data backup. In this server, I host various Docker-based services such as PhotoPrism, MonicaHQ and Firefly III.",
+      "keywords": [
+        "Unraid",
+        "Docker",
+        "proxmox",
+        "ZFS",
+        "Docker-compose",
+        "TailScale",
+        "Syncthing",
+        "Backup"
+      ],
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "roles": [
+        "Team Lead"
+      ],
+      "type": "personal"
+    },
+    {
+      "name": "Yubikey provisioning scripts",
+      "description": "Automated the provisioning of Yubikeys' GPG applet to enable enforcing code singning by developers. Check my Github for more details.",
+      "keywords": [
+        "Bash",
+        "Yubikey",
+        "PGP",
+        "GnuPG"
+      ],
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "roles": [
+        "Team Lead"
+      ],
+      "type": "personal"
+    },
     {
       "name": "DevSecOps pipeline",
       "description": "Implemented DAST, SAST, and secure stages for NodeJS projects to enhance early detection of security vulnerabilities. Adapted each environment pipeline to its corresponding development environment, using tools such as Snyk, Zap Scanner, tfsec, Hadolint, JSLint, Sonarqube, and Sigstore.",
@@ -239,24 +276,6 @@
       "type": "professional"
     },
     {
-      "name": "Django-based covid tracker dashboard",
-      "description": "Created a Django-based dashboard for displaying Covid-19 statistics as part of a software engineering course at HKU, utilizing Jira and GitHub in an Agile development process.",
-      "keywords": [
-        "Django",
-        "Agile",
-        "Frontend",
-        "Backend",
-        "GitHub",
-        "Python"
-      ],
-      "startDate": "2021-01-14",
-      "endDate": "2021-05-30",
-      "roles": [
-        "Programmer"
-      ],
-      "type": "coursework"
-    },
-    {
       "name": "Haskell-based interpreter",
       "description": "Developed a custom programming language interpreter using Haskell for a Principles of Programming Languages Course, incorporating features like First-class Functions, Variable Scoping, Monads, and Mutable States. See https://github.com/santiago-mooser/haskell-based-interpreter.git",
       "keywords": [
@@ -288,26 +307,6 @@
       "roles": [
         "Team Lead",
         "Talk Host"
-      ],
-      "type": "personal"
-    },
-    {
-      "name": "Self-hosted Server",
-      "description": "Deployed a proxmox-based server for personal self-hosting and media and data backup. In this server, I host various Docker-based services such as PhotoPrism, MonicaHQ and Firefly III.",
-      "keywords": [
-        "Unraid",
-        "Docker",
-        "proxmox",
-        "ZFS",
-        "Docker-compose",
-        "TailScale",
-        "Syncthing",
-        "Backup"
-      ],
-      "startDate": "2019-01-01",
-      "endDate": "2020-01-01",
-      "roles": [
-        "Team Lead"
       ],
       "type": "personal"
     }
