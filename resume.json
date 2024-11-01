@@ -8,7 +8,7 @@
     "email": "contact@santiago-mooser.com",
     "website": "https://santiago-mooser.com",
     "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-    "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist with strong automation skills. I mainly like to work with linux and linux-adjacent technologies but also enjoy infrastructure and DevOps work. I've worked in several different roles, including as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My focus over the past couple of years has been learning about technologies I'm interested in (Kubernetes, Rust, Linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room but am also more than happy to help mentor and guide others where needed. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right",
+    "summary": "Hi there 👋 My name is Santiago. I'm a 25y/o DevSecOps engineer with a background in Computer Science. I mainly do security work, but I'm a technical generalist with strong automation skills. I mainly like to work with linux and linux-adjacent technologies but also enjoy infrastructure and DevOps work. I've worked in several different roles, including as a DevSecOps Engineer, Penetration Tester, and WebApp Developer. My focus over the past couple of years has been learning about technologies I'm interested in (Kubernetes, Rust, Linux) and in general improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies; This includes but is not limited to building and hosting my own Proxmox server at home, running Arch Linux as my main OS, and developing my own containerized services in Docker. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room. However, I'm also more than happy to help mentor and guide others where I can. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right!",
     "location": {
       "city": "Hong Kong"
     },
@@ -40,31 +40,32 @@
       "name": "Hex Trust",
       "location": "Hong Kong",
       "url": "https://hextrust.com",
-      "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.",
+      "description": "Hex Trust is a fully-licensed provider of bank-grade custody for digital assets with a focus on security and compliance.",
       "position": "DevSecOps Engineer (Full-time)",
       "startDate": "2023-10",
-      "summary": "After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers where I focused on hardening our cloud workloads and improving our security monitoring.",
+      "summary": "After graduating, I got a permanent offer from HexTrust to work as their in-house DevSecOps Engineers, where I focused on improving our security monitoring and hardening the cloud-based workloads.",
       "highlights": [
         "Maintained, deployed and managed Privileged Access Management (PAM) tool (teleport) by provisioning and managing access to our kubernetes clusters, RDS databases, web applications and linux servers using terragrunt, helm charts and AWS EKS.",
         "Developed, used and maintained terraform modules to provision and maintain cloud resources in AWS such as EKS roles, IAM roles and teleport roles.",
-        "Organized and launched bug-bounty programme for main service. Organized response to findings.",
-        "Organized and ran source code review of critical services. Organized response to findings",
-        "Acted as main responder to security incidents and documented situation and response in incident reports.",
+        "Organized, launched, and ran private bug-bounty programme for our services. Responded to reports and coordinated fixes.",
+        "Deployed CSPM tool and improved alerting to improve our security monitoring",
+        "Served as a security advocate in the company to improve security practices.",
+        "Acted as main contact for security-related incidents. Responded to incidents and documented response in incidence reports.",
         "Managed interests of stakeholders in other departments to ensure both security and business needs were met.",
-        "Misc work such as automating small tasks for team members, helping with difficult IT tickets and "
+        "Misc work such as automating small tasks for team members, helping with difficult IT tickets and investigating non-security issues with infrastructure."
       ]
     },
     {
       "name": "Hex Trust",
       "location": "Hong Kong",
       "url": "https://hextrust.com",
-      "description": "Hex Trust is a fully-licensed and insured provider of bank-grade custody for digital assets with a focus on security and compliance.",
+      "description": "Hex Trust is a fully-licensed provider of bank-grade custody for digital assets with a focus on security and compliance.",
       "position": "DevSecOps Engineer (Full-time/part-time)",
       "startDate": "2022-06",
       "endDate": "2023-05",
-      "summary": "Got head-hunted into an internship and continued working part-time throughout the last year of my studies. Focused on the 'Build' initiatives and 'Shift Left' approach by delivering several projects within DevSecOps, Application Security, Security Automation and Cyber Defense.",
+      "summary": "Got head-hunted into an internship and continued working part-time throughout the last year of my studies. Focused on shiftin security left by delivering several projects that improved security reporting in the company.",
       "highlights": [
-        "Designed, implemented, and maintained the company's first-ever DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production using Snyk, tfsec, Clair, and trufflehog, as well as other DAST tools. Also adapted CICD rules based on the company's Git branching strategy.",
+        "Designed, implemented, and maintained the company's first-ever DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production using Snyk, tfsec, Clair, and trufflehog, as well as other SAST tools. Adapted CICD rules based on the company's Git branching strategy.",
         "Personally led the Snyk vulnerability management tool implementation, achieving a 20% reduction in active, potentially exploitable vulnerabilities within the first month.",
         "Deployed and maintained next-gen WAF (Signal Sciences) to protect against OWASP Top-10, various web CVEs, and enumeration attacks. The project led to increased protection as well as visibility into incoming network attacks. The ruleset was managed through Terraform Infrastructure as Code (IAC) for increased reproducibility and control.",
         "Automated provisioning of company Yubikeys, reducing provisioning time from ~45 minutes to <1 minute. The open-source scripts can be found on my GitHub.",
@@ -103,9 +104,10 @@
       "courses": [
         "Advanced Algorithm Analysis",
         "Algorithmic Game Theory",
+        "Cryptography",
         "Principles of Programming Languages",
         "Compiling Techniques",
-        "Principles of Operating Systems"
+        "Functional Programming"
       ],
       "highlights": [
         "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",
@@ -116,6 +118,15 @@
   "skills": [
     {
       "name": "DevOps & DevSecOps",
+      "keywords": [
+        "Kubernetes RBAC",
+        "CICD Security automation",
+        "SAST",
+        "PAM tooling",
+      ]
+    },
+    {
+      "name": "Infrastructure",
       "keywords": [
         "Containerization",
         "Docker",
@@ -154,15 +165,6 @@
         "Unraid",
         "XCP-ng",
         "Proxmox"
-      ]
-    },
-    {
-      "name": "Security",
-      "keywords": [
-        "DAST",
-        "SAST",
-        "Network scanning",
-        "WebApp scanning"
       ]
     },
     {
