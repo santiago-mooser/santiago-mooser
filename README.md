@@ -16,7 +16,8 @@
 - DBMS: PostgreSQL, Elasticsearch
 - Frameworks: Django, ReactJS (basic)
 
-## Skills 
+## Skills
+
 - Scripting (Bash, Python)
 - Debugging (I debugged [this](https://github.com/santiago-mooser/multi-threaded-samplesort) with gdb)
 - Basic Memory management and optimization (same thing as above)

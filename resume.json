@@ -122,7 +122,7 @@
         "Kubernetes RBAC",
         "CICD Security automation",
         "SAST",
-        "PAM tooling",
+        "PAM tooling"
       ]
     },
     {
@@ -180,7 +180,7 @@
     }
   ],
   "projects": [
-    
+
     {
       "name": "Self-hosted Server",
       "description": "Deployed a proxmox-based server for personal self-hosting and media and data backup. In this server, I host various Docker-based services such as PhotoPrism, MonicaHQ and Firefly III.",
