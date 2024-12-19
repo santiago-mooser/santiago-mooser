@@ -102,12 +102,13 @@
       "startDate": "2018-09",
       "endDate": "2023-06",
       "courses": [
-        "Advanced Algorithm Analysis",
-        "Algorithmic Game Theory",
-        "Cryptography",
-        "Principles of Programming Languages",
-        "Compiling Techniques",
-        "Functional Programming"
+        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp3250.html'><i class='fas fa-external-link-alt'></i></a> Design & Analysis of Algorithms (adv)",
+        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp3352.html'><i class='fas fa-external-link-alt'></i></a> Algorithmic Game Theory",
+        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp3357.html'><i class='fas fa-external-link-alt'></i></a> Cryptography",
+        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2022/comp3259.html'><i class='fas fa-external-link-alt'></i></a> Principles of Programming Languages",
+        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2022/comp3235.html'><i class='fas fa-external-link-alt'></i></a> Compiling Techniques",
+        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2022/comp3258.html'><i class='fas fa-external-link-alt'></i></a> Functional Programming",
+        "<a href='https://msccs.cs.hku.hk/public/courses/2024/COMP7905A/'><i class='fas fa-external-link-alt'></i></a> Reverse Engineering & Malware Analysis"
       ],
       "highlights": [
         "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",
@@ -180,7 +181,77 @@
     }
   ],
   "projects": [
-
+    {
+      "name": "Yubikey provisioning scripts",
+      "description": "Automated the provisioning of Yubikeys' GPG applet to enable enforcing code singning by developers. The scripts are written in Bash and use GnuPG to interact with the Yubikey.",
+      "keywords": [
+        "Bash",
+        "Yubikey",
+        "PGP",
+        "GnuPG"
+      ],
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "roles": [
+        "Team Lead"
+      ],
+      "type": "personal",
+      "url": "https://github.com/santiago-mooser/yubikey-provisioning-scripts"
+    },
+    {
+      "name": "Mock crypto trading bot",
+      "description": "Developed a low-latency, high-frequency mock trading bot for cryptocurrencies using Object-oriented Python. The bot uses ccxt to interact with various exchanges and has a simple spread arbitrage strategy.",
+      "keywords": [
+        "Python",
+        "ccxt",
+        "Trading",
+        "Cryptocurrency",
+        "Arbitrage",
+        "Bot"
+      ],
+      "startDate": "2024-03-01",
+      "endDate": "2024-08-01",
+      "roles": [
+        "Team Lead"
+      ],
+      "type": "personal",
+      "url": "https://github.com/santiago-mooser/Mock-crypto-trading-bot"
+    },
+    {
+      "name": "Haskell-based interpreter",
+      "description": "Developed a custom programming language interpreter using Haskell for a Principles of Programming Languages Course, incorporating features like First-class Functions, Variable Scoping, Monads, and Mutable States.",
+      "keywords": [
+        "Haskell",
+        "Functional Programming",
+        "Interpreter",
+        "Principles of Programming Languages"
+      ],
+      "startDate": "2022-01-14",
+      "endDate": "2022-05-30",
+      "roles": [
+        "Programmer"
+      ],
+      "type": "coursework",
+      "url": "https://github.com/santiago-mooser/haskell-based-interpreter"
+    },
+    {
+      "name": "Multi-threaded implementation of Sample Sort",
+      "description": "C-based implementation of a multi-threaded sorting program that uses the samplesort algorithm to sort large datasets. The program uses POSIX threads and shared memory to achieve parallelism.",
+      "keywords": [
+        "C",
+        "POSIX",
+        "Threads",
+        "Sorting",
+        "Parallelism"
+      ],
+      "startDate": "2022-09-01",
+      "endDate": "2022-11-30",
+      "roles": [
+        "Programmer"
+      ],
+      "type": "coursework",
+      "url": "https://github.com/santiago-mooser/multi-threaded-samplesort"
+    },
     {
       "name": "Self-hosted Server",
       "description": "Deployed a proxmox-based server for personal self-hosting and media and data backup. In this server, I host various Docker-based services such as PhotoPrism, MonicaHQ and Firefly III.",
@@ -193,22 +264,6 @@
         "TailScale",
         "Syncthing",
         "Backup"
-      ],
-      "startDate": "2019-01-01",
-      "endDate": "2020-01-01",
-      "roles": [
-        "Team Lead"
-      ],
-      "type": "personal"
-    },
-    {
-      "name": "Yubikey provisioning scripts",
-      "description": "Automated the provisioning of Yubikeys' GPG applet to enable enforcing code singning by developers. Check my Github for more details.",
-      "keywords": [
-        "Bash",
-        "Yubikey",
-        "PGP",
-        "GnuPG"
       ],
       "startDate": "2019-01-01",
       "endDate": "2020-01-01",
@@ -276,41 +331,6 @@
         "Programmer"
       ],
       "type": "professional"
-    },
-    {
-      "name": "Haskell-based interpreter",
-      "description": "Developed a custom programming language interpreter using Haskell for a Principles of Programming Languages Course, incorporating features like First-class Functions, Variable Scoping, Monads, and Mutable States. See https://github.com/santiago-mooser/haskell-based-interpreter.git",
-      "keywords": [
-        "Haskell",
-        "Functional Programming",
-        "Interpreter",
-        "Principles of Programming Languages"
-      ],
-      "startDate": "2022-01-14",
-      "endDate": "2022-05-30",
-      "roles": [
-        "Programmer"
-      ],
-      "type": "coursework"
-    },
-    {
-      "name": "Computer Science Association Virtual Career Week 2022",
-      "description": "Organized and led the 2022 virtual career week event for the Computer Science Association, hosting six speakers from various roles and serving as a host for three fireside talks",
-      "keywords": [
-        "Career Talk",
-        "Public Talk",
-        "Fireside Talk",
-        "Virtual Career Week",
-        "Computer Science Association",
-        "Virtual Career Week 2022"
-      ],
-      "startDate": "2022-03-28",
-      "endDate": "2022-04-29",
-      "roles": [
-        "Team Lead",
-        "Talk Host"
-      ],
-      "type": "personal"
     }
   ],
   "references": [
