@@ -1,7 +1,7 @@
 # Quick highlights
 
 - Strong quantitative and analytical skills.
-- Intermediate experience in low-latency programming and systematic trading (rust, golang).
+- Some experience in low-latency programming and systematic trading (rust, golang).
 - Advanced experience in Python programming & general automation.
 - Have been using & managing \*nix systems (Ubuntu, Arch, Debian) for 8+ years
 - Regularly secure & deploy services in kubernetes. Do lots of work with containarization.
