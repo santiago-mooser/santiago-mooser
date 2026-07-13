@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{metaDescription}}">
+  <meta name="author" content="{{basics.name}}">
+  <link rel="canonical" href="{{canonical}}">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <meta name="theme-color" content="#334960">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{pageTitle}}">
+  <meta property="og:description" content="{{metaDescription}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{basics.image}}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{pageTitle}}">
+  <meta name="twitter:description" content="{{metaDescription}}">
+  <meta name="twitter:image" content="{{basics.image}}">
+  <script type="application/ld+json">{{{jsonld}}}</script>
+  <style>{{{css}}}</style>
+  <style media="print">{{{printcss}}}</style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <img class="photo" src="profile.jpg" alt="Portrait of {{basics.name}}" width="160" height="160">
+      <h1>{{basics.name}}</h1>
+      {{#basics.label}}<p class="headline">{{basics.label}}</p>{{/basics.label}}
+      <nav class="contact" aria-label="Contact and profiles">
+        {{#basics.email}}<a href="mailto:{{basics.email}}">{{{mailIcon}}}<span>{{basics.email}}</span></a>{{/basics.email}}
+        {{#city}}<span class="loc">{{{pinIcon}}}<span>{{city}}</span></span>{{/city}}
+        {{#profiles}}
+        <a {{#cssClass}}class="{{cssClass}}" {{/cssClass}}href="{{url}}" rel="me noopener noreferrer">{{{iconSvg}}}<span>{{label}}</span></a>
+        {{/profiles}}
+      </nav>
+    </header>
+
+    <div class="columns">
+      <main>
+        {{#basics.summary}}
+        <section id="about" aria-labelledby="about-h">
+          <h2 id="about-h">About</h2>
+          <p class="summary">{{basics.summary}}</p>
+        </section>
+        {{/basics.summary}}
+
+        {{#hasWork}}
+        <section id="work" aria-labelledby="work-h">
+          <h2 id="work-h">Work experience</h2>
+          {{#work}}
+          <article class="entry">
+            <div class="entry-head">
+              <h3>{{position}}</h3>
+              <span class="dates">{{dates}}</span>
+            </div>
+            <p class="org">
+              {{#url}}<a href="{{url}}" rel="noopener noreferrer">{{name}}</a>{{/url}}{{^url}}{{name}}{{/url}}{{#location}} · {{location}}{{/location}}
+            </p>
+            {{#summary}}<p class="entry-summary">{{summary}}</p>{{/summary}}
+            {{#hasHighlights}}
+            <ul class="highlights">
+              {{#highlights}}<li>{{.}}</li>{{/highlights}}
+            </ul>
+            {{/hasHighlights}}
+          </article>
+          {{/work}}
+        </section>
+        {{/hasWork}}
+
+        {{#hasProjects}}
+        <section id="projects" aria-labelledby="projects-h">
+          <h2 id="projects-h">Projects</h2>
+          {{#projects}}
+          <article class="entry">
+            <div class="entry-head">
+              <h3>
+                {{#hasUrl}}<a href="{{url}}" rel="noopener noreferrer">{{name}}{{{extIcon}}}</a>{{/hasUrl}}{{^hasUrl}}{{name}}{{/hasUrl}}
+              </h3>
+              {{#type}}<span class="tag">{{type}}</span>{{/type}}
+            </div>
+            <p class="entry-summary">{{description}}</p>
+            {{#hasKeywords}}
+            <ul class="badges">
+              {{#keywords}}<li>{{.}}</li>{{/keywords}}
+            </ul>
+            {{/hasKeywords}}
+          </article>
+          {{/projects}}
+        </section>
+        {{/hasProjects}}
+
+        {{#hasReferences}}
+        <section id="references" aria-labelledby="references-h">
+          <h2 id="references-h">References</h2>
+          {{#references}}
+          <blockquote class="reference">
+            <p>“{{reference}}”</p>
+            <footer>— {{#url}}<a href="{{url}}" rel="noopener noreferrer">{{name}}</a>{{/url}}{{^url}}{{name}}{{/url}}</footer>
+          </blockquote>
+          {{/references}}
+        </section>
+        {{/hasReferences}}
+      </main>
+
+      <aside>
+        {{#hasEducation}}
+        <section id="education" aria-labelledby="education-h">
+          <h2 id="education-h">Education</h2>
+          {{#education}}
+          <article class="entry">
+            <h3>{{#url}}<a href="{{url}}" rel="noopener noreferrer">{{institution}}</a>{{/url}}{{^url}}{{institution}}{{/url}}</h3>
+            <p class="org">{{degree}}</p>
+            <p class="dates">{{dates}}</p>
+            {{#hasHighlights}}
+            <ul class="highlights">
+              {{#highlights}}<li>{{.}}</li>{{/highlights}}
+            </ul>
+            {{/hasHighlights}}
+            {{#hasCourses}}
+            <h4>Selected coursework</h4>
+            <ul class="courses">
+              {{#courses}}<li>{{.}}</li>{{/courses}}
+            </ul>
+            {{/hasCourses}}
+          </article>
+          {{/education}}
+        </section>
+        {{/hasEducation}}
+
+        {{#hasSkills}}
+        <section id="skills" aria-labelledby="skills-h">
+          <h2 id="skills-h">Skills</h2>
+          {{#skills}}
+          <div class="skill-group">
+            <h3>{{name}}</h3>
+            <ul class="badges">
+              {{#keywords}}<li>{{.}}</li>{{/keywords}}
+            </ul>
+          </div>
+          {{/skills}}
+        </section>
+        {{/hasSkills}}
+
+        {{#hasCertificates}}
+        <section id="certificates" aria-labelledby="certificates-h">
+          <h2 id="certificates-h">Certificates</h2>
+          <ul class="plain">
+            {{#certificates}}
+            <li>
+              {{#hasUrl}}<a href="{{url}}" rel="noopener noreferrer">{{name}}</a>{{/hasUrl}}{{^hasUrl}}{{name}}{{/hasUrl}}
+              {{#issuer}}<span class="muted"> — {{issuer}}{{#year}}, {{year}}{{/year}}</span>{{/issuer}}
+            </li>
+            {{/certificates}}
+          </ul>
+        </section>
+        {{/hasCertificates}}
+
+        {{#hasLanguages}}
+        <section id="languages" aria-labelledby="languages-h">
+          <h2 id="languages-h">Languages</h2>
+          <ul class="plain">
+            {{#languages}}<li>{{language}}<span class="muted"> — {{fluency}}</span></li>{{/languages}}
+          </ul>
+        </section>
+        {{/hasLanguages}}
+
+        {{#hasInterests}}
+        <section id="interests" aria-labelledby="interests-h">
+          <h2 id="interests-h">Interests</h2>
+          <ul class="badges">
+            {{#interests}}<li>{{name}}</li>{{/interests}}
+          </ul>
+        </section>
+        {{/hasInterests}}
+      </aside>
+    </div>
+
+    <footer class="colophon">
+      <p>
+        {{#lastModified}}Last updated {{lastModified}} · {{/lastModified}}Generated from <a href="https://github.com/santiago-mooser/santiago-mooser" rel="noopener noreferrer">resume.json</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

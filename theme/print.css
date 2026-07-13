@@ -1,0 +1,38 @@
+@page { size: A4; margin: 12mm; }
+
+body { background: #fff; font-size: 10pt; }
+
+.page {
+  margin: 0;
+  max-width: none;
+  border-radius: 0;
+  padding: 0 4mm;
+}
+
+.photo { margin-top: 0; width: 84px; height: 84px; border-width: 3px; }
+.masthead { padding-bottom: 8px; }
+
+.columns { gap: 6px 24px; }
+section { margin-top: 12px; }
+
+/* letter-spacing on headings makes pdftotext split words ("E D U C AT I O N"),
+   which breaks ATS section detection */
+h2 { letter-spacing: 0; break-after: avoid; page-break-after: avoid; }
+h3 { break-after: avoid; page-break-after: avoid; }
+
+.entry { margin-bottom: 10px; break-inside: avoid; }
+.reference { break-inside: avoid; }
+.highlights li { margin: 3px 0; }
+
+a { color: inherit; text-decoration: none; }
+
+.badges li, .tag, .reference {
+  background: #eef2f6 !important;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+/* keyword badges duplicate the descriptions — save the space in print */
+#projects .badges { display: none; }
+
+.colophon, .contact a.cv-link { display: none; }

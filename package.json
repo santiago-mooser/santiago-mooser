@@ -1,0 +1,14 @@
+{
+  "name": "santiago-mooser.com",
+  "private": true,
+  "description": "Personal resume site: resume.json rendered with the vendored theme in theme/",
+  "scripts": {
+    "validate": "resumed validate resume.json",
+    "build": "node scripts/build.js",
+    "pdf": "sh scripts/pdf.sh"
+  },
+  "dependencies": {
+    "jsonresume-theme-mooser": "file:./theme",
+    "resumed": "^6.0.0"
+  }
+}

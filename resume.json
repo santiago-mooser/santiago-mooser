@@ -1,14 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "meta": {
-    "theme": "mooser"
+    "theme": "mooser",
+    "lastModified": "2026-07-13"
   },
   "basics": {
     "name": "Santiago Espinosa Mooser",
+    "label": "Senior DevSecOps Engineer → Quantitative Developer",
     "email": "contact@santiago-mooser.com",
-    "website": "https://santiago-mooser.com",
-    "image": "https://avatars0.githubusercontent.com/u/40335919?v=4",
-    "summary": "Hi there 👋 My name is Santiago. I'm curently a Senior DevSecOps engineer with a background in Computer Science but I'm pivoting to Quant Research. I mainly do security work, but I'm a technical generalist with strong math, coding and automation skills. I mainly work with Kubernetes and AWS but also enjoy working with linux and linux-adjacent technologies. I've worked in several different roles, including as a DevSecOps Engineer, Penetration Tester, WebApp Developer and now Quant Developer. My focus over the past couple of years has been learning about Systematic trading and generally improving my technical knowledge. I'm a very curious person and as such have experimented with many different technologies. This includes but is not limited to building and hosting my own Linux server at home (I still use it daily!), coding up a crypto trading but, building a programming language, and developing my own compiler. I like to work with a technical team that I can rely on and love to be the least knowledgeable person in the room. That said, I also go out of my way to help and guide people that I am working with when I can. If you're interested in my work, please feel free to check out my github and/or contact me using my email in the top right.",
+    "url": "https://santiago-mooser.com",
+    "image": "https://santiago-mooser.com/profile.jpg",
+    "summary": "I'm a Senior DevSecOps engineer at Hex Trust (digital-asset custody) moving into quantitative development. By day I secure and automate cloud infrastructure — Kubernetes, AWS, infrastructure as code; the rest of the time I build trading-adjacent systems: market-microstructure benchmarks in Rust, trading-competition bots, and the self-hosted Kubernetes lab I run at home. I have a Computer Science degree from HKU with a theory focus (algorithms, game theory, cryptography), and I like being the least knowledgeable person in the room. If any of this is interesting, feel free to reach out by email.",
     "location": {
       "city": "Hong Kong"
     },
@@ -24,14 +26,9 @@
         "url": "https://linkedin.com/in/santiago-mooser"
       },
       {
-        "network": "Keybase",
-        "username": "santiagoespinosa",
-        "url": "https://keybase.io/santiagoespinosa"
-      },
-      {
-        "network": "cv",
-        "username": "Download this as PDF",
-        "url": "https://santiago-mooser.com/cv_santiago_espinosa_mooser.pdf"
+        "network": "CV",
+        "username": "Download CV (PDF)",
+        "url": "https://santiago-mooser.com/cv.pdf"
       }
     ]
   },
@@ -41,18 +38,17 @@
       "location": "Hong Kong",
       "url": "https://hextrust.com",
       "description": "Hex Trust is a fully-licensed provider of bank-grade custody for digital assets with a focus on security and compliance.",
-      "position": "DevSecOps Engineer (Full-time)",
+      "position": "Senior DevSecOps Engineer",
       "startDate": "2023-09",
-      "summary": "After taking a short break, I joined HexTrust full-time to work as their in-house DevSecOps Engineers where I focused on hardening the cloud-based workloads and generally inproving the security of the company from a technical perspective.",
+      "summary": "Rejoined Hex Trust full-time as the in-house DevSecOps engineer, progressing from intern to L13 (Senior) across my time at the company. I focus on hardening cloud workloads and improving the company's technical security posture.",
       "highlights": [
-        "Planned and started implementation company's move to distroless containers to reduce attack surface and security tooling false positives. Project is ongoing.",
-        "Maintained, deployed and managed Privileged Access Management (PAM) tool (teleport) by provisioning and managing access to our kubernetes clusters, RDS databases, web applications and linux servers using terragrunt, helm charts and AWS EKS.",
-        "Automated security processes using Python, GoLang and Bash to relieve manual work such as whitelisting company devices in MDM.", 
-        "Developed, used and maintained terraform modules to provision and maintain cloud resources in AWS such as EKS roles, IAM roles and teleport roles.",
-        "Organized, launched, and ran private bug-bounty programme for our services. Responded to reports and coordinated fixes.",
-        "Integrated CSPM tool with our cloud and on-prem servers and improved alerting to improve our security monitoring",
-        "Served as a security advocate as well as security counsel in the company to improve security practices.",
-        "Acted as main contact for security-related incidents. Responded to incidents and documented response in incidence reports."
+        "Designed and implemented the CI/CD pipeline to build, sign, deploy, and debug distroless containers; coordinated the developer teams' migration and ran internal talks on working with them.",
+        "Deployed and managed the company's Privileged Access Management platform (Teleport) across Kubernetes clusters, RDS databases, web applications, and Linux servers using Terragrunt, Helm, and AWS EKS, providing auditable real-time access to production.",
+        "Designed and deployed RBAC roles for AWS, Kubernetes, databases, and Linux servers, making production access auditable and maintainable.",
+        "Integrated a CSPM platform across cloud and on-prem servers and implemented custom Kubernetes and cloud alerting; deployed the monitoring stack with Helm, CloudFormation, and ArgoCD across multiple clouds.",
+        "Organized, launched, and ran the company's private bug-bounty program; coordinated fixes and used the findings to steer security priorities.",
+        "Automated security processes in Python, Go, and Bash — for example, MDM device whitelisting.",
+        "Acted as main contact for security incidents: led the response, wrote incident reports, and presented results to the CTO; served as internal security counsel for developers, including cryptography questions."
       ]
     },
     {
@@ -60,76 +56,97 @@
       "location": "Hong Kong",
       "url": "https://hextrust.com",
       "description": "Hex Trust is a fully-licensed provider of bank-grade custody for digital assets with a focus on security and compliance.",
-      "position": "DevSecOps Engineer (Full-time/part-time)",
-      "startDate": "2022-06",
+      "position": "DevSecOps Engineer (intern → part-time)",
+      "startDate": "2022-05",
       "endDate": "2023-05",
-      "summary": "Got head-hunted into an internship and continued working part-time throughout the last year of my studies. Focused on shiftin security left by delivering several projects that improved security reporting in the company.",
+      "summary": "Head-hunted into an internship, then continued part-time through my final year of studies. Focused on shifting security left and improving security reporting across the company.",
       "highlights": [
-        "Designed, implemented, and maintained the company's first-ever DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production using Snyk, tfsec, Clair, and trufflehog, as well as other SAST tools. Adapted CICD rules based on the company's Git branching strategy.",
-        "Personally led the Snyk vulnerability management tool implementation, achieving a 20% reduction in active, potentially exploitable vulnerabilities within the first month.",
-        "Deployed and maintained next-gen WAF (Signal Sciences) to protect against OWASP Top-10, various web CVEs, and enumeration attacks. The project led to increased protection as well as visibility into incoming network attacks. The ruleset was managed through Terraform Infrastructure as Code (IAC) for increased reproducibility and control.",
-        "Automated provisioning of company Yubikeys, reducing provisioning time from ~45 minutes to <1 minute. The open-source scripts can be found on my GitHub.",
-        "Led the adoption of YubiKey hardware smartcards for company-wide code signing, significantly enhancing security measures across the organization.",
-        "Conducted thorough investigations on critical security incidents by analyzing logs and alerts from the company's SIEM and WAF systems, and provided recommendations to the Head of Cybersecurity.",
-        "Collaborated with Head of Cybersecurity to evaluate and test next-generation WAF/RASP and automated pentesting tools."
+        "Designed, implemented, and maintained the company's first DevSecOps pipeline, preventing vulnerable code, secrets, and dependencies from reaching production with Snyk, tfsec, Clair, TruffleHog, and other SAST tools, adapted to the company's branching strategy.",
+        "Led the Snyk vulnerability-management rollout, cutting active, potentially exploitable vulnerabilities by 20% in the first month.",
+        "Deployed and maintained a next-gen WAF (Signal Sciences) protecting against the OWASP Top 10, web CVEs, and enumeration attacks, with the ruleset managed through Terraform.",
+        "Automated YubiKey provisioning, reducing per-key setup from ~45 minutes to under 1 minute (scripts open-sourced on my GitHub), and led the adoption of YubiKeys for company-wide code signing.",
+        "Investigated critical security incidents through SIEM and WAF log analysis and reported recommendations to the Head of Cybersecurity."
       ]
     },
     {
       "name": "Handshake Networking",
-      "description": "Handshake Networking is a boutique cybersecurity consultancy company that specializes in penetration testing and application security testing.",
+      "description": "Handshake Networking is a boutique cybersecurity consultancy specializing in penetration testing and application security testing.",
       "url": "https://handshake.hk",
       "location": "Hong Kong",
       "startDate": "2020-05",
       "endDate": "2022-01",
-      "position": "Pentester/Software Developer (full-time/part-time)",
-      "summary": "Started as a internship, then deferred a semester to work on developing internal tooling and helping with Pentesting and general automation.",
+      "position": "Penetration Tester & Software Developer (intern → part-time)",
+      "summary": "Started as an internship, then deferred a semester to build internal tooling and help with penetration testing and automation.",
       "highlights": [
-        "Designed, developed, and deployed a Python-based Django backend API to automatically scan vessels worldwide using remote scanners, RabbitMQ queues, and asynchronous Celery tasks.",
-        "Managed and maintained company servers and VMs, facilitating the deployment and utilization of internal services such as Bookstack, Samba, Elasticsearch, Microsoft Domain Controller, and Microsoft Remote app server.",
-        "Compiled an Elasticsearch-based database containing over 4.2 billion records of publicly available leaked credentials to enhance penetration testing quality and increase the success rate of brute-forcing client passwords.",
-        "Assisted in the re-certification process for the Authorized Scanning Vendor PCI certificate by automating reconnaissance and reporting stages.",
-        "Deployed Docker-based internal services, including Bookstack (an internal wiki), GitLab, and an Ubuntu-based Samba server.",
-        "Developed various internal automation tools and web applications, such as an ike-scan and nmap multithreaded wrapper (available on GitHub)."
+        "Designed, developed, and deployed a Django-based API that scans vessels connected to satellite and 4G networks worldwide using modular remote scanners, RabbitMQ queues, and asynchronous Celery tasks.",
+        "Compiled an Elasticsearch database of over 4.2 billion publicly leaked credentials to improve penetration-test quality and password-audit success rates.",
+        "Carried out penetration tests and assisted with report writing; helped automate the reconnaissance and reporting stages of the PCI Authorized Scanning Vendor re-certification.",
+        "Managed the company's on-prem servers and VMs, deploying and maintaining internal services including GitLab, Bookstack, Samba, Elasticsearch, and a Microsoft domain controller."
+      ]
+    },
+    {
+      "name": "PwC (New Ventures)",
+      "description": "DevOps for PwC's New Ventures team.",
+      "url": "https://www.pwchk.com",
+      "location": "Hong Kong",
+      "startDate": "2019-06",
+      "endDate": "2022-12",
+      "position": "DevOps Intern (intern → part-time)",
+      "summary": "Internship, continued part-time alongside my studies.",
+      "highlights": [
+        "Reduced server provisioning time from 3–5 business days to 30–45 minutes by automating provisioning with Ansible, Terraform, and Jinja2 templates.",
+        "Deployed and maintained the team's internal messaging platform (Mattermost), including backups."
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hong Kong",
+      "institution": "The University of Hong Kong",
       "url": "https://hku.hk/",
-      "studyType": "Bachelor",
+      "studyType": "B.S. Engineering",
       "area": "Computer Science",
       "startDate": "2018-09",
-      "endDate": "2023-06",
+      "endDate": "2023-07",
       "courses": [
-        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp3250.html' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Design & Analysis of Algorithms (adv)",
-        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp3352.html' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Algorithmic Game Theory",
-        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp3357.html' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Cryptography",
-        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2022/comp3259.html' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Principles of Programming Languages",
-        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2022/comp3235.html' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Compiling Techniques",
-        "<a href='https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2022/comp3258.html' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Functional Programming",
-        "<a href='https://msccs.cs.hku.hk/public/courses/2024/COMP7905A/' target='_blank' rel='noopener noreferrer'><i class='fas fa-external-link-alt'></i></a> Reverse Engineering & Malware Analysis"
+        "Design & Analysis of Algorithms (advanced)",
+        "Algorithmic Game Theory",
+        "Discrete Mathematics",
+        "Cryptography",
+        "Principles of Programming Languages",
+        "Compiling Techniques",
+        "Functional Programming",
+        "Reverse Engineering & Malware Analysis"
       ],
       "highlights": [
-        "Marketing Secretary (2021-2022, 2022-2023) for the Computer Science Association ",
-        "Lead organizer for the HKU Computer Science Society's Virtual Career Week 2022."
+        "Two-time executive committee member (Marketing Secretary) of the Computer Science Association.",
+        "Lead organizer of the Computer Science Association's Virtual Career Week 2022."
       ]
     }
   ],
   "skills": [
     {
+      "name": "Quantitative & Data",
+      "keywords": [
+        "Python (pandas, NumPy)",
+        "Statistics",
+        "Backtesting & market-data analysis",
+        "C & low-level programming (Assembly)",
+        "Algorithm design"
+      ]
+    },
+    {
       "name": "DevOps & DevSecOps",
       "keywords": [
         "Kubernetes RBAC",
-        "CICD Security automation",
+        "CI/CD security automation",
         "SAST",
-        "PAM tooling"
+        "PAM tooling",
+        "Debugging & reverse engineering"
       ]
     },
     {
       "name": "Infrastructure",
       "keywords": [
-        "Containerization",
         "Docker",
         "Kubernetes",
         "Helm",
@@ -139,215 +156,161 @@
       ]
     },
     {
-      "name": "Scripting / Automation",
+      "name": "Languages & Scripting",
       "keywords": [
-        "Bash",
         "Python",
-        "Linux shell"
-      ]
-    },
-    {
-      "name": "Linux/Unix systems",
-      "keywords": [
-        "Ubuntu",
-        "Arch Linux",
-        "Proxmox",
+        "Go",
+        "Rust",
         "Bash",
-        "Systemd services"
+        "Haskell"
       ]
     },
     {
-      "name": "Cloud / Sysadmin",
+      "name": "Linux & Systems",
       "keywords": [
-        "AWS",
-        "GCP",
-        "Linode",
-        "Digital Ocean",
-        "Unraid",
-        "XCP-ng",
+        "NixOS",
+        "Arch Linux",
+        "Ubuntu / Debian",
+        "systemd",
+        "ZFS",
         "Proxmox"
       ]
     },
     {
-      "name": "Web development",
+      "name": "Cloud & Backend",
       "keywords": [
+        "AWS",
+        "GCP",
         "Django",
-        "API",
         "RabbitMQ",
         "Celery",
-        "Queues",
-        "MySQL"
+        "PostgreSQL",
+        "Elasticsearch"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Yubikey provisioning scripts",
-      "description": "Automated the provisioning of Yubikeys' GPG applet to enable enforcing code singning by developers. The scripts are written in Bash and use GnuPG to interact with the Yubikey.",
+      "name": "mmap-sync HFT benchmark",
+      "description": "Benchmarked Cloudflare's mmap-sync IPC library (Rust) under HFT-style workloads: 192-byte bid/ask structs, Hawkes-distributed bursty writes, and 12 concurrent readers on isolated cores, measured with Criterion.rs on a tuned Ryzen 7 5800X3D. Reads were stable at ~31 µs, but writes spiked to 14 ms (+233%) in 16% of samples — concluding mmap-sync is unsuitable for latency-critical write paths.",
       "keywords": [
-        "Bash",
-        "Yubikey",
-        "PGP",
-        "GnuPG"
-      ],
-      "startDate": "2019-01-01",
-      "endDate": "2020-01-01",
-      "roles": [
-        "Team Lead"
+        "Rust",
+        "Low latency",
+        "IPC",
+        "Market microstructure",
+        "Benchmarking",
+        "Criterion.rs"
       ],
       "type": "personal",
-      "url": "https://github.com/santiago-mooser/yubikey-provisioning-scripts"
+      "url": "https://github.com/santiago-mooser/mmap-sync-benchmark"
     },
     {
-      "name": "Mock crypto trading bot",
-      "description": "Developed a low-latency, high-frequency mock trading bot for cryptocurrencies using Object-oriented Python. The bot uses ccxt to interact with various exchanges and has a simple spread arbitrage strategy.",
+      "name": "IMC Prosperity 2024",
+      "description": "Trading competition (team Quant Crusaders): finished #729 of 10,000+ teams, top 15 in Hong Kong. Implemented RSI momentum, linear-regression prediction, pair-trading, and market-making strategies for bonds, ETFs, stocks, and options in Python across 3 of 5 rounds; code and analysis notebooks are public.",
+      "keywords": [
+        "Python",
+        "Trading",
+        "Pair trading",
+        "Market making",
+        "Jupyter"
+      ],
+      "startDate": "2024-04",
+      "endDate": "2024-05",
+      "type": "competition",
+      "url": "https://github.com/santiago-mooser/IMC-trading"
+    },
+    {
+      "name": "Jane Street Electronic Trading Challenge 2022",
+      "description": "Real-time PvP trading challenge: wrote a live trading bot competing against other participants on a simulated exchange trading bonds, ETFs, and stocks. Finished #4 of 30 participants.",
+      "keywords": [
+        "Python",
+        "Trading",
+        "Real-time systems"
+      ],
+      "type": "competition"
+    },
+    {
+      "name": "Crypto arbitrage simulator",
+      "description": "Crypto arbitrage simulator in Python (ccxt): polls order books from multiple exchanges, detects cross-exchange spread opportunities, and simulates fills net of per-exchange taker fees. Built to learn exchange microstructure — including why naive spread arbitrage rarely survives fees and latency.",
       "keywords": [
         "Python",
         "ccxt",
         "Trading",
         "Cryptocurrency",
-        "Arbitrage",
-        "Bot"
+        "Arbitrage"
       ],
-      "startDate": "2024-03-01",
-      "endDate": "2024-08-01",
-      "roles": [
-        "Team Lead"
-      ],
+      "startDate": "2024-03",
+      "endDate": "2024-08",
       "type": "personal",
       "url": "https://github.com/santiago-mooser/Mock-crypto-trading-bot"
     },
     {
+      "name": "YubiKey provisioning scripts",
+      "description": "Automated provisioning of YubiKeys' GPG applet to enable enforced commit signing by developers (Bash + GnuPG), cutting per-key setup from ~45 minutes to under a minute. Adopted company-wide at Hex Trust.",
+      "keywords": [
+        "Bash",
+        "YubiKey",
+        "PGP",
+        "GnuPG"
+      ],
+      "startDate": "2022-06",
+      "endDate": "2023-05",
+      "type": "professional",
+      "url": "https://github.com/santiago-mooser/yubikey-provisioning-scripts"
+    },
+    {
       "name": "Haskell-based interpreter",
-      "description": "Developed a custom programming language interpreter using Haskell for a Principles of Programming Languages Course, incorporating features like First-class Functions, Variable Scoping, Monads, and Mutable States.",
+      "description": "Custom programming-language interpreter written in Haskell for a Principles of Programming Languages course, with first-class functions, variable scoping, monads, and mutable state.",
       "keywords": [
         "Haskell",
-        "Functional Programming",
-        "Interpreter",
-        "Principles of Programming Languages"
+        "Functional programming",
+        "Interpreter"
       ],
-      "startDate": "2022-01-14",
-      "endDate": "2022-05-30",
-      "roles": [
-        "Programmer"
-      ],
+      "startDate": "2022-01",
+      "endDate": "2022-05",
       "type": "coursework",
       "url": "https://github.com/santiago-mooser/haskell-based-interpreter"
     },
     {
-      "name": "Multi-threaded implementation of Sample Sort",
-      "description": "C-based implementation of a multi-threaded sorting program that uses the samplesort algorithm to sort large datasets. The program uses POSIX threads and shared memory to achieve parallelism.",
+      "name": "Multi-threaded samplesort",
+      "description": "C implementation of multi-threaded samplesort for large datasets using POSIX threads and shared memory; debugged with gdb.",
       "keywords": [
         "C",
-        "POSIX",
-        "Threads",
-        "Sorting",
-        "Parallelism"
+        "POSIX threads",
+        "Parallelism",
+        "Sorting"
       ],
-      "startDate": "2022-09-01",
-      "endDate": "2022-11-30",
-      "roles": [
-        "Programmer"
-      ],
+      "startDate": "2022-09",
+      "endDate": "2022-11",
       "type": "coursework",
       "url": "https://github.com/santiago-mooser/multi-threaded-samplesort"
     },
     {
-      "name": "Self-hosted Server",
-      "description": "Deployed a proxmox-based server for personal self-hosting and media and data backup. In this server, I host various Docker-based services such as PhotoPrism, MonicaHQ and Firefly III.",
+      "name": "Self-hosted Kubernetes homelab",
+      "description": "NixOS server running a k3s Kubernetes cluster managed entirely through GitOps (ArgoCD, 30+ applications): ZFS storage with OpenEBS, a VictoriaMetrics/VictoriaLogs observability stack with alerting to Signal, and SSO via Authelia. Self-hosted since 2019, evolving from a Proxmox box into the current NixOS/k3s setup; in daily use.",
       "keywords": [
-        "Unraid",
-        "Docker",
-        "proxmox",
+        "NixOS",
+        "Kubernetes",
+        "k3s",
+        "ArgoCD",
+        "GitOps",
         "ZFS",
-        "Docker-compose",
-        "TailScale",
-        "Syncthing",
-        "Backup"
+        "Observability"
       ],
-      "startDate": "2019-01-01",
-      "endDate": "2020-01-01",
-      "roles": [
-        "Team Lead"
-      ],
+      "startDate": "2019-01",
       "type": "personal"
-    },
-    {
-      "name": "DevSecOps pipeline",
-      "description": "Implemented DAST, SAST, and secure stages for NodeJS projects to enhance early detection of security vulnerabilities. Adapted each environment pipeline to its corresponding development environment, using tools such as Snyk, Zap Scanner, tfsec, Hadolint, JSLint, Sonarqube, and Sigstore.",
-      "keywords": [
-        "DevSecOps",
-        "SecOps",
-        "DAST",
-        "SAST",
-        "Chaos Engineering",
-        "Snyk",
-        "HadoLint",
-        "SonarQube",
-        "semgrep",
-        "ChaosKube",
-        "Sigstore",
-        "tfsec"
-      ],
-      "startDate": "2022-01-14",
-      "endDate": "2022-05-30",
-      "roles": [
-        "Programmer"
-      ],
-      "type": "professional"
-    },
-    {
-      "name": "Ansible-based automation for server provisioning",
-      "description": "Developed Ansible playbooks for provisioning PWC's servers using Ansible, Jinja2, and Bash scripting, reducing provisioning time from 4-5 business days to 30-45 minutes.",
-      "keywords": [
-        "Docker",
-        "Ansible",
-        "Jenkins",
-        "MySQL",
-        "Documenation"
-      ],
-      "startDate": "2019-06-01",
-      "endDate": "2019-08-25",
-      "roles": [
-        "Programmer"
-      ],
-      "type": "professional"
-    },
-    {
-      "name": "Django-based network scanner API",
-      "description": "Designed, developed, and deployed a Django-based API for scanning vessels connected to satellite and 4G networks using asynchronous, pluggable 'scan engines' that communicate via RabbitMQ queues.",
-      "keywords": [
-        "Django",
-        "Nmap",
-        "Queues",
-        "RabbitMQ",
-        "Celery",
-        "Docker",
-        "CICD"
-      ],
-      "startDate": "2021-10-25",
-      "endDate": "2022-01-14",
-      "roles": [
-        "Programmer"
-      ],
-      "type": "professional"
     }
   ],
   "references": [
     {
-      "name": "Shane Read - Chief Information Security Officer at HexTrust",
+      "name": "Shane Read — Chief Information Security Officer, Hex Trust",
       "reference": "Santiago's rich experience in DevOps and Information Security allowed us to complete the design and implementation of our DevSecOps pipeline in a matter of weeks rather than months.",
       "url": "https://www.linkedin.com/in/cisoinasia/"
     },
     {
-      "name": "Kit Ho - Head of DevOps at PWC New Ventures",
+      "name": "Kit Ho — Head of DevOps, PwC New Ventures",
       "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products.",
       "url": "https://www.linkedin.com/in/kit-hei-ho/"
-    },
-    {
-      "name": "Richard Stagg - Director and Managing Consultant at Handshake Networking",
-      "reference": "",
-      "url": "https://www.linkedin.com/in/richard-stagg-6528183/"
     }
   ],
   "certificates": [
@@ -373,27 +336,27 @@
     },
     {
       "language": "Cantonese",
-      "fluency": "Rudimentary"
+      "fluency": "Basic"
     }
   ],
   "interests": [
     {
-      "name": "Playing the Bass"
+      "name": "Systematic trading"
     },
     {
-      "name": "Muay Thai, MMA and Running"
+      "name": "Self-hosting & homelab"
     },
     {
-      "name": "Co-op Videogames"
+      "name": "Cybersecurity & ethical hacking"
     },
     {
-      "name": "Cybersecurity and Ethical Hacking"
+      "name": "Muay Thai, MMA & running"
     },
     {
-      "name": "Privacy"
+      "name": "Playing the bass"
     },
     {
-      "name": "Self-hosting"
+      "name": "Co-op videogames"
     }
   ]
 }
