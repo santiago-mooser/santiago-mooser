@@ -4,18 +4,19 @@
 
 ```
 resume.json ──> theme/ (vendored JSON Resume theme) ──> dist/index.html
-static/     ──────────────────────────────────────────> dist/ (favicon, robots, sitemap, PDFs, …)
-dist/index.html ──> headless Chrome ──> dist/cv.pdf (+ legacy cv_santiago_espinosa_mooser.pdf)
+static/     ──────────────────────────────────────────> dist/ (favicon, robots, 404, CV PDFs, …)
 ```
 
 On push to `main`, `.github/workflows/publish.yml` spellchecks, validates,
-builds, renders the PDF, and deploys `dist/` to GitHub Pages (source:
-GitHub Actions — no generated files are committed to the repo).
+builds, and deploys `dist/` to GitHub Pages (source: GitHub Actions — no
+generated files are committed to the repo).
 
 ## Editing
 
-- Content: edit `resume.json` (bump `meta.lastModified`). The PDF is generated
-  from the same file — never upload a hand-made PDF.
+- Content: edit `resume.json` (bump `meta.lastModified`).
+- CV PDF: hand-maintained. Replace BOTH `static/cv.pdf` and
+  `static/cv_santiago_espinosa_mooser.pdf` (same file, legacy URL) and keep
+  them in sync with `resume.json` — they will not update themselves.
 - Styling/markup: edit `theme/` (`resume.template`, `style.css`, `print.css`,
   `index.js`). The theme is vendored here; the old npm package
   `jsonresume-theme-mooser` is no longer part of the build.
@@ -28,7 +29,6 @@ GitHub Actions — no generated files are committed to the repo).
 npm ci
 npm run validate   # resume.json against the JSON Resume schema
 npm run build      # renders dist/
-npm run pdf        # needs Chrome; on NixOS: nix-shell -p chromium --command 'npm run pdf'
 ```
 
 Open `dist/index.html` in a browser.

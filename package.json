@@ -4,8 +4,7 @@
   "description": "Personal resume site: resume.json rendered with the vendored theme in theme/",
   "scripts": {
     "validate": "resumed validate resume.json",
-    "build": "node scripts/build.js",
-    "pdf": "sh scripts/pdf.sh"
+    "build": "node scripts/build.js"
   },
   "dependencies": {
     "jsonresume-theme-mooser": "file:./theme",
