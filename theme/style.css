@@ -12,15 +12,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-bg: #131a23;
-    --card: #1d2632;
-    --ink: #dbe3ec;
-    --muted: #9aa7b4;
-    --line: #323e4c;
-    --badge-bg: #2a3543;
-    --link: #93bad8;
-    --accent: #a9c4dd;
+    --page-bg: #10161e;
+    --card: #1c2531;
+    --ink: #e9eef5;
+    --muted: #b6c2cf;
+    --line: #3c4857;
+    --badge-bg: #303c4b;
+    --link: #a9cbe7;
+    --accent: #bcd3ea;
   }
+  /* light-on-dark text renders thinner; grayscale smoothing keeps it readable */
+  body { -webkit-font-smoothing: auto; }
   .page { border: 1px solid var(--line); }
   .photo { border-color: var(--line); }
 }
