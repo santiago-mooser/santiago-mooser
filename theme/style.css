@@ -1,0 +1,233 @@
+:root {
+  --navy: #334960;
+  --navy-deep: #2a3c50;
+  --ink: #28313c;
+  --muted: #5c6875;
+  --line: #e3e8ee;
+  --card: #ffffff;
+  --badge-bg: #eef2f6;
+  --link: #2d5a7a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1020px;
+  margin: 96px auto 40px;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 0 clamp(20px, 5vw, 56px) 32px;
+}
+
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--navy); }
+a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-radius: 2px; }
+
+.ico {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  flex: none;
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  text-align: center;
+  padding-top: 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid var(--navy);
+  background: var(--navy);
+  margin-top: -80px;
+  object-fit: cover;
+}
+
+.masthead h1 {
+  margin: 14px 0 2px;
+  font-size: clamp(1.7rem, 4.5vw, 2.3rem);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.headline {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  font-size: 0.92rem;
+}
+
+.contact a,
+.contact .loc {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.contact a:hover { color: var(--navy); text-decoration: underline; }
+
+/* ---------- layout ---------- */
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 12px 48px;
+  padding-top: 8px;
+}
+
+@media (max-width: 760px) {
+  .columns { grid-template-columns: minmax(0, 1fr); }
+  .page { margin-top: 88px; }
+}
+
+section { margin-top: 26px; }
+
+h2 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--navy);
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+
+h3 { font-size: 1.02rem; margin: 0; font-weight: 650; }
+h4 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 12px 0 4px;
+}
+
+.summary { margin: 0; max-width: 66ch; }
+
+/* ---------- entries ---------- */
+
+.entry { margin-bottom: 22px; }
+.entry:last-child { margin-bottom: 8px; }
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2px 16px;
+}
+
+.entry-head h3 a {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dates {
+  color: var(--muted);
+  font-size: 0.88rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.org { margin: 1px 0 6px; font-size: 0.92rem; color: var(--muted); }
+.entry-summary { margin: 6px 0; }
+
+.highlights {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.highlights li { margin: 5px 0; }
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--badge-bg);
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+/* ---------- badges & lists ---------- */
+
+.badges {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badges li {
+  background: var(--badge-bg);
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 0.85rem;
+}
+
+.plain { list-style: none; margin: 0; padding: 0; }
+.plain li { margin: 6px 0; }
+
+.courses { margin: 4px 0 0; padding-left: 20px; font-size: 0.92rem; }
+.courses li { margin: 3px 0; }
+
+.skill-group { margin-bottom: 14px; }
+.skill-group h3 { font-size: 0.95rem; }
+
+.muted { color: var(--muted); }
+
+/* ---------- references ---------- */
+
+.reference {
+  margin: 0 0 18px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--navy);
+  background: var(--badge-bg);
+  border-radius: 0 8px 8px 0;
+}
+.reference p { margin: 0 0 6px; }
+.reference footer { font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- footer ---------- */
+
+.colophon {
+  margin-top: 34px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.colophon p { margin: 0; }

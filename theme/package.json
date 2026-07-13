@@ -1,0 +1,11 @@
+{
+  "name": "jsonresume-theme-mooser",
+  "version": "0.3.0",
+  "description": "Self-contained JSON Resume theme for santiago-mooser.com — no external assets",
+  "main": "index.js",
+  "author": "Santiago Espinosa Mooser",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}
