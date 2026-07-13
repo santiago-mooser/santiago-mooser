@@ -30,7 +30,15 @@ jobs:
       - name: Spellcheck content
         uses: crate-ci/typos@bee27e3a4fd1ea2111cf90ab89cd076c870fce14 # v1.48.0
         with:
-          files: resume.json README.md theme static scripts
+          files: resume.json README.md PIPELINE.md theme static scripts
+
+      - name: Warn if the hand-maintained CV PDF has drifted from resume.json
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          current=$(node -pe "JSON.parse(require('fs').readFileSync('resume.json','utf8')).work.find(w=>!w.endDate)?.name ?? ''")
+          if ! pdftotext static/cv.pdf - | grep -qiF "$(echo "$current" | cut -d'(' -f1 | xargs)"; then
+            echo "::warning file=static/cv.pdf::CV PDF does not mention the current employer ($current) — the hand-maintained PDF has drifted from resume.json"
+          fi
 
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
@@ -44,9 +52,6 @@ jobs:
 
       - name: Render site
         run: npm run build
-
-      - name: Render CV PDF (headless Chrome ships with the runner)
-        run: npm run pdf
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:

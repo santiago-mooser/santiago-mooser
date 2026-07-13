@@ -1,37 +1,56 @@
 :root {
-  --navy: #334960;
-  --navy-deep: #2a3c50;
+  color-scheme: light dark;
+  --page-bg: #334960;
+  --card: #ffffff;
   --ink: #28313c;
   --muted: #5c6875;
   --line: #e3e8ee;
-  --card: #ffffff;
   --badge-bg: #eef2f6;
   --link: #2d5a7a;
+  --accent: #334960;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #131a23;
+    --card: #1d2632;
+    --ink: #dbe3ec;
+    --muted: #9aa7b4;
+    --line: #323e4c;
+    --badge-bg: #2a3543;
+    --link: #93bad8;
+    --accent: #a9c4dd;
+  }
+  .page { border: 1px solid var(--line); }
+  .photo { border-color: var(--line); }
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: var(--navy);
+  background: var(--page-bg);
   color: var(--ink);
   font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: clamp(16px, 15px + 0.2vw, 18px);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 
 .page {
-  max-width: 1020px;
+  max-width: min(1360px, 94vw);
   margin: 96px auto 40px;
   background: var(--card);
   border-radius: 14px;
-  padding: 0 clamp(20px, 5vw, 56px) 32px;
+  padding: 0 clamp(20px, 4vw, 64px) 32px;
 }
 
 a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-a:hover { color: var(--navy); }
-a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-radius: 2px; }
+a:hover { color: var(--accent); }
+@media (prefers-reduced-motion: no-preference) {
+  a { transition: color 120ms ease; }
+}
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
 .ico {
   width: 1em;
@@ -53,15 +72,15 @@ a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-ra
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  border: 5px solid var(--navy);
-  background: var(--navy);
+  border: 5px solid var(--page-bg);
+  background: var(--page-bg);
   margin-top: -80px;
   object-fit: cover;
 }
 
 .masthead h1 {
   margin: 14px 0 2px;
-  font-size: clamp(1.7rem, 4.5vw, 2.3rem);
+  font-size: clamp(1.7rem, 1.2rem + 2vw, 2.7rem);
   font-weight: 750;
   letter-spacing: -0.02em;
   text-wrap: balance;
@@ -69,9 +88,9 @@ a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-ra
 
 .headline {
   margin: 0 0 14px;
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .contact {
@@ -91,20 +110,29 @@ a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-ra
   text-decoration: none;
 }
 
-.contact a:hover { color: var(--navy); text-decoration: underline; }
+.contact a { color: var(--link); }
+.contact a:hover { color: var(--accent); text-decoration: underline; }
 
 /* ---------- layout ---------- */
 
 .columns {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
-  gap: 12px 48px;
+  gap: 12px clamp(40px, 5vw, 72px);
   padding-top: 8px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .columns { grid-template-columns: minmax(0, 1fr); }
   .page { margin-top: 88px; }
+}
+
+/* two-column masonry for projects at wide widths so the main column
+   doesn't run 2000px past the aside */
+@media (min-width: 1100px) {
+  #projects { column-count: 2; column-gap: clamp(40px, 4vw, 64px); }
+  #projects h2 { column-span: all; }
+  #projects .entry { break-inside: avoid; }
 }
 
 section { margin-top: 26px; }
@@ -114,8 +142,8 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--navy);
-  border-bottom: 2px solid var(--navy);
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 6px;
   margin: 0 0 14px;
 }
@@ -130,7 +158,7 @@ h4 {
   margin: 12px 0 4px;
 }
 
-.summary { margin: 0; max-width: 66ch; }
+.summary { margin: 0; max-width: 75ch; }
 
 /* ---------- entries ---------- */
 
@@ -160,11 +188,13 @@ h4 {
 }
 
 .org { margin: 1px 0 6px; font-size: 0.92rem; color: var(--muted); }
-.entry-summary { margin: 6px 0; }
+.org-desc { margin: 2px 0 6px; font-size: 0.9rem; color: var(--muted); max-width: 75ch; }
+.entry-summary { margin: 6px 0; max-width: 75ch; }
 
 .highlights {
   margin: 8px 0 0;
   padding-left: 20px;
+  max-width: 75ch;
 }
 .highlights li { margin: 5px 0; }
 
@@ -213,7 +243,7 @@ h4 {
 .reference {
   margin: 0 0 18px;
   padding: 14px 18px;
-  border-left: 4px solid var(--navy);
+  border-left: 4px solid var(--accent);
   background: var(--badge-bg);
   border-radius: 0 8px 8px 0;
 }

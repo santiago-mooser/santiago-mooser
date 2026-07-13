@@ -6,11 +6,11 @@
   },
   "basics": {
     "name": "Santiago Espinosa Mooser",
-    "label": "Senior DevSecOps Engineer → Quantitative Developer",
+    "label": "Quantitative Technologist at QRT",
     "email": "contact@santiago-mooser.com",
     "url": "https://santiago-mooser.com",
     "image": "https://santiago-mooser.com/profile.jpg",
-    "summary": "I'm a Senior DevSecOps engineer at Hex Trust (digital-asset custody) moving into quantitative development. By day I secure and automate cloud infrastructure — Kubernetes, AWS, infrastructure as code; the rest of the time I build trading-adjacent systems: market-microstructure benchmarks in Rust, trading-competition bots, and the self-hosted Kubernetes lab I run at home. I have a Computer Science degree from HKU with a theory focus (algorithms, game theory, cryptography), and I like being the least knowledgeable person in the room. If any of this is interesting, feel free to reach out by email.",
+    "summary": "I'm a Quantitative Technologist at QRT (Qube Research & Technologies) in Hong Kong, doing platform work for quantitative research and trading. Before that I was a Senior DevSecOps Engineer at Hex Trust (digital-asset custody), and I still build things on the side: market-microstructure benchmarks in Rust, trading-competition bots, and the self-hosted Kubernetes lab I run at home. I have a Computer Science degree from HKU with a theory focus (algorithms, game theory, cryptography), and I like being the least knowledgeable person in the room. If any of this is interesting, feel free to reach out by email.",
     "location": {
       "city": "Hong Kong"
     },
@@ -34,13 +34,23 @@
   },
   "work": [
     {
+      "name": "Qube Research & Technologies (QRT)",
+      "location": "Hong Kong",
+      "url": "https://www.qube-rt.com",
+      "description": "QRT is a global quantitative and systematic investment manager.",
+      "position": "Quantitative Technologist",
+      "startDate": "2025-10",
+      "summary": "Platform work supporting quantitative research and trading infrastructure."
+    },
+    {
       "name": "Hex Trust",
       "location": "Hong Kong",
       "url": "https://hextrust.com",
       "description": "Hex Trust is a fully-licensed provider of bank-grade custody for digital assets with a focus on security and compliance.",
       "position": "Senior DevSecOps Engineer",
       "startDate": "2023-09",
-      "summary": "Rejoined Hex Trust full-time as the in-house DevSecOps engineer, progressing from intern to L13 (Senior) across my time at the company. I focus on hardening cloud workloads and improving the company's technical security posture.",
+      "endDate": "2025-09",
+      "summary": "Rejoined Hex Trust full-time as the in-house DevSecOps engineer, progressing from intern to L13 (Senior) across my time at the company. Focused on hardening cloud workloads and improving the company's technical security posture.",
       "highlights": [
         "Designed and implemented the CI/CD pipeline to build, sign, deploy, and debug distroless containers; coordinated the developer teams' migration and ran internal talks on working with them.",
         "Deployed and managed the company's Privileged Access Management platform (Teleport) across Kubernetes clusters, RDS databases, web applications, and Linux servers using Terragrunt, Helm, and AWS EKS, providing auditable real-time access to production.",
@@ -91,7 +101,7 @@
       "location": "Hong Kong",
       "startDate": "2019-06",
       "endDate": "2022-12",
-      "position": "DevOps Intern (intern → part-time)",
+      "position": "DevOps Intern (later part-time)",
       "summary": "Internship, continued part-time alongside my studies.",
       "highlights": [
         "Reduced server provisioning time from 3–5 business days to 30–45 minutes by automating provisioning with Ansible, Terraform, and Jinja2 templates.",
@@ -299,18 +309,6 @@
       ],
       "startDate": "2019-01",
       "type": "personal"
-    }
-  ],
-  "references": [
-    {
-      "name": "Shane Read — Chief Information Security Officer, Hex Trust",
-      "reference": "Santiago's rich experience in DevOps and Information Security allowed us to complete the design and implementation of our DevSecOps pipeline in a matter of weeks rather than months.",
-      "url": "https://www.linkedin.com/in/cisoinasia/"
-    },
-    {
-      "name": "Kit Ho — Head of DevOps, PwC New Ventures",
-      "reference": "Santiago was always willing to offer his assistance and had excellent technical skills on working software products.",
-      "url": "https://www.linkedin.com/in/kit-hei-ho/"
     }
   ],
   "certificates": [

@@ -58,6 +58,7 @@ function render(resume) {
   ].filter(Boolean).join('');
   view.city = basics.location && basics.location.city;
   view.canonical = basics.url && !basics.url.endsWith('/') ? `${basics.url}/` : basics.url;
+  view.ogImage = `${view.canonical}og-banner.png`;
 
   view.profiles = (basics.profiles || []).map((p) => ({
     label: p.network === 'CV' ? (p.username || 'CV') : p.network,
@@ -73,6 +74,8 @@ function render(resume) {
     ...w,
     dates: dateRange(w.startDate, w.endDate),
     hasHighlights: Boolean(w.highlights && w.highlights.length),
+    // org one-liner adds context to sparse entries; noise on detailed ones
+    showDescription: Boolean(w.description) && !(w.highlights && w.highlights.length),
   }));
   view.hasWork = view.work.length > 0;
 
@@ -118,7 +121,7 @@ function render(resume) {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: basics.name,
-    jobTitle: basics.label,
+    jobTitle: basics.label ? basics.label.split(' at ')[0] : undefined,
     email: basics.email ? `mailto:${basics.email}` : undefined,
     url: basics.url,
     image: basics.image,

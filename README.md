@@ -1,9 +1,9 @@
 # Hi there 👋
 
-I'm Santiago — a Senior DevSecOps engineer in Hong Kong, moving into quantitative development.
+I'm Santiago — a Quantitative Technologist at QRT in Hong Kong, doing platform work for quantitative research and trading. Previously Senior DevSecOps Engineer at Hex Trust.
 
-- Security & infrastructure by day: Kubernetes, AWS, IaC, CI/CD security automation
-- Trading-adjacent systems the rest of the time: benchmarking [mmap-sync for market-data IPC in Rust](https://github.com/santiago-mooser/mmap-sync-benchmark), [IMC Prosperity 2024](https://github.com/santiago-mooser/IMC-trading) (#729 of 10,000+ teams), and a [crypto arbitrage simulator](https://github.com/santiago-mooser/Mock-crypto-trading-bot)
+- Infrastructure, security & automation: Kubernetes, AWS, IaC, CI/CD
+- Trading-adjacent side projects: benchmarking [mmap-sync for market-data IPC in Rust](https://github.com/santiago-mooser/mmap-sync-benchmark), [IMC Prosperity 2024](https://github.com/santiago-mooser/IMC-trading) (#729 of 10,000+ teams), and a [crypto arbitrage simulator](https://github.com/santiago-mooser/Mock-crypto-trading-bot)
 - I run a NixOS + k3s GitOps homelab, and have been using & managing \*nix systems (Ubuntu, Arch, Debian, NixOS) for years
 - Open-source supporter & cybersecurity enthusiast :)
 

@@ -43,4 +43,4 @@ jobs:
         run: |
           gh issue create --repo "$GITHUB_REPOSITORY" \
             --title "Quarterly resume review $(date +%Y-Q%q)" \
-            --body "$(printf 'Time to check the resume is still current:\n\n- [ ] Current role, title, and dates still accurate?\n- [ ] Anything from the last quarter worth adding (projects, writing, competitions)?\n- [ ] Summary and headline still match the positioning?\n- [ ] meta.lastModified bumped?\n- [ ] static/.well-known/security.txt Expires date still in the future?')"
+            --body "$(printf 'Time to check the resume is still current:\n\n- [ ] Current role, title, and dates still accurate?\n- [ ] Anything from the last quarter worth adding (projects, writing, competitions)?\n- [ ] Summary and headline still match the positioning?\n- [ ] meta.lastModified bumped?\n- [ ] Hand-maintained CV PDFs in static/ still match resume.json?\n- [ ] static/.well-known/security.txt Expires date still in the future?')"
