@@ -34,4 +34,3 @@ fs.writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="
 `);
 
 console.log(`Built dist/ (${fs.readdirSync(dist).join(', ')})`);
-console.log('NOTE: run "npm run pdf" after — build wipes dist/, including the PDFs.');

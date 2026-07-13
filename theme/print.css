@@ -1,5 +1,17 @@
 @page { size: A4; margin: 12mm; }
 
+/* force the light palette even when the browser is in dark mode */
+:root {
+  --page-bg: #ffffff;
+  --card: #ffffff;
+  --ink: #28313c;
+  --muted: #5c6875;
+  --line: #e3e8ee;
+  --badge-bg: #eef2f6;
+  --link: #2d5a7a;
+  --accent: #334960;
+}
+
 body { background: #fff; font-size: 10pt; }
 
 .page {
