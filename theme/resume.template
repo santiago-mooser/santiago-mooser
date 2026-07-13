@@ -37,7 +37,7 @@
         {{#basics.email}}<a href="mailto:{{basics.email}}">{{{mailIcon}}}<span>{{basics.email}}</span></a>{{/basics.email}}
         {{#city}}<span class="loc">{{{pinIcon}}}<span>{{city}}</span></span>{{/city}}
         {{#profiles}}
-        <a {{#cssClass}}class="{{cssClass}}" {{/cssClass}}href="{{url}}" rel="me noopener noreferrer">{{{iconSvg}}}<span>{{label}}</span></a>
+        <a {{#cssClass}}class="{{cssClass}}" {{/cssClass}}href="{{url}}" target="_blank" rel="me noopener noreferrer">{{{iconSvg}}}<span>{{label}}</span></a>
         {{/profiles}}
       </nav>
     </header>
@@ -61,7 +61,7 @@
               <span class="dates">{{dates}}</span>
             </div>
             <p class="org">
-              {{#url}}<a href="{{url}}" rel="noopener noreferrer">{{name}}</a>{{/url}}{{^url}}{{name}}{{/url}}{{#location}} · {{location}}{{/location}}
+              {{#url}}<a href="{{url}}" target="_blank" rel="noopener noreferrer">{{name}}</a>{{/url}}{{^url}}{{name}}{{/url}}{{#location}} · {{location}}{{/location}}
             </p>
             {{#showDescription}}<p class="org-desc">{{description}}</p>{{/showDescription}}
             {{#summary}}<p class="entry-summary">{{summary}}</p>{{/summary}}
@@ -82,7 +82,7 @@
           <article class="entry">
             <div class="entry-head">
               <h3>
-                {{#hasUrl}}<a href="{{url}}" rel="noopener noreferrer">{{name}}{{{extIcon}}}</a>{{/hasUrl}}{{^hasUrl}}{{name}}{{/hasUrl}}
+                {{#hasUrl}}<a href="{{url}}" target="_blank" rel="noopener noreferrer">{{name}}{{{extIcon}}}</a>{{/hasUrl}}{{^hasUrl}}{{name}}{{/hasUrl}}
               </h3>
               {{#type}}<span class="tag">{{type}}</span>{{/type}}
             </div>
@@ -103,7 +103,7 @@
           {{#references}}
           <blockquote class="reference">
             <p>“{{reference}}”</p>
-            <footer>— {{#url}}<a href="{{url}}" rel="noopener noreferrer">{{name}}</a>{{/url}}{{^url}}{{name}}{{/url}}</footer>
+            <footer>— {{#url}}<a href="{{url}}" target="_blank" rel="noopener noreferrer">{{name}}</a>{{/url}}{{^url}}{{name}}{{/url}}</footer>
           </blockquote>
           {{/references}}
         </section>
@@ -116,7 +116,7 @@
           <h2 id="education-h">Education</h2>
           {{#education}}
           <article class="entry">
-            <h3>{{#url}}<a href="{{url}}" rel="noopener noreferrer">{{institution}}</a>{{/url}}{{^url}}{{institution}}{{/url}}</h3>
+            <h3>{{#url}}<a href="{{url}}" target="_blank" rel="noopener noreferrer">{{institution}}</a>{{/url}}{{^url}}{{institution}}{{/url}}</h3>
             <p class="org">{{degree}}</p>
             <p class="dates">{{dates}}</p>
             {{#hasHighlights}}
@@ -155,7 +155,7 @@
           <ul class="plain">
             {{#certificates}}
             <li>
-              {{#hasUrl}}<a href="{{url}}" rel="noopener noreferrer">{{name}}</a>{{/hasUrl}}{{^hasUrl}}{{name}}{{/hasUrl}}
+              {{#hasUrl}}<a href="{{url}}" target="_blank" rel="noopener noreferrer">{{name}}</a>{{/hasUrl}}{{^hasUrl}}{{name}}{{/hasUrl}}
               {{#issuer}}<span class="muted"> — {{issuer}}{{#year}}, {{year}}{{/year}}</span>{{/issuer}}
             </li>
             {{/certificates}}
@@ -185,7 +185,7 @@
 
     <footer class="colophon">
       <p>
-        {{#lastModified}}Last updated {{lastModified}} · {{/lastModified}}Generated from <a href="https://github.com/santiago-mooser/santiago-mooser" rel="noopener noreferrer">resume.json</a>
+        {{#lastModified}}Last updated {{lastModified}} · {{/lastModified}}Generated from <a href="https://github.com/santiago-mooser/santiago-mooser" target="_blank" rel="noopener noreferrer">resume.json</a>
       </p>
     </footer>
   </div>
