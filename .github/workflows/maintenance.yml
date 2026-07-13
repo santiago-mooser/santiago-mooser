@@ -1,0 +1,46 @@
+name: Maintenance
+
+on:
+  schedule:
+    - cron: '0 9 3 * *' # monthly: link check
+    - cron: '0 10 1 1,4,7,10 *' # quarterly: content freshness reminder
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 9 3 * *'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Check external links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          # LinkedIn blocks automated checkers
+          args: --no-progress --exclude 'linkedin\.com' resume.json README.md
+          fail: true
+
+      - name: Open an issue if links are broken
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Link check failed $(date +%Y-%m)" \
+            --body "The monthly lychee run found broken links. See the run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+  content-reminder:
+    if: github.event.schedule == '0 10 1 1,4,7,10 *'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open quarterly review issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Quarterly resume review $(date +%Y-Q%q)" \
+            --body "$(printf 'Time to check the resume is still current:\n\n- [ ] Current role, title, and dates still accurate?\n- [ ] Anything from the last quarter worth adding (projects, writing, competitions)?\n- [ ] Summary and headline still match the positioning?\n- [ ] meta.lastModified bumped?\n- [ ] static/.well-known/security.txt Expires date still in the future?')"
