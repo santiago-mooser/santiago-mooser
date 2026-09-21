@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Four different ways to make it yours — Santiago</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        --paper: #ece8df;
+        --ink: #263c50;
+      }
+      .gallery-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        padding: 30px 0;
+        border-bottom: 1px solid #b9c1bf;
+        font-size: 13px;
+      }
+      .gallery-intro {
+        padding: 60px 0 40px;
+        max-width: 960px;
+      }
+      .gallery-intro h1 {
+        font-size: clamp(46px, 5.5vw, 76px);
+        margin: 20px 0;
+      }
+      .gallery-intro p {
+        max-width: 670px;
+        font-size: 19px;
+        color: #56636b;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 44px 30px;
+      }
+      .concept {
+        min-width: 0;
+      }
+      .concept .preview {
+        display: block;
+        background: #f6f1e7;
+        border: 1px solid #a9b6bc;
+        border-radius: 8px;
+        overflow: hidden;
+        aspect-ratio: 1.44;
+      }
+      .concept img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: transform 0.25s;
+      }
+      .concept .preview:hover img {
+        transform: scale(1.015);
+      }
+      .concept-title {
+        display: flex;
+        gap: 18px;
+        align-items: baseline;
+        margin: 24px 0 12px;
+      }
+      .concept-title h2 {
+        font-size: 31px;
+        margin: 0;
+      }
+      .concept-title span {
+        font-size: 12px;
+        color: #725c46;
+      }
+      .concept p {
+        font-size: 16px;
+        max-width: 520px;
+        color: #56636b;
+      }
+      .concept-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        font-size: 14px;
+      }
+      .concept .traits {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #725c46;
+        margin: 14px 0;
+      }
+      .gallery-end {
+        margin: 65px 0 40px;
+        border-top: 1px solid #b9c1bf;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 60px;
+      }
+      .gallery-end h2 {
+        font-size: 30px;
+      }
+      .gallery-end p {
+        font-size: 16px;
+      }
+      .gallery-footer {
+        border-top: 1px solid #b9c1bf;
+        padding: 20px 0 35px;
+        font-size: 12px;
+        color: #56636b;
+      }
+      @media (max-width: 700px) {
+        .gallery-header {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .gallery-intro {
+          padding-top: 35px;
+        }
+        .gallery-grid,
+        .gallery-end {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+        .concept-title h2 {
+          font-size: 27px;
+        }
+        .gallery-end {
+          gap: 15px;
+        }
+        .gallery-intro h1 {
+          font-size: 47px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .concept img {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="gallery-header">
+        <a class="brand" href="index.html">Santiago Mooser / Design studies</a
+        ><a href="../design-study/index.html">View round 01 ↗</a>
+      </header>
+      <main>
+        <section class="gallery-intro">
+          <span class="kicker"
+            >Round 02 / More character, more possibilities</span
+          >
+          <h1>Four different ways<br />to make it yours.</h1>
+          <p>
+            A personal magazine. A photographic journal. An illustrated cabinet.
+            A colourful space after dark. Different ways to give your writing a
+            home.
+          </p>
+        </section>
+        <div class="gallery-grid">
+          <article class="concept">
+            <a class="preview" href="edition.html"
+              ><img
+                src="edition-desktop.png"
+                alt="Sunday Edition with a newspaper masthead, lead story, photograph and margin notes"
+                width="1440"
+                height="1000"
+            /></a>
+            <div class="concept-title">
+              <span>01</span>
+              <h2>The Sunday Edition</h2>
+            </div>
+            <div class="traits">Editorial · Layered · Assured</div>
+            <p>
+              A generous masthead, a proper lead story, harbour photography and
+              thoughts in the margins. Your own small magazine, with slate ink
+              and vermilion accents.
+            </p>
+            <div class="concept-links">
+              <a href="edition.html">Explore homepage ↗</a
+              ><a href="edition-post.html">Read an article ↗</a
+              ><a href="edition-mobile.png">Phone preview ↗</a>
+            </div>
+          </article>
+          <article class="concept">
+            <a class="preview" href="field.html"
+              ><img
+                src="field-desktop.png"
+                alt="Field Notes with a wide photographic cover and tactile notebook entries"
+                width="1440"
+                height="1000"
+            /></a>
+            <div class="concept-title">
+              <span>02</span>
+              <h2>Field Notes</h2>
+            </div>
+            <div class="traits">Photographic · Tactile · Personal</div>
+            <p>
+              A cinematic cover, soft paper, forest-green details and entries
+              that feel collected along the way. The most atmospheric direction.
+            </p>
+            <div class="concept-links">
+              <a href="field.html">Explore homepage ↗</a
+              ><a href="field-post.html">Read an article ↗</a
+              ><a href="field-mobile.png">Phone preview ↗</a>
+            </div>
+          </article>
+          <article class="concept">
+            <a class="preview" href="cabinet.html"
+              ><img
+                src="cabinet-desktop.png"
+                alt="Curiosity Cabinet with a botanical illustration, colourful cards and a personal shelf"
+                width="1440"
+                height="1000"
+            /></a>
+            <div class="concept-title">
+              <span>03</span>
+              <h2>The Curiosity Cabinet</h2>
+            </div>
+            <div class="traits">Illustrated · Warm · Exploratory</div>
+            <p>
+              Handmade-feeling illustrations, growing thoughts, unexpected
+              colours and a shelf for small discoveries. A home for interests
+              that don’t fit one category.
+            </p>
+            <div class="concept-links">
+              <a href="cabinet.html">Explore homepage ↗</a
+              ><a href="cabinet-post.html">Read an article ↗</a
+              ><a href="cabinet-mobile.png">Phone preview ↗</a>
+            </div>
+          </article>
+          <article class="concept">
+            <a class="preview" href="afterhours.html"
+              ><img
+                src="afterhours-desktop.png"
+                alt="After Hours with a navy background, oversized lavender heading, orbit artwork and colourful cards"
+                width="1440"
+                height="1000"
+            /></a>
+            <div class="concept-title">
+              <span>04</span>
+              <h2>After Hours</h2>
+            </div>
+            <div class="traits">Dark · Colourful · Playful</div>
+            <p>
+              Your existing dark slate, with a much bolder personality: lavender
+              type, orbital geometry, warm illustrations and a green strip of
+              passing thoughts.
+            </p>
+            <div class="concept-links">
+              <a href="afterhours.html">Explore homepage ↗</a
+              ><a href="afterhours-post.html">Read an article ↗</a
+              ><a href="afterhours-mobile.png">Phone preview ↗</a>
+            </div>
+          </article>
+        </div>
+        <section class="gallery-end">
+          <div>
+            <h2>My shortlist: 01 or 03.</h2>
+            <p>
+              <strong>The Sunday Edition</strong> gives your writing presence
+              and keeps the strongest connection to your current palette.
+              <strong>The Curiosity Cabinet</strong> has the most personal,
+              exploratory character.
+            </p>
+            <p>
+              All four include a reading specimen and working topic filters.
+              Imagery can be optional per post; you should never have to design
+              a cover just to write something.
+            </p>
+          </div>
+          <div>
+            <h2>Built around your words.</h2>
+            <p>
+              The proposed workflow remains Markdown → static HTML → GitHub
+              Pages. The visual direction does not require a CMS server or a
+              different way of writing.
+            </p>
+            <p>
+              <a href="RESEARCH.md"
+                >References, design tradeoffs & publishing implications ↗</a
+              >
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="gallery-footer">
+        Design prototypes with illustrative content. Photo: I P / Unsplash.
+        Original vector illustrations. No production migration.
+      </footer>
+    </div>
+  </body>
+</html>
