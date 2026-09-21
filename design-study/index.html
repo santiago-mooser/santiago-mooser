@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Santiago — a place for your words</title>
+    <style>
+      @font-face {
+        font-family: "Lora";
+        src: url("fonts/Lora.ttf") format("truetype");
+        font-weight: 400 700;
+        font-display: swap;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f5f4f0;
+        color: #28313c;
+        font:
+          17px/1.6 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 1320px;
+        padding: 60px 40px;
+        margin: auto;
+      }
+      .label {
+        font:
+          12px ui-monospace,
+          monospace;
+        letter-spacing: 0.14em;
+        color: #596774;
+        text-transform: uppercase;
+      }
+      h1 {
+        font:
+          normal clamp(40px, 6vw, 76px) / 1.05 "Lora",
+          Georgia,
+          serif;
+        letter-spacing: -0.05em;
+        margin: 22px 0;
+      }
+      a {
+        color: #334960;
+        text-underline-offset: 4px;
+      }
+      a:focus-visible {
+        outline: 3px solid #334960;
+        outline-offset: 5px;
+      }
+      .lead {
+        max-width: 660px;
+        font-size: 20px;
+        color: #596774;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 26px;
+        margin-top: 50px;
+      }
+      .card {
+        min-width: 0;
+      }
+      .card img {
+        width: 100%;
+        aspect-ratio: 1.3;
+        object-fit: cover;
+        object-position: top;
+        border: 1px solid #ccd4dc;
+        border-radius: 5px;
+      }
+      h2 {
+        font:
+          28px "Lora",
+          Georgia,
+          serif;
+        margin-bottom: 12px;
+      }
+      .card p {
+        font-size: 15px;
+        color: #596774;
+      }
+      .links {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+      }
+      .recommendation {
+        margin-top: 55px;
+        padding: 28px 0;
+        border-top: 1px solid #ccd4dc;
+        max-width: 820px;
+      }
+      .recommendation p {
+        max-width: 740px;
+      }
+      .small {
+        font-size: 13px;
+        color: #596774;
+      }
+      @media (max-width: 850px) {
+        main {
+          padding: 35px 22px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .card img {
+          max-height: 420px;
+        }
+        .card {
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="label">
+        Santiago Mooser / Website direction study / September 2026
+      </div>
+      <h1>A place for your words.</h1>
+      <p class="lead">
+        Three ways to move from a résumé to a personal home on the internet. The
+        same slate-blue roots, with writing at the centre.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <a href="journal.html"
+            ><img
+              src="journal-desktop.png"
+              alt="Quiet journal preview with warm paper, serif headline and recent writing"
+          /></a>
+          <div class="label">01 / Recommended</div>
+          <h2>The quiet journal</h2>
+          <p>
+            Warm paper, generous spacing and a calm reading rhythm. For essays,
+            observations and speaking your mind.
+          </p>
+          <div class="links">
+            <a href="journal.html">Explore homepage ↗</a
+            ><a href="journal-post.html">Read a post ↗</a>
+          </div>
+          <p>
+            Inspired by
+            <a href="https://manuelmoreale.com/">Manu Moreale</a> and
+            <a href="https://macwright.com/">Tom MacWright</a>.
+          </p>
+        </article>
+        <article class="card">
+          <a href="archive.html"
+            ><img
+              src="archive-desktop.png"
+              alt="Writing index preview with deep slate background and compact dated entries"
+          /></a>
+          <div class="label">02 / Restrained & direct</div>
+          <h2>The writing index</h2>
+          <p>
+            A deep slate canvas and a clean dated archive. Your existing dark
+            theme, distilled into a writing-first layout.
+          </p>
+          <div class="links">
+            <a href="archive.html">Explore homepage ↗</a
+            ><a href="archive-post.html">Read a post ↗</a>
+          </div>
+          <p>Inspired by <a href="https://rauchg.com/">Guillermo Rauch</a>.</p>
+        </article>
+        <article class="card">
+          <a href="notebook.html"
+            ><img
+              src="notebook-desktop.png"
+              alt="Open notebook preview with a personal sidebar and pale writing sheets"
+          /></a>
+          <div class="label">03 / Personal & exploratory</div>
+          <h2>The open notebook</h2>
+          <p>
+            A personal introduction beside a collection of thoughts. For small
+            discoveries, longer pieces and changing interests.
+          </p>
+          <div class="links">
+            <a href="notebook.html">Explore homepage ↗</a
+            ><a href="notebook-post.html">Read a post ↗</a>
+          </div>
+          <p>
+            Inspired by <a href="https://macwright.com/">Tom MacWright</a> and
+            <a href="https://manuelmoreale.com/">Manu Moreale</a>.
+          </p>
+        </article>
+      </div>
+      <div class="recommendation">
+        <div class="label">The recommendation</div>
+        <h2>Quiet journal + Markdown + Astro.</h2>
+        <p>
+          Write ordinary Markdown, preview it locally, and publish through your
+          existing GitHub workflow. Astro builds the posts into static HTML.
+          Keep the CV available from About; give the homepage to your writing.
+        </p>
+        <p>
+          <a href="RESEARCH.md"
+            >Read the full research and publishing proposal ↗</a
+          >
+        </p>
+        <p class="small">
+          Clickable design specimens, not a production migration. All post text
+          is illustrative. Appearance controls demonstrate light/dark variants;
+          no authoring backend is connected.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
